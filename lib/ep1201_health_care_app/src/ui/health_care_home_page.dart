@@ -15,7 +15,21 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
       body: SafeArea(
         child: Column(
           children: [
+            SizedBox(
+              height: 64,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
 
+                ],
+              ),
+            )
           ],
         ),
       ),
@@ -23,9 +37,7 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
         child: Container(
           height: 64,
           child: Row(
-            children: [
-
-            ],
+            children: [],
           ),
         ),
       ),
