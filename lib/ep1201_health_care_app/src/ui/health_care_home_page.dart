@@ -137,7 +137,10 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
                     ),
                     Text(
                       "Paitents",
-                      style: TextStyle(color: healthCarePrimaryColor, fontSize: 12),
+                      style: TextStyle(
+                        color: healthCarePrimaryColor,
+                        fontSize: 12,
+                      ),
                     ),
                   ],
                 ),
@@ -157,7 +160,10 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
                     ),
                     Text(
                       "Credentialing",
-                      style: TextStyle(color: healthCarePrimaryColor, fontSize: 12),
+                      style: TextStyle(
+                        color: healthCarePrimaryColor,
+                        fontSize: 12,
+                      ),
                     ),
                   ],
                 ),
@@ -177,7 +183,10 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
                     ),
                     Text(
                       "Documents",
-                      style: TextStyle(color: healthCarePrimaryColor, fontSize: 12),
+                      style: TextStyle(
+                        color: healthCarePrimaryColor,
+                        fontSize: 12,
+                      ),
                     ),
                   ],
                 ),
