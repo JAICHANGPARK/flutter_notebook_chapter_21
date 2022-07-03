@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HealthCareHomePage extends StatefulWidget {
   const HealthCareHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,8 @@ class HealthCareHomePage extends StatefulWidget {
 class _HealthCareHomePageState extends State<HealthCareHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+    );
   }
 }
