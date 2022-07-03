@@ -1,6 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/health_care_style.dart';
+import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/health_care_bottom_menu_widget.dart';
 
 class HealthCareHomePage extends StatefulWidget {
   const HealthCareHomePage({Key? key}) : super(key: key);
@@ -71,130 +72,7 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 4),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: healthCarePrimaryColor,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.bar_chart),
-                      iconSize: 32,
-                      color: healthCarePrimaryColor,
-                    ),
-                    Text(
-                      "Home",
-                      style: TextStyle(
-                        color: healthCarePrimaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.bar_chart),
-                      iconSize: 32,
-                      color: healthCarePrimaryColor,
-                    ),
-                    Text(
-                      "Billing",
-                      style: TextStyle(
-                        color: healthCarePrimaryColor,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.bar_chart),
-                      iconSize: 32,
-                      color: healthCarePrimaryColor,
-                    ),
-                    Text(
-                      "Paitents",
-                      style: TextStyle(
-                        color: healthCarePrimaryColor,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.bar_chart),
-                      iconSize: 32,
-                      color: healthCarePrimaryColor,
-                    ),
-                    Text(
-                      "Credentialing",
-                      style: TextStyle(
-                        color: healthCarePrimaryColor,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.bar_chart),
-                      iconSize: 32,
-                      color: healthCarePrimaryColor,
-                    ),
-                    Text(
-                      "Documents",
-                      style: TextStyle(
-                        color: healthCarePrimaryColor,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: HealthCareBottomMenuWidget(),
     );
   }
 }
