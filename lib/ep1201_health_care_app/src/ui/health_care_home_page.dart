@@ -12,6 +12,23 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 64,
+          child: Row(
+            children: [
+
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
