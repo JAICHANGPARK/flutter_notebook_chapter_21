@@ -18,6 +18,7 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
 
           decoration: BoxDecoration(
             color: Colors.blue,
+            borderRadius: BorderRadius.circular(4)
           ),
           padding: EdgeInsets.symmetric(vertical: 8),
           child: Row(
