@@ -32,122 +32,32 @@ class _HealthCareBottomMenuWidgetState extends State<HealthCareBottomMenuWidget>
         height: 72,
         padding: EdgeInsets.symmetric(horizontal: 4),
         child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                children: [
-                  Container(
-                    height: 3,
-                    color: healthCarePrimaryColor,
+          children: bottomMenuItems
+              .map(
+                (e) => Expanded(
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 3,
+                        color: healthCarePrimaryColor,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: e.iconWidget ?? Icon(Icons.home),
+                        iconSize: 32,
+                        color: healthCarePrimaryColor,
+                      ),
+                      Text(
+                        e.title ?? "?",
+                        style: TextStyle(
+                          color: healthCarePrimaryColor,
+                        ),
+                      )
+                    ],
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.bar_chart),
-                    iconSize: 32,
-                    color: healthCarePrimaryColor,
-                  ),
-                  Text(
-                    "Home",
-                    style: TextStyle(
-                      color: healthCarePrimaryColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Column(
-                children: [
-                  Container(
-                    height: 3,
-                    color: Colors.transparent,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.bar_chart),
-                    iconSize: 32,
-                    color: healthCarePrimaryColor,
-                  ),
-                  Text(
-                    "Billing",
-                    style: TextStyle(
-                      color: healthCarePrimaryColor,
-                      fontSize: 12,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Column(
-                children: [
-                  Container(
-                    height: 3,
-                    color: Colors.transparent,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.bar_chart),
-                    iconSize: 32,
-                    color: healthCarePrimaryColor,
-                  ),
-                  Text(
-                    "Paitents",
-                    style: TextStyle(
-                      color: healthCarePrimaryColor,
-                      fontSize: 12,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Column(
-                children: [
-                  Container(
-                    height: 3,
-                    color: Colors.transparent,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.bar_chart),
-                    iconSize: 32,
-                    color: healthCarePrimaryColor,
-                  ),
-                  Text(
-                    "Credentialing",
-                    style: TextStyle(
-                      color: healthCarePrimaryColor,
-                      fontSize: 12,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Column(
-                children: [
-                  Container(
-                    height: 3,
-                    color: Colors.transparent,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.bar_chart),
-                    iconSize: 32,
-                    color: healthCarePrimaryColor,
-                  ),
-                  Text(
-                    "Documents",
-                    style: TextStyle(
-                      color: healthCarePrimaryColor,
-                      fontSize: 12,
-                    ),
-                  ),
-                ],
-              ),
-            )
-          ],
+                ),
+              )
+              .toList(),
         ),
       ),
     );
