@@ -12,8 +12,10 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Expanded(child: Placeholder()),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 8),
+          margin: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+
           decoration: BoxDecoration(
             color: Colors.blue,
           ),
