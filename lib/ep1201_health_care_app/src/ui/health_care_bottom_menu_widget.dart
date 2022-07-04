@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/health_care_style.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/model/hc_menu.dart';
+import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/riverpod/menu_index_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class HealthCareBottomMenuWidget extends StatefulWidget {
@@ -18,6 +19,7 @@ class _HealthCareBottomMenuWidgetState extends State<HealthCareBottomMenuWidget>
         height: 72,
         padding: EdgeInsets.symmetric(horizontal: 4),
         child: Consumer(builder: (context, ref, _) {
+          final index = ref.watch(hcMenuIndexProvider);
           return Row(
             children: bottomMenuItems
                 .map(
@@ -26,18 +28,21 @@ class _HealthCareBottomMenuWidgetState extends State<HealthCareBottomMenuWidget>
                       children: [
                         Container(
                           height: 3,
-                          color: healthCarePrimaryColor,
+                          color: index == e.index ? healthCarePrimaryColor : Colors.transparent,
                         ),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            ref.read(hcMenuIndexProvider.notifier).state = e.index ?? 0;
+                          },
                           icon: e.iconWidget ?? Icon(Icons.home),
                           iconSize: 32,
-                          color: healthCarePrimaryColor,
+                          color: index == e.index ? healthCarePrimaryColor : Colors.grey,
                         ),
                         Text(
                           e.title ?? "?",
                           style: TextStyle(
-                            color: healthCarePrimaryColor,
+                            color: index == e.index ? healthCarePrimaryColor : Colors.grey,
+                            fontSize: 12,
                           ),
                         )
                       ],
