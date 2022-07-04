@@ -12,11 +12,31 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(Icons.edit),
-          label: Text("New Message"),
-        )
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 8),
+          decoration: BoxDecoration(
+            color: Colors.blue,
+          ),
+          padding: EdgeInsets.symmetric(vertical: 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.edit,
+                color: Colors.white,
+              ),
+              SizedBox(
+                width: 8,
+              ),
+              Text(
+                "New Message",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              )
+            ],
+          ),
+        ),
       ],
     );
   }
