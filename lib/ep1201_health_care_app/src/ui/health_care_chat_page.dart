@@ -25,25 +25,33 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                   child: Row(
                     children: [
                       CircleAvatar(),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              item.unreadMsg != 0
-                                  ? CircleAvatar(
-                                      radius: 8,
-                                      foregroundColor: Colors.white,
-                                      backgroundColor: Colors.red,
-                                      child: Text(
-                                        "${item.unreadMsg}",
-                                        style: TextStyle(fontSize: 10),
-                                      ),
-                                    )
-                                  : Container(),
-                            ],
-                          )
-                        ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                item.unreadMsg != 0
+                                    ? CircleAvatar(
+                                        radius: 8,
+                                        foregroundColor: Colors.white,
+                                        backgroundColor: Colors.red,
+                                        child: Text(
+                                          "${item.unreadMsg}",
+                                          style: TextStyle(fontSize: 10),
+                                        ),
+                                      )
+                                    : Container(),
+                                Text(
+                                  "${item.name ?? ""}",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Spacer(),
+                                Text("${item?.time ?? ""}")
+                              ],
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
