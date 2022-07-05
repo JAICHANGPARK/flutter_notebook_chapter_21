@@ -86,7 +86,7 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                                             color: Colors.grey,
                                             borderRadius: BorderRadius.circular(8),
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal:6, vertical: 2),
+                                          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                                           child: Center(
                                             child: Text(
                                               "${item.tag ?? ""}",
