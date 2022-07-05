@@ -19,11 +19,28 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
             child: ListView.builder(
               itemCount: hcChatItems.length,
               itemBuilder: (context, index) {
+                var item = hcChatItems[index];
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 16),
                   child: Row(
                     children: [
                       CircleAvatar(),
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              item.unreadMsg != 0
+                                  ? CircleAvatar(
+                                      radius: 8,
+                                      foregroundColor: Colors.white,
+                                      backgroundColor: Colors.red,
+                                      child: Text("${item.unreadMsg}"),
+                                    )
+                                  : Container(),
+                            ],
+                          )
+                        ],
+                      )
                     ],
                   ),
                 );
