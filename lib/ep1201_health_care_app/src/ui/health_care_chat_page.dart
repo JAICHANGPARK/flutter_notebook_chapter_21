@@ -26,6 +26,7 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                     children: [
                       CircleAvatar(),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
@@ -34,7 +35,10 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                                       radius: 8,
                                       foregroundColor: Colors.white,
                                       backgroundColor: Colors.red,
-                                      child: Text("${item.unreadMsg}"),
+                                      child: Text(
+                                        "${item.unreadMsg}",
+                                        style: TextStyle(fontSize: 10),
+                                      ),
                                     )
                                   : Container(),
                             ],
