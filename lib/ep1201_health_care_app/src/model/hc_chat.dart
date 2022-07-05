@@ -1,5 +1,4 @@
 class HcChat {
-
   String? name;
   String? msg;
   String? tag;
@@ -7,5 +6,12 @@ class HcChat {
   int? unreadMsg;
   String profileImg;
 
-  HcChat({this.name, this.msg, this.tag, this.time, this.unreadMsg, this.profileImg});
+  HcChat({
+    this.name,
+    this.msg,
+    this.tag,
+    this.time,
+    this.unreadMsg,
+    this.profileImg,
+  });
 }
