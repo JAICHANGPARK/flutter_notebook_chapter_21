@@ -61,11 +61,16 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height: 4,),
                               Row(
                                 children: [
                                   Expanded(
                                     child: Text(
                                       "${item.msg}",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey,
+                                      ),
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
