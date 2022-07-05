@@ -26,31 +26,54 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                     children: [
                       CircleAvatar(),
                       Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                item.unreadMsg != 0
-                                    ? CircleAvatar(
-                                        radius: 8,
-                                        foregroundColor: Colors.white,
-                                        backgroundColor: Colors.red,
-                                        child: Text(
-                                          "${item.unreadMsg}",
-                                          style: TextStyle(fontSize: 10),
-                                        ),
-                                      )
-                                    : Container(),
-                                Text(
-                                  "${item.name ?? ""}",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                Spacer(),
-                                Text("${item?.time ?? ""}")
-                              ],
-                            )
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  item.unreadMsg != 0
+                                      ? CircleAvatar(
+                                          radius: 8,
+                                          foregroundColor: Colors.white,
+                                          backgroundColor: Colors.red,
+                                          child: Text(
+                                            "${item.unreadMsg}",
+                                            style: TextStyle(fontSize: 10),
+                                          ),
+                                        )
+                                      : Container(),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    "${item.name ?? ""}",
+                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "${item?.time ?? ""}",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      "${item.msg}",
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                  item
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
