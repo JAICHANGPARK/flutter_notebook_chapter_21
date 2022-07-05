@@ -24,7 +24,11 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                   padding: const EdgeInsets.only(bottom: 16),
                   child: Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        backgroundImage: NetworkImage(
+                          item.profileImg ?? "",
+                        ),
+                      ),
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -61,7 +65,9 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 4,),
+                              SizedBox(
+                                height: 4,
+                              ),
                               Row(
                                 children: [
                                   Expanded(
