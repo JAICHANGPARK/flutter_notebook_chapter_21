@@ -29,7 +29,7 @@ List<HcChat> hcChatItems = [
   HcChat(
     name: "Charlie Donin",
     msg:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     unreadMsg: 2,
     profileImg: "https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_960_720.jpg",
     tag: null,
@@ -38,7 +38,7 @@ List<HcChat> hcChatItems = [
   HcChat(
     name: "Charlie Donin",
     msg:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     unreadMsg: 0,
     profileImg: "https://cdn.pixabay.com/photo/2020/10/04/10/43/horse-5625922_960_720.jpg",
     tag: "CRED",
@@ -47,11 +47,10 @@ List<HcChat> hcChatItems = [
   HcChat(
     name: "Charlie Donin",
     msg:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     unreadMsg: 0,
     profileImg: "https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_960_720.jpg",
-    tag: BILLING,
+    tag: "BILLING",
     time: "3:23 PM",
   ),
-
 ];
