@@ -14,15 +14,21 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
     return Column(
       children: [
         Expanded(
-          child: ListView.builder(
-            itemCount: hcChatItems.length,
-            itemBuilder: (context, index) {
-              return Row(
-                children: [
-                  
-                ],
-              );
-            },
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: ListView.builder(
+              itemCount: hcChatItems.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 16),
+                  child: Row(
+                    children: [
+                      CircleAvatar(),
+                    ],
+                  ),
+                );
+              },
+            ),
           ),
         ),
         Container(
