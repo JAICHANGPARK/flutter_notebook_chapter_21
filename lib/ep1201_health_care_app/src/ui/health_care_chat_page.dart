@@ -71,12 +71,19 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                                   ),
                                   item.tag != null
                                       ? Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          padding: EdgeInsets.symmetric(horizontal: 4),
                                           child: Center(
-                                            child: Text("${item.tag ?? ""}",),
+                                            child: Text(
+                                              "${item.tag ?? ""}",
+                                              style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                           ),
                                         )
                                       : Container()
