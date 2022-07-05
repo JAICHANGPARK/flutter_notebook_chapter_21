@@ -69,7 +69,17 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
-                                  item
+                                  item.tag != null
+                                      ? Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(8)
+                                    ),
+                                          child: Center(
+                                            child: Text("${item.tag ?? ""}",),
+                                          ),
+                                        )
+                                      : Container()
                                 ],
                               )
                             ],
