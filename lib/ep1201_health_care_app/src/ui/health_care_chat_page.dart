@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/model/hc_chat.dart';
 
 class HealthCareChatPage extends StatefulWidget {
   const HealthCareChatPage({Key? key}) : super(key: key);
@@ -12,7 +13,18 @@ class _HealthCareChatPageState extends State<HealthCareChatPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(child: Placeholder()),
+        Expanded(
+          child: ListView.builder(
+            itemCount: hcChatItems.length,
+            itemBuilder: (context, index) {
+              return Row(
+                children: [
+                  
+                ],
+              );
+            },
+          ),
+        ),
         Container(
           margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
           decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(4)),
