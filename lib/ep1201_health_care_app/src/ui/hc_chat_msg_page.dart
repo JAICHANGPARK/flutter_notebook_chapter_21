@@ -14,18 +14,60 @@ class _HcChatMsgPageState extends State<HcChatMsgPage> {
   Widget build(BuildContext context) {
     return Consumer(builder: (context, ref, _) {
       final item = ref.watch(selectedChatMsgItem);
-      return Column(
-        children: [
-          Text("I'm having a problem on a clame #12345"),
-          Row(
-            children: [
-              CircleAvatar(
-                backgroundImage: NetworkImage(item?.profileImg ?? ""),
-              ),
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+                child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("I'm having a problem on a clame #12345"),
 
-            ],
-          )
-        ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: NetworkImage(item?.profileImg ?? ""),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(item?.name ?? "name"),
+                              Text(item?.time ?? "time"),
+                            ],
+                          ),
+                          item?.tag != null
+                              ? Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                  child: Center(
+                                    child: Text(
+                                      "${item?.tag ?? ""}",
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              : Container()
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            )),
+          ],
+        ),
       );
     });
   }
