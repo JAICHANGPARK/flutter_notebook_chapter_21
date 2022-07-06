@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/health_care_style.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/riverpod/menu_index_provider.dart';
+import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/hc_chat_msg_page.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/health_care_bottom_menu_widget.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/health_care_chat_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -89,6 +90,7 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
                     Container(),
                     Container(),
                     Container(),
+                    HcChatMsgPage(),
                   ],
                 );
               }),
