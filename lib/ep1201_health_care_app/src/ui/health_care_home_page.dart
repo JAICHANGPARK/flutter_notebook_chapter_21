@@ -26,6 +26,35 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
               height: 52,
               child: Consumer(builder: (context, ref, _) {
                 final index = ref.watch(hcMenuIndexProvider);
+                if (index == 6) {
+                  return Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          ref.read(hcMenuIndexProvider.notifier).state = 0;
+                        },
+                        icon: Icon(Icons.keyboard_arrow_left_outlined),
+                        color: Colors.grey,
+                      ),
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.delete),
+                        color: Colors.grey,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.mail),
+                        color: Colors.grey,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.more_horiz),
+                        color: Colors.grey,
+                      ),
+                    ],
+                  );
+                }
                 return Row(
                   children: [
                     Expanded(
