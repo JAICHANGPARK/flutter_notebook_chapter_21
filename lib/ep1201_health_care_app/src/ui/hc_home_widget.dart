@@ -31,7 +31,10 @@ class HcHomeWidget extends StatelessWidget {
             Container(
               height: 36,
               width: 260,
-              decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(24)),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(24),
+              ),
               child: Row(
                 children: [
                   TextButton(
@@ -56,7 +59,9 @@ class HcHomeWidget extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
