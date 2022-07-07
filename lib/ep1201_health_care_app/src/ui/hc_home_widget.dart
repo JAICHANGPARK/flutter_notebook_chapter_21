@@ -87,21 +87,36 @@ class HcHomeWidget extends StatelessWidget {
                   children: [
                     CircleAvatar(),
                     Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Review rejected claim"),
-                              Text("8:31 PM"),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text("Claim #10023")
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Review rejected claim",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "8:31 PM",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text("Claim #10023"  ,  style: TextStyle(
+                              color: Colors.grey,
+                            ),)
+                          ],
+                        ),
                       ),
                     )
                   ],
