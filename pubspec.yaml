@@ -14,6 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   badges: any
   flutter_riverpod: ^2.0.0-dev.9
+  fl_chart: ^0.55.0
 
 
 dev_dependencies:
