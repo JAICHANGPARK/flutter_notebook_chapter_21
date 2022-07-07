@@ -85,7 +85,11 @@ class HcHomeWidget extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   children: [
-                    CircleAvatar(),
+                    CircleAvatar(
+                      backgroundColor: Colors.grey[200],
+                      foregroundColor: Colors.grey,
+                      child: Icon(Icons.video_collection_rounded),
+                    ),
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -112,9 +116,12 @@ class HcHomeWidget extends StatelessWidget {
                             SizedBox(
                               height: 4,
                             ),
-                            Text("Claim #10023"  ,  style: TextStyle(
-                              color: Colors.grey,
-                            ),)
+                            Text(
+                              "Claim #10023",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
                           ],
                         ),
                       ),
