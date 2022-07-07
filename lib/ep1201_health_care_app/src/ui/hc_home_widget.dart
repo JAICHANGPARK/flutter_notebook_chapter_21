@@ -1,4 +1,6 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/health_care_style.dart';
 
 class HcHomeWidget extends StatelessWidget {
   const HcHomeWidget({Key? key}) : super(key: key);
@@ -26,7 +28,68 @@ class HcHomeWidget extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(vertical: 16),
               height: 240,
-              color: Colors.blue,
+
+              child: BarChart(
+                BarChartData(
+                  barGroups: [
+                    BarChartGroupData(
+                      x: 0,
+                      barRods: [
+                        BarChartRodData(
+                          toY: 10,
+                          width: 32,
+                          color: healthCarePrimaryColor,
+                          borderRadius: BorderRadius.zero,
+                        )
+                      ],
+                    ),
+                    BarChartGroupData(
+                      x: 1,
+                      barRods: [
+                        BarChartRodData(
+                          toY: 16,
+                          width: 32,
+                          color: healthCarePrimaryColor,
+                          borderRadius: BorderRadius.zero,
+                        )
+                      ],
+                    ),
+                    BarChartGroupData(
+                      x: 2,
+                      barRods: [
+                        BarChartRodData(
+                          toY: 17,
+                          width: 32,
+                          color: healthCarePrimaryColor,
+                          borderRadius: BorderRadius.zero,
+                        )
+                      ],
+                    ),
+                    BarChartGroupData(
+                      x: 3,
+                      barRods: [
+                        BarChartRodData(
+                          toY: 25,
+                          width: 32,
+                          color: healthCarePrimaryColor,
+                          borderRadius: BorderRadius.zero,
+                        )
+                      ],
+                    ),
+                    BarChartGroupData(
+                      x: 3,
+                      barRods: [
+                        BarChartRodData(
+                          toY: 30,
+                          width: 32,
+                          color: healthCarePrimaryColor,
+                          borderRadius: BorderRadius.zero,
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ),
             Container(
               height: 36,
@@ -80,8 +143,9 @@ class HcHomeWidget extends StatelessWidget {
                 ),
               ],
             ),
-            ...[
-              Padding(
+            ...List.generate(
+              10,
+              (index) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   children: [
@@ -128,8 +192,8 @@ class HcHomeWidget extends StatelessWidget {
                     )
                   ],
                 ),
-              )
-            ]
+              ),
+            ),
           ],
         ),
       ),
