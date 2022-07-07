@@ -51,11 +51,12 @@ class HcHomeWidget extends StatelessWidget {
                       )),
                   TextButton(onPressed: () {}, child: Text("MTD")),
                   TextButton(
-                      onPressed: () {},
-                      child: Text("All"),
-                      style: TextButton.styleFrom(
-                        primary: Colors.grey,
-                      )),
+                    onPressed: () {},
+                    child: Text("All"),
+                    style: TextButton.styleFrom(
+                      primary: Colors.grey,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -78,7 +79,29 @@ class HcHomeWidget extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            ...[
+              Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("Review rejected claim"),
+                            Text("8:31 PM"),
+                          ],
+                        ),
+                        Text("Claim #10023")
+                      ],
+                    ),
+                  )
+                ],
+              )
+            ]
           ],
         ),
       ),
