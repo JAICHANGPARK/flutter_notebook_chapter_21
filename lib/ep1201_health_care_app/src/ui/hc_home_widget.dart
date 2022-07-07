@@ -43,6 +43,13 @@ class HcHomeWidget extends StatelessWidget {
                   TextButton(onPressed: (){}, child: Text("All")),
                 ],
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Action Items"),
+                TextButton(onPressed: (){}, child: Text("View all")),
+              ],
             )
           ],
         ),
