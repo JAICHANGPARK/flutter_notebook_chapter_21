@@ -81,25 +81,31 @@ class HcHomeWidget extends StatelessWidget {
               ],
             ),
             ...[
-              Row(
-                children: [
-                  CircleAvatar(),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text("Review rejected claim"),
-                            Text("8:31 PM"),
-                          ],
-                        ),
-                        Text("Claim #10023")
-                      ],
-                    ),
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Row(
+                  children: [
+                    CircleAvatar(),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Review rejected claim"),
+                              Text("8:31 PM"),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text("Claim #10023")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               )
             ]
           ],
