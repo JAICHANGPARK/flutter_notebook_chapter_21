@@ -31,16 +31,28 @@ class HcHomeWidget extends StatelessWidget {
             Container(
               height: 36,
               width: 260,
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(24)
-              ),
+              decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(24)),
               child: Row(
                 children: [
-                  TextButton(onPressed: (){}, child: Text("1m")),
-                  TextButton(onPressed: (){}, child: Text("1y")),
-                  TextButton(onPressed: (){}, child: Text("MTD")),
-                  TextButton(onPressed: (){}, child: Text("All")),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text("1m"),
+                      style: TextButton.styleFrom(
+                        primary: Colors.grey,
+                      )),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text("1y"),
+                      style: TextButton.styleFrom(
+                        primary: Colors.grey,
+                      )),
+                  TextButton(onPressed: () {}, child: Text("MTD")),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text("All"),
+                      style: TextButton.styleFrom(
+                        primary: Colors.grey,
+                      )),
                 ],
               ),
             ),
@@ -48,7 +60,17 @@ class HcHomeWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Action Items"),
-                TextButton(onPressed: (){}, child: Text("View all")),
+                TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
+                  child: Text(
+                    "View all",
+                  ),
+                ),
               ],
             )
           ],
