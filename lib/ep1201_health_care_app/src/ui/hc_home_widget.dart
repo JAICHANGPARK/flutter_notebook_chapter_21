@@ -18,7 +18,7 @@ class HcHomeWidget extends StatelessWidget {
                   "\$35,543",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 28,
+                    fontSize: 24,
                   ),
                 )
               ],
