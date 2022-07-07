@@ -5,6 +5,7 @@ import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/riverpod/
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/hc_chat_msg_page.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/health_care_bottom_menu_widget.dart';
 import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/health_care_chat_page.dart';
+import 'package:flutter_notebook_chapter_21/ep1201_health_care_app/src/ui/hc_home_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class HealthCareHomePage extends StatefulWidget {
