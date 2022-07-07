@@ -28,9 +28,28 @@ class HcHomeWidget extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(vertical: 16),
               height: 240,
-
               child: BarChart(
                 BarChartData(
+                  maxY: 35,
+                  borderData: FlBorderData(
+                    show: false,
+                  ),
+                  gridData: FlGridData(
+                    drawVerticalLine: false,
+                    horizontalInterval: 10,
+                  ),
+                  titlesData: FlTitlesData(
+                    rightTitles: AxisTitles(
+                      sideTitles: SideTitles(
+                        showTitles: false,
+                      ),
+                    ),
+                    topTitles: AxisTitles(
+                      sideTitles: SideTitles(
+                        showTitles: false,
+                      ),
+                    ),
+                  ),
                   barGroups: [
                     BarChartGroupData(
                       x: 0,
