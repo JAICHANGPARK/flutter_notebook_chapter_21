@@ -110,11 +110,7 @@ class _HealthCareHomePageState extends State<HealthCareHomePage> {
                   index: index,
                   children: [
                     HealthCareChatPage(),
-                    SingleChildScrollView(
-                      child: Column(
-                        children: [],
-                      ),
-                    ),
+                    HcHomeWidget(),
                     Container(),
                     Container(),
                     Container(),
