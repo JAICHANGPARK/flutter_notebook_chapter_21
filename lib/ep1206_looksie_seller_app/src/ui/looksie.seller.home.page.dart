@@ -20,6 +20,24 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
               Icons.home_filled,
             ),
             label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline,
+              ),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.add_box_outlined,
+              ),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.chat_bubble_outline_outlined,
+              ),
+              label: "Home"
           )
         ],
       ),
