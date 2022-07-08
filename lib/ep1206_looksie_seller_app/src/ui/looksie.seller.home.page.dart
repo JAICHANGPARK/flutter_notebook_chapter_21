@@ -13,6 +13,16 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
+      body: IndexedStack(
+        index: pageIndex,
+        children: [
+          Container(),
+          Container(),
+          Container(),
+          Container(),
+          Container(),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
@@ -58,6 +68,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
           )
         ],
       ),
+      
     );
   }
 }
