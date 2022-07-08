@@ -7,8 +7,20 @@ class LooksieSellerHomePage extends StatefulWidget {
   State<LooksieSellerHomePage> createState() => _LooksieSellerHomePageState();
 }
 
-class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
+class _LooksieSellerHomePageState extends State<LooksieSellerHomePage>
+with TickerProviderStateMixin{
   int pageIndex = 0;
+  late TabController _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(
+      length: 3,
+      vsync: this,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +30,16 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
         index: pageIndex,
         children: [
           Container(),
-          Container(),
+          NestedScrollView(
+            headerSliverBuilder: (context, _) => [
+              SliverAppBar(
+                bottom: TabBar(
+                  tabs: [Tab()],
+                ),
+              ),
+            ],
+            body: SingleChildScrollView(),
+          ),
           Container(),
           Container(),
           Container(),
@@ -66,6 +87,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
       ),
       floatingActionButton: pageIndex == 1
           ? FloatingActionButton(
+              backgroundColor: Color.fromRGBO(125, 114, 250, 1),
               onPressed: () {},
               child: Icon(Icons.add),
             )
