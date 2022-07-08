@@ -10,6 +10,19 @@ class LooksieSellerHomePage extends StatefulWidget {
 class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home"
+          )
+        ],
+      ),
+    );
   }
 }
