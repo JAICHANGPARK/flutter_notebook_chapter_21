@@ -9,10 +9,11 @@ class LooksieSellerHomePage extends StatefulWidget {
 
 class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[200],
       body: IndexedStack(
         index: pageIndex,
         children: [
@@ -30,45 +31,45 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
         currentIndex: pageIndex,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        onTap: (idx){
+        onTap: (idx) {
           setState(() {
             pageIndex = idx;
           });
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
-            ),
-            label: ""
-          ),
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: ""),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline,
               ),
-              label: ""
-          ),
+              label: ""),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.add_box_outlined,
               ),
-              label: "Home"
-          ),
+              label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.chat_bubble_outline_outlined,
               ),
-              label: ""
-          ),
+              label: ""),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.settings_outlined,
               ),
-              label: ""
-          )
+              label: "")
         ],
       ),
-      
+      floatingActionButton: pageIndex == 1
+          ? FloatingActionButton(
+              onPressed: () {},
+              child: Icon(Icons.add),
+            )
+          : null,
     );
   }
 }
