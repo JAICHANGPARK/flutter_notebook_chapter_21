@@ -8,6 +8,7 @@ class LooksieSellerHomePage extends StatefulWidget {
 }
 
 class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
+  int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,6 +17,14 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
+        currentIndex: pageIndex,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
+        onTap: (idx){
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(
