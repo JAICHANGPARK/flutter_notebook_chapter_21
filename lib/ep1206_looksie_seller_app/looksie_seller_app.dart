@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1206_looksie_seller_app/src/ui/looksie.seller.home.page.dart';
 
 
 class LooksieSellerApp extends StatelessWidget {
@@ -6,6 +7,8 @@ class LooksieSellerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: LooksieSellerHomePage(),
+    );
   }
 }
