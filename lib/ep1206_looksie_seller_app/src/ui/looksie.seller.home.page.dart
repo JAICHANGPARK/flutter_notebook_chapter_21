@@ -7,8 +7,7 @@ class LooksieSellerHomePage extends StatefulWidget {
   State<LooksieSellerHomePage> createState() => _LooksieSellerHomePageState();
 }
 
-class _LooksieSellerHomePageState extends State<LooksieSellerHomePage>
-with TickerProviderStateMixin{
+class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with TickerProviderStateMixin {
   int pageIndex = 0;
   late TabController _tabController;
 
@@ -31,15 +30,40 @@ with TickerProviderStateMixin{
         children: [
           Container(),
           NestedScrollView(
-            headerSliverBuilder: (context, _) => [
-              SliverAppBar(
-                bottom: TabBar(
-                  tabs: [Tab()],
-                ),
-              ),
-            ],
-            body: SingleChildScrollView(),
-          ),
+              headerSliverBuilder: (context, _) => [
+                    SliverAppBar(
+                      bottom: TabBar(
+                        controller: _tabController,
+                        tabs: [
+                          Tab(text: "Posts"),
+                          Tab(
+                            text: "Store",
+                          ),
+                          Tab(
+                            text: "About",
+                          )
+                        ],
+                      ),
+                      expandedHeight: 320,
+                      pinned: true,
+                      floating: true,
+                      title: Text("Ceramic Lovers"),
+                    ),
+                  ],
+              body: TabBarView(
+                controller: _tabController,
+                children: [
+                  Container(
+                    color: Colors.red,
+                  ),
+                  Container(
+                    color: Colors.green,
+                  ),
+                  Container(
+                    color: Colors.blue,
+                  ),
+                ],
+              )),
           Container(),
           Container(),
           Container(),
