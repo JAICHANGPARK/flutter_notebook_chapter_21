@@ -27,14 +27,11 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
 
         print(scrollController.offset);
         if (scrollController.offset <= 0.0) {
-          setState(() {
-            offsetZero = true;
-          });
+          offsetZero = true;
         } else {
-          setState(() {
-            offsetZero = false;
-          });
+          offsetZero = false;
         }
+        setState(() {});
       });
   }
 
@@ -69,10 +66,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                           ),
                           Text(
                             "Ceramic Lovers",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                           ),
                           SizedBox(
                             height: 8,
