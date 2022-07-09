@@ -30,7 +30,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
         children: [
           Container(),
           NestedScrollView(
-              headerSliverBuilder: (context, _) => [
+              headerSliverBuilder: (context, isScrolled) => [
                     SliverAppBar(
                       bottom: TabBar(
                         controller: _tabController,
