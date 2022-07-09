@@ -23,7 +23,6 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
     );
     scrollController
       ..addListener(() {
-
         if (scrollController.offset <= 0.0) {
           offsetZero = true;
         } else {
@@ -119,11 +118,47 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                   ),
                 ];
               },
+
               body: TabBarView(
                 controller: _tabController,
                 children: [
-                  Container(
-                    color: Colors.red,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 120),
+                    child: ListView(
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        height: 54,
+                                        width: 54,
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                          borderRadius: BorderRadius.circular(4)
+                                        ),
+                                      ),
+                                      Column(
+                                        children: [
+                                          Text("Ceramic Lovers"),
+                                          Text("Tue, Mar 23"),
+                                        ],
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     color: Colors.green,
