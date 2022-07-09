@@ -118,13 +118,13 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                   ),
                 ];
               },
-
               body: TabBarView(
                 controller: _tabController,
                 children: [
                   Padding(
-                    padding:  EdgeInsets.only(top: offsetZero ? 0 : 120),
+                    padding: EdgeInsets.only(top: offsetZero ? 8 : 180),
                     child: ListView(
+                      padding: EdgeInsets.zero,
                       children: [
                         Column(
                           children: [
@@ -134,23 +134,58 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                               ),
                               child: Column(
                                 children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(4),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("Ceramic Lovers"),
+                                            SizedBox(
+                                              height: 4,
+                                            ),
+                                            Text("Tue, Mar 23"),
+                                          ],
+                                        ),
+                                        Spacer(),
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(Icons.more_vert_outlined),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 420,
+                                    child: Container(
+                                      color: Colors.red,
+                                    ),
+                                  ),
                                   Row(
                                     children: [
-                                      Container(
-                                        height: 54,
-                                        width: 54,
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: BorderRadius.circular(4)
-                                        ),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.favorite),
+                                        color: Colors.red,
                                       ),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("Ceramic Lovers"),
-                                          Text("Tue, Mar 23"),
-                                        ],
-                                      )
+                                      Text("100 likes"),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.chat_bubble_outline_outlined),
+                                      ),
+                                      Text("10 comments"),
                                     ],
                                   )
                                 ],
@@ -214,7 +249,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
               label: "")
         ],
       ),
-      floatingActionButton: pageIndex == 1
+      floatingActionButton: pageIndex == 1 && offsetZero
           ? FloatingActionButton(
               backgroundColor: Color.fromRGBO(125, 114, 250, 1),
               onPressed: () {},
