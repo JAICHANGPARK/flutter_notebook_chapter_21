@@ -23,9 +23,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
     );
     scrollController
       ..addListener(() {
-        // print(scrollController.position);
 
-        print(scrollController.offset);
         if (scrollController.offset <= 0.0) {
           offsetZero = true;
         } else {
