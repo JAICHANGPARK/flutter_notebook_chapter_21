@@ -67,7 +67,13 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                           SizedBox(
                             height: 8,
                           ),
-                          Text("Ceramic Lovers"),
+                          Text(
+                            "Ceramic Lovers",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16
+                            ),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
