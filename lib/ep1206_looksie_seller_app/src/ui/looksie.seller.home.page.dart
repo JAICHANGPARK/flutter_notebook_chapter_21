@@ -12,6 +12,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
   late TabController _tabController;
   ScrollController scrollController = ScrollController();
   bool offsetZero = false;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -20,12 +21,21 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
       length: 3,
       vsync: this,
     );
-    scrollController..addListener(() {
-      // print(scrollController.position);
-      print(scrollController.position.maxScrollExtent);
+    scrollController
+      ..addListener(() {
+        // print(scrollController.position);
 
-    });
-
+        print(scrollController.offset);
+        if (scrollController.offset <= 0.0) {
+          setState(() {
+            offsetZero = true;
+          });
+        } else {
+          setState(() {
+            offsetZero = false;
+          });
+        }
+      });
   }
 
   @override
@@ -37,14 +47,42 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
         children: [
           Container(),
           NestedScrollView(
-            controller: scrollController,
+              controller: scrollController,
               headerSliverBuilder: (context, isScrolled) {
                 print(isScrolled);
                 return [
                   SliverAppBar(
-
+                    flexibleSpace: FlexibleSpaceBar(
+                      background: Column(
+                        children: [
+                          Container(
+                            height: 84,
+                            width: 84,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                          Text("Ceramic Lovers"),
+                          Text("@ceramic_lovers"),
+                          Text('12 followers'),
+                          Container(
+                            width: 240,
+                            height: 32,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(4)
+                            ),
+                            child: Center(
+                              child: Text("Edit profile"),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                     bottom: TabBar(
                       controller: _tabController,
+                      labelColor: Colors.black,
+                      indicatorColor: Color.fromRGBO(125, 114, 250, 1),
                       tabs: [
                         Tab(text: "Posts"),
                         Tab(
@@ -58,9 +96,9 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                     expandedHeight: 320,
                     pinned: true,
                     // floating: true,
-
-                    title: Text("Ceramic Lovers"),
-
+                    backgroundColor: Colors.white,
+                    title: offsetZero ? Text("") : Text("Ceramic Lovers"),
+                    foregroundColor: Colors.black,
                   ),
                 ];
               },
