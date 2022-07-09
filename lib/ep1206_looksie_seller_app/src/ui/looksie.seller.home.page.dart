@@ -123,7 +123,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                 controller: _tabController,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 120),
+                    padding:  EdgeInsets.only(top: offsetZero ? 0 : 120),
                     child: ListView(
                       children: [
                         Column(
@@ -145,6 +145,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                         ),
                                       ),
                                       Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Ceramic Lovers"),
                                           Text("Tue, Mar 23"),
