@@ -10,7 +10,8 @@ class LooksieSellerHomePage extends StatefulWidget {
 class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with TickerProviderStateMixin {
   int pageIndex = 0;
   late TabController _tabController;
-
+  ScrollController scrollController = ScrollController();
+  bool offsetZero = false;
   @override
   void initState() {
     // TODO: implement initState
@@ -19,6 +20,12 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
       length: 3,
       vsync: this,
     );
+    scrollController..addListener(() {
+      // print(scrollController.position);
+      print(scrollController.position.maxScrollExtent);
+
+    });
+
   }
 
   @override
@@ -30,26 +37,33 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
         children: [
           Container(),
           NestedScrollView(
-              headerSliverBuilder: (context, isScrolled) => [
-                    SliverAppBar(
-                      bottom: TabBar(
-                        controller: _tabController,
-                        tabs: [
-                          Tab(text: "Posts"),
-                          Tab(
-                            text: "Store",
-                          ),
-                          Tab(
-                            text: "About",
-                          )
-                        ],
-                      ),
-                      expandedHeight: 320,
-                      pinned: true,
-                      floating: true,
-                      title: Text("Ceramic Lovers"),
+            controller: scrollController,
+              headerSliverBuilder: (context, isScrolled) {
+                print(isScrolled);
+                return [
+                  SliverAppBar(
+
+                    bottom: TabBar(
+                      controller: _tabController,
+                      tabs: [
+                        Tab(text: "Posts"),
+                        Tab(
+                          text: "Store",
+                        ),
+                        Tab(
+                          text: "About",
+                        )
+                      ],
                     ),
-                  ],
+                    expandedHeight: 320,
+                    pinned: true,
+                    // floating: true,
+
+                    title: Text("Ceramic Lovers"),
+
+                  ),
+                ];
+              },
               body: TabBarView(
                 controller: _tabController,
                 children: [
