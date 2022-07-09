@@ -53,7 +53,6 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                 return [
                   SliverAppBar(
                     flexibleSpace: FlexibleSpaceBar(
-
                       background: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -62,21 +61,35 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                             width: 84,
                             decoration: BoxDecoration(
                               color: Colors.red,
+                              borderRadius: BorderRadius.circular(4),
                             ),
                           ),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("Ceramic Lovers"),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("@ceramic_lovers"),
-                          SizedBox(height: 8,),
-                          Text('12 followers'),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            '12 followers',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Container(
                             width: 240,
                             height: 32,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
-                              borderRadius: BorderRadius.circular(4)
+                              color: Colors.grey[300],
+                              borderRadius: BorderRadius.circular(4),
                             ),
                             child: Center(
                               child: Text("Edit profile"),
