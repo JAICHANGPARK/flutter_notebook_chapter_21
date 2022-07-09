@@ -53,7 +53,9 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                 return [
                   SliverAppBar(
                     flexibleSpace: FlexibleSpaceBar(
+
                       background: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             height: 84,
@@ -62,9 +64,13 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                               color: Colors.red,
                             ),
                           ),
+                          SizedBox(height: 8,),
                           Text("Ceramic Lovers"),
+                          SizedBox(height: 8,),
                           Text("@ceramic_lovers"),
+                          SizedBox(height: 8,),
                           Text('12 followers'),
+                          SizedBox(height: 8,),
                           Container(
                             width: 240,
                             height: 32,
