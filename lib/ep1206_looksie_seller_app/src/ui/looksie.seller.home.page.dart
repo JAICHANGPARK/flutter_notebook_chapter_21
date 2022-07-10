@@ -256,7 +256,35 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                             )
                           ],
                         ),
-                      )
+                      ),
+                      SizedBox(
+                        height: 280,
+                        child: Container(
+                          // color: Colors.blue,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (_, index) {
+                              return Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Container(
+
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
