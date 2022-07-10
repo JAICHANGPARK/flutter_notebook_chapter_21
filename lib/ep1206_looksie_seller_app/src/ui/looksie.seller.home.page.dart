@@ -227,6 +227,14 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                         ),
                         decoration: BoxDecoration(
                           color: Colors.grey[300]!,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Search for products",
+                          ),
                         ),
                       ),
                       Row(
