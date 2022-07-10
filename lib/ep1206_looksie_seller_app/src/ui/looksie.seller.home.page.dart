@@ -216,22 +216,26 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                   ),
                 ),
                 //Store Tab
-                Column(
-                  children: [
-                    Container(
-                      height: 42,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[300]!,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 42,
+                        margin: EdgeInsets.symmetric(
+                          horizontal: 12,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300]!,
+                        ),
                       ),
-                    ),
-                    Row(
-                      children: [
-                        Text("Plant Pots"),
-
-                      ],
-                    )
-
-                  ],
+                      Row(
+                        children: [
+                          Text("Plant Pots"),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 Container(
                   color: Colors.blue,
@@ -286,10 +290,10 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
       ),
       floatingActionButton: pageIndex == 1 && offsetZero
           ? FloatingActionButton(
-        backgroundColor: Color.fromRGBO(125, 114, 250, 1),
-        onPressed: () {},
-        child: Icon(Icons.add),
-      )
+              backgroundColor: Color.fromRGBO(125, 114, 250, 1),
+              onPressed: () {},
+              child: Icon(Icons.add),
+            )
           : null,
     );
   }
