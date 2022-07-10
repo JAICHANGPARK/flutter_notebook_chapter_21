@@ -277,6 +277,12 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                         width: 180,
                                         decoration: BoxDecoration(
                                           color: Colors.pink,
+                                          borderRadius: BorderRadius.circular(4),
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2019/12/08/21/10/potter-4682257__340.jpg"),
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -291,7 +297,12 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                           padding: const EdgeInsets.symmetric(vertical: 8),
                                           child: Text("Big Plant Pot"),
                                         ),
-                                        Text("KWD 20.990"),
+                                        Text(
+                                          "KWD 20.990",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                       ],
                                     )
                                   ],
