@@ -117,7 +117,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                       )
                     ],
                   ),
-                  expandedHeight: 320,
+                  expandedHeight: 280,
                   pinned: true,
                   // floating: true,
                   backgroundColor: Colors.white,
@@ -234,13 +234,28 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Search for products",
+                            icon: Icon(Icons.search),
                           ),
                         ),
                       ),
-                      Row(
-                        children: [
-                          Text("Plant Pots"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 0, 0, 8),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Plant Pots",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.arrow_forward),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
