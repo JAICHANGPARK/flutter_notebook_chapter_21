@@ -215,9 +215,15 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                     ],
                   ),
                 ),
-              //Store Tab
+                //Store Tab
                 Column(
                   children: [
+                    Container(
+                      height: 42,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300]!,
+                      ),
+                    ),
                     Row(
                       children: [
                         Text("Plant Pots"),
@@ -280,10 +286,10 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
       ),
       floatingActionButton: pageIndex == 1 && offsetZero
           ? FloatingActionButton(
-              backgroundColor: Color.fromRGBO(125, 114, 250, 1),
-              onPressed: () {},
-              child: Icon(Icons.add),
-            )
+        backgroundColor: Color.fromRGBO(125, 114, 250, 1),
+        onPressed: () {},
+        child: Icon(Icons.add),
+      )
           : null,
     );
   }
