@@ -144,6 +144,11 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius: BorderRadius.circular(4),
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2022/07/04/06/25/butterfly-7300501__340.jpg",
+                                                ),
+                                                fit: BoxFit.cover),
                                           ),
                                         ),
                                         SizedBox(
@@ -170,7 +175,13 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                   SizedBox(
                                     height: 420,
                                     child: Container(
-                                      color: Colors.red,
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2022/06/08/15/20/artist-7250695_960_720.jpg"),
+                                            fit: BoxFit.cover),
+                                      ),
                                     ),
                                   ),
                                   Row(
