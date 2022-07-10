@@ -237,9 +237,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                 Icons.add_box_outlined,
               ),
               label: "Home"),
-          BottomNavigatio
-
-          nBarItem(
+          BottomNavigationBarItem(
               icon: Icon(
                 Icons.chat_bubble_outline_outlined,
               ),
