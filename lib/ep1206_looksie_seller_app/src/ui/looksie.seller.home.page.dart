@@ -241,7 +241,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 0, 0, 8),
+                        padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -264,6 +264,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                         child: Container(
                           // color: Colors.blue,
                           child: ListView.builder(
+                            padding: EdgeInsets.zero,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (_, index) {
                               return Padding(
@@ -278,6 +279,9 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                           color: Colors.pink,
                                         ),
                                       ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
                                     ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
