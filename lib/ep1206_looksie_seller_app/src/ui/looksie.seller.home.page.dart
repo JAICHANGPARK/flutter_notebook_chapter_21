@@ -11,7 +11,7 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
   int pageIndex = 0;
   late TabController _tabController;
   ScrollController scrollController = ScrollController();
-  bool offsetZero = false;
+  bool offsetZero = true;
 
   @override
   void initState() {
@@ -56,6 +56,11 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                             decoration: BoxDecoration(
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(4),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2022/07/04/06/25/butterfly-7300501__340.jpg",
+                                  ),
+                                  fit: BoxFit.cover),
                             ),
                           ),
                           SizedBox(
@@ -63,7 +68,10 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                           ),
                           Text(
                             "Ceramic Lovers",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                           SizedBox(
                             height: 8,
