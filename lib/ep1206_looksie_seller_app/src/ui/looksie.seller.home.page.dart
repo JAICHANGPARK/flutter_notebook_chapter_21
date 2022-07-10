@@ -202,7 +202,9 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                                     Text("100 likes"),
                                     IconButton(
                                       onPressed: () {},
-                                      icon: Icon(Icons.chat_bubble_outline_outlined),
+                                      icon: Icon(
+                                        Icons.chat_bubble_outline_outlined,
+                                      ),
                                     ),
                                     Text("10 comments"),
                                   ],
@@ -267,17 +269,27 @@ class _LooksieSellerHomePageState extends State<LooksieSellerHomePage> with Tick
                               return Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(
                                       child: Container(
-
+                                        width: 180,
+                                        decoration: BoxDecoration(
+                                          color: Colors.pink,
+                                        ),
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Container(
-
-                                      ),
-                                    ),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("549845616354813"),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text("Big Plant Pot"),
+                                        ),
+                                        Text("KWD 20.990"),
+                                      ],
+                                    )
                                   ],
                                 ),
                               );
