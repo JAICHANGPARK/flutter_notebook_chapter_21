@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CoffeeDeliveryMainScreen extends StatefulWidget {
   const CoffeeDeliveryMainScreen({Key? key}) : super(key: key);
 
@@ -11,6 +10,25 @@ class CoffeeDeliveryMainScreen extends StatefulWidget {
 class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: 72,
+              decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24),
+                    topRight: Radius.circular(24),
+                  ),),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
