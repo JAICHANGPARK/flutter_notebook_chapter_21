@@ -20,12 +20,21 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
             child: Container(
               height: 72,
               decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(24),
-                    topRight: Radius.circular(24),
-                  ),),
+                color: Colors.black,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                  topRight: Radius.circular(24),
+                ),
+              ),
             ),
+          ),
+          Positioned(
+            child: SizedBox(
+              height: 72,
+              width: 72,
+            ),
+            right: 16,
+            bottom: 84,
           )
         ],
       ),
