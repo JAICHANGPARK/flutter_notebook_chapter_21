@@ -14,6 +14,13 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
       body: Stack(
         children: [
           Positioned(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
+              ),
+            ),
+          ),
+          Positioned(
             left: 0,
             right: 0,
             bottom: 0,
@@ -29,6 +36,8 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
             ),
           ),
           Positioned(
+            right: 16,
+            bottom: 84,
             child: SizedBox(
               height: 58,
               width: 58,
@@ -61,8 +70,6 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                 ],
               ),
             ),
-            right: 16,
-            bottom: 84,
           )
         ],
       ),
