@@ -30,8 +30,36 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
           ),
           Positioned(
             child: SizedBox(
-              height: 72,
-              width: 72,
+              height: 58,
+              width: 58,
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.red[200],
+                      child: Icon(Icons.shopping_bag_outlined),
+                      foregroundColor: Colors.black,
+                    ),
+                  ),
+                  Positioned(
+                    right: 0,
+                    top: 0,
+                    child: CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Colors.black,
+                      child: Text(
+                        "3",
+                        style: TextStyle(fontSize: 12),
+                      ),
+                      foregroundColor: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
             ),
             right: 16,
             bottom: 84,
