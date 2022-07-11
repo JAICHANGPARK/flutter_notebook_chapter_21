@@ -15,13 +15,60 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
         child: Stack(
           children: [
             Positioned(
-              left: 0,
-              right: 0,
+              left: 16,
+              right: 16,
               bottom: 0,
-              top: 0,
+              top: 16,
               child: SingleChildScrollView(
                 child: Column(
-                  children: [],
+                  children: [
+                    Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Good Morning"),
+                            Text("Dream Walker"),
+                          ],
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            shape: BoxShape.circle,
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.mail_outline,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Container(
+                      height: 200,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Container(
+                      height: 200,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Container(
+                      height: 200,
+                      color: Colors.blue,
+                    )
+                  ],
                 ),
               ),
             ),
