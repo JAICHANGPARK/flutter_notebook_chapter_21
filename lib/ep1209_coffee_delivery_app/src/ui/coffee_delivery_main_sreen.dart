@@ -11,6 +11,7 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
@@ -106,7 +107,10 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                             height: 24,
                           ),
                           Container(
-                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(24),
+                            ),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                             child: Text(
                               "Find out more",
