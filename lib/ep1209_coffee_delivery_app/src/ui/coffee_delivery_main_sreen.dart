@@ -27,8 +27,24 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Good Morning"),
-                            Text("Dream Walker"),
+                            Text(
+                              "Good Morning",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "Dream Walker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                              ),
+                            ),
                           ],
                         ),
                         Spacer(),
@@ -52,7 +68,27 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                     ),
                     Container(
                       height: 200,
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2017/04/19/13/03/coffee-2242213_960_720.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Text("Share Happiness"),
+                          Text(
+                            "Buy 1 Get 1",
+                            style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 16,
@@ -84,6 +120,29 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                     topLeft: Radius.circular(24),
                     topRight: Radius.circular(24),
                   ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.store_outlined),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.wallet),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.wallet_giftcard),
+                      color: Colors.grey,
+                    ),
+                    CircleAvatar(
+                      radius: 16,
+                    )
+                  ],
                 ),
               ),
             ),
