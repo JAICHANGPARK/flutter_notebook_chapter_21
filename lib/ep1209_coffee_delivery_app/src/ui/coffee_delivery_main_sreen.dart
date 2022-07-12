@@ -70,30 +70,49 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                       height: 200,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
-                        image: DecorationImage(
-                          image: NetworkImage(
-                            "https://cdn.pixabay.com/photo/2017/04/19/13/03/coffee-2242213_960_720.jpg",
+                          color: Colors.blue,
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2017/04/19/13/03/coffee-2242213_960_720.jpg",
+                            ),
+                            fit: BoxFit.cover,
                           ),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+                          borderRadius: BorderRadius.circular(4)),
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          SizedBox(
+                            height: 24,
+                          ),
                           Text(
                             "Share Happiness",
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 22,
                             ),
+                          ),
+                          SizedBox(
+                            height: 8,
                           ),
                           Text(
                             "Buy 1 Get 1",
                             style: TextStyle(
                               fontStyle: FontStyle.italic,
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 24,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 24,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            child: Text(
+                              "Find out more",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           )
                         ],
@@ -104,7 +123,57 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                     ),
                     Container(
                       height: 200,
-                      color: Colors.blue,
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Beverages",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("View all"),
+                                style: TextButton.styleFrom(
+                                  primary: Colors.pinkAccent[100],
+                                ),
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: GridView.count(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 16,
+                              mainAxisSpacing: 16,
+                              childAspectRatio: 11 / 4,
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                ),
+                                Container(
+                                  decoration:
+                                      BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
+                                ),
+                                Container(
+                                  decoration:
+                                      BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
+                                ),
+                                Container(
+                                  decoration:
+                                      BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 16,
