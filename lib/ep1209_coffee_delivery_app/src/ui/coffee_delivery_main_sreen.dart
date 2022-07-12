@@ -122,7 +122,7 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                       height: 16,
                     ),
                     Container(
-                      height: 200,
+                      height: 180,
                       child: Column(
                         children: [
                           Row(
@@ -149,26 +149,108 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                               crossAxisCount: 2,
                               crossAxisSpacing: 16,
                               mainAxisSpacing: 16,
-                              childAspectRatio: 11 / 4,
+                              childAspectRatio: 12 / 4,
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(32),
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(Icons.coffee),
+                                      ),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Text(
+                                        "Signatured",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(Icons.coffee),
+                                      ),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Text(
+                                        "Iced Coffee",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(Icons.coffee),
+                                      ),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Text(
+                                        "Hot Coffee",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
-                                )
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(Icons.coffee),
+                                      ),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Text(
+                                        "Chocolate",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),
                           ),
