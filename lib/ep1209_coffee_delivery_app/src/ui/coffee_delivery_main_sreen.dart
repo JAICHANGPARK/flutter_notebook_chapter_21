@@ -68,6 +68,7 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                     ),
                     Container(
                       height: 200,
+                      width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                         image: DecorationImage(
@@ -77,14 +78,22 @@ class _CoffeeDeliveryMainScreenState extends State<CoffeeDeliveryMainScreen> {
                           fit: BoxFit.cover,
                         ),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Share Happiness"),
+                          Text(
+                            "Share Happiness",
+                            style: TextStyle(
+                              fontSize: 18,
+                            ),
+                          ),
                           Text(
                             "Buy 1 Get 1",
                             style: TextStyle(
                               fontStyle: FontStyle.italic,
                               fontWeight: FontWeight.bold,
+                              fontSize: 18,
                             ),
                           )
                         ],
