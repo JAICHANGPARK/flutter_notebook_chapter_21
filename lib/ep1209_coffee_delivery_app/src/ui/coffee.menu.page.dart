@@ -23,7 +23,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
         child: Stack(
           children: [
             Positioned(
-              left: 16,
+              left: 0,
               right: 0,
               bottom: 0,
               top: 24,
