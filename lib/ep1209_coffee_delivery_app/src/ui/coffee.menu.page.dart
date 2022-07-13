@@ -60,7 +60,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
                     height: 58,
                     decoration: BoxDecoration(
                         // color: Colors.orangeAccent,
@@ -87,9 +87,24 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         }),
                   ),
                   Expanded(
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      children: coffeeMenuItems.map((e) => Container()).toList(),
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        right: 16,
+                        top: 8,
+                      ),
+                      child: GridView.count(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 8,
+                        crossAxisSpacing: 8,
+                        children: coffeeMenuItems
+                            .map((e) => Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                ))
+                            .toList(),
+                      ),
                     ),
                   ),
                 ],
