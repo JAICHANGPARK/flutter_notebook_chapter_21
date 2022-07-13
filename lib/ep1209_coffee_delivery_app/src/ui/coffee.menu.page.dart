@@ -26,9 +26,39 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
               left: 16,
               right: 16,
               bottom: 0,
-              top: 0,
+              top: 24,
               child: Column(
-                children: [],
+                children: [
+                  Container(
+                    height: 42,
+                    width: 180,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Center(
+                            child: Text("Food"),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.pinkAccent[100],
+                              borderRadius: BorderRadius.circular(24)
+                            ),
+                            child: Center(
+                              child: Text("Drink"),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
             Positioned(
