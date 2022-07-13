@@ -66,7 +66,9 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     ),
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
+                        itemCount: 4,
                         itemBuilder: (context, index) {
+
                           return Container(
                             width: 160,
                             decoration: BoxDecoration(
