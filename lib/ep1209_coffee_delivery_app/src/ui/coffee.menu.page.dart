@@ -59,10 +59,21 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     height: 64,
                     decoration: BoxDecoration(
                       color: Colors.orangeAccent,
                     ),
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                          );
+                        }),
                   )
                 ],
               ),
