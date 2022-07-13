@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/model/menu_item.dart';
 
 class CoffeeMenuPage extends StatefulWidget {
   const CoffeeMenuPage({Key? key}) : super(key: key);
@@ -60,23 +61,37 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 64,
+                    height: 58,
                     decoration: BoxDecoration(
-                      color: Colors.orangeAccent,
-                    ),
+                        // color: Colors.orangeAccent,
+                        ),
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 4,
                         itemBuilder: (context, index) {
-
                           return Container(
                             width: 160,
+                            margin: EdgeInsets.symmetric(horizontal: 6),
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                                color: index == 0 ? Colors.black : Colors.grey[200],
+                                borderRadius: BorderRadius.circular(36)),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                ),
+                                Text("Signatured"),
+                              ],
                             ),
                           );
                         }),
-                  )
+                  ),
+                  Expanded(
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      children: coffeeMenuItems.map((e) => Container()).toList(),
+                    ),
+                  ),
                 ],
               ),
             ),
