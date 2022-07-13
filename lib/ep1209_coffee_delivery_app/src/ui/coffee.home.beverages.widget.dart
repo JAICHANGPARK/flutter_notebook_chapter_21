@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/ui/coffee.menu.page.dart';
 
 class CoffeeHomeBeveragesWidget extends StatelessWidget {
   const CoffeeHomeBeveragesWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       height: 180,
       child: Column(
         children: [
@@ -21,7 +21,13 @@ class CoffeeHomeBeveragesWidget extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CoffeeMenuPage(),
+                    ),
+                  );
+                },
                 child: Text("View all"),
                 style: TextButton.styleFrom(
                   primary: Colors.pinkAccent[100],
