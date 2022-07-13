@@ -24,7 +24,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
           children: [
             Positioned(
               left: 16,
-              right: 16,
+              right: 0,
               bottom: 0,
               top: 24,
               child: Column(
@@ -48,7 +48,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.pinkAccent[100],
-                              borderRadius: BorderRadius.circular(24)
+                              borderRadius: BorderRadius.circular(24),
                             ),
                             child: Center(
                               child: Text("Drink"),
@@ -56,6 +56,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  Container(
+                    height: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.orangeAccent,
                     ),
                   )
                 ],
