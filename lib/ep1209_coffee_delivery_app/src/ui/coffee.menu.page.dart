@@ -106,14 +106,35 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                       ),
                       child: GridView.count(
                         crossAxisCount: 2,
-                        mainAxisSpacing: 8,
-                        crossAxisSpacing: 8,
-                        childAspectRatio: 0.9,
+                        mainAxisSpacing: 12,
+                        crossAxisSpacing: 12,
+                        childAspectRatio: 0.75,
                         children: coffeeMenuItems
                             .map(
                               (e) => Container(
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: NetworkImage(e.img ?? ""),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                        child: Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 8,
+                                        vertical: 4,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Text("${e.price}"),
+                                    ))
+                                  ],
                                 ),
                               ),
                             )
