@@ -80,7 +80,9 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                 CircleAvatar(
                                   radius: 24,
                                 ),
-                                Text("Signatured"),
+                                Text("Signatured", style: TextStyle(
+                                  color: index == 0 ? Colors.white : Colors.black
+                                ),),
                               ],
                             ),
                           );
