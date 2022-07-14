@@ -123,17 +123,30 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                 child: Stack(
                                   children: [
                                     Positioned(
+                                        right: 8,
+                                        top: 8,
                                         child: Container(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 8,
-                                        vertical: 4,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                      child: Text("${e.price}"),
-                                    ))
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 8,
+                                            vertical: 4,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
+                                          child: Text("\$ ${e.price}"),
+                                        )),
+                                    Positioned(
+                                        left: 16,
+                                        bottom: 16,
+                                        right: 0,
+                                        child: Container(
+                                          margin: EdgeInsets.only(right: 24),
+                                          child: Text(
+                                            "${e.title}",
+                                            style: TextStyle(color: Colors.white, fontSize: 20),
+                                          ),
+                                        ))
                                   ],
                                 ),
                               ),
