@@ -139,9 +139,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                     Positioned(
                                         left: 16,
                                         bottom: 16,
-                                        right: 0
-
-                                        ,
+                                        right: 0,
                                         child: Container(
                                           margin: EdgeInsets.only(right: 24),
                                           child: Text(
