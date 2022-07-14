@@ -73,16 +73,25 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                             width: 160,
                             margin: EdgeInsets.symmetric(horizontal: 6),
                             decoration: BoxDecoration(
-                                color: index == 0 ? Colors.black : Colors.grey[200],
-                                borderRadius: BorderRadius.circular(36)),
+                              color: index == 0 ? Colors.black : Colors.grey[200],
+                              borderRadius: BorderRadius.circular(36),
+                            ),
+                            padding: EdgeInsets.only(left: 8),
                             child: Row(
                               children: [
                                 CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.white,
                                 ),
-                                Text("Signatured", style: TextStyle(
-                                  color: index == 0 ? Colors.white : Colors.black
-                                ),),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "Signatured",
+                                  style: TextStyle(
+                                    color: index == 0 ? Colors.white : Colors.black,
+                                  ),
+                                ),
                               ],
                             ),
                           );
@@ -99,12 +108,15 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         crossAxisCount: 2,
                         mainAxisSpacing: 8,
                         crossAxisSpacing: 8,
+                        childAspectRatio: 0.9,
                         children: coffeeMenuItems
-                            .map((e) => Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                  ),
-                                ))
+                            .map(
+                              (e) => Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                              ),
+                            )
                             .toList(),
                       ),
                     ),
