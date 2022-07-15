@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class DrinkOrderPage extends StatefulWidget {
   const DrinkOrderPage({Key? key}) : super(key: key);
 
@@ -12,7 +11,11 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
+      ),
     );
   }
 }
