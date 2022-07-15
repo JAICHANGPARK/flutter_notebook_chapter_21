@@ -38,14 +38,17 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
           child: Stack(
         children: [
           Positioned(
-              left: 0,
-              right: 0,
-              bottom: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey[100]
-                ),
-              )),
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 1.8,
+              decoration: BoxDecoration(
+                color: Colors.grey[100],
+                borderRadius: BorderRadius.circular(16),
+              ),
+            ),
+          ),
           Positioned(
             left: 0,
             right: 0,
