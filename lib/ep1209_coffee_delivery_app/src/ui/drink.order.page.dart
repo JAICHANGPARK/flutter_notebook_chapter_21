@@ -3,6 +3,7 @@ import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/model
 
 class DrinkOrderPage extends StatefulWidget {
   final CoffeeMenuItem? menuItem;
+
   const DrinkOrderPage({Key? key, this.menuItem}) : super(key: key);
 
   @override
@@ -22,7 +23,21 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
       body: SafeArea(
           child: Stack(
         children: [
-          Positioned(child: Container()),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: 72,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft: Radius.circular(16),
+                ),
+              ),
+            ),
+          ),
         ],
       )),
     );
