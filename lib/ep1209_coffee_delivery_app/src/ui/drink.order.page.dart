@@ -50,6 +50,7 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                   topLeft: Radius.circular(24),
                 ),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   GestureDetector(
@@ -71,10 +72,13 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                       ),
                     ),
                   ),
-                  Text(
-                    "$itemCount",
-                    style: TextStyle(
-                      color: Colors.white,
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: Text(
+                      "$itemCount",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                   GestureDetector(
@@ -95,7 +99,17 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Expanded(
+                      child: Container(
+                    height: 48,
+                    decoration: BoxDecoration(
+                      color: Colors.red[100],
+                    ),
+                  ))
                 ],
               ),
             ),
