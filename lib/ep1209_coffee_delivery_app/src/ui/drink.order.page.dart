@@ -53,9 +53,7 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
               child: Row(
                 children: [
                   GestureDetector(
-                    onTap: () {
-                      decrementItem();
-                    },
+                    onTap: decrementItem,
                     child: Container(
                       height: 54,
                       width: 54,
