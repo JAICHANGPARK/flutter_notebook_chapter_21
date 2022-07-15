@@ -39,6 +39,23 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
         children: [
           Positioned(
             left: 0,
+            top: 0,
+            right: 0,
+            child: Column(
+              children: [
+                Container(
+                  height: 120,
+                  width: 84,
+                  decoration: BoxDecoration(
+                    color: Colors.orangeAccent,
+                  ),
+                ),
+                Text("${widget.menuItem?.title ?? ""}",)
+              ],
+            ),
+          ),
+          Positioned(
+            left: 0,
             right: 0,
             bottom: 0,
             child: Container(
