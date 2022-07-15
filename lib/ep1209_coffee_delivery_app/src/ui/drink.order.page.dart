@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/model/menu_item.dart';
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 
 class DrinkOrderPage extends StatefulWidget {
   final CoffeeMenuItem? menuItem;
@@ -48,15 +49,27 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                   width: 84,
                   decoration: BoxDecoration(
                     color: Colors.orangeAccent,
+                    borderRadius: BorderRadius.circular(8),
                     image: DecorationImage(
                       image: NetworkImage(
                         widget.menuItem?.img ?? "",
                       ),
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                Text(
-                  "${widget.menuItem?.title ?? ""}",
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: Text(
+                    "${widget.menuItem?.title ?? ""}",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 32),
+                  child: Text(
+                    loremIpsum.substring(0, 120),
+                  ),
                 )
               ],
             ),
