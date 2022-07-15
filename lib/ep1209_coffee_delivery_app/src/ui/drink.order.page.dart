@@ -20,9 +20,9 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
   }
 
   void decrementItem() {
-    setState(() {
-      itemCount--;
-    });
+    itemCount--;
+    itemCount = itemCount <= 1 ? 1 : itemCount;
+    setState(() {});
   }
 
   @override
@@ -110,14 +110,20 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                       color: Colors.red[100],
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "Add to bag",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        Text("${(itemCount * (widget?.menuItem?.price ?? 0.0)).toStringAsFixed(2)}")
+                        Text(
+                          "\$${(itemCount * (widget?.menuItem?.price ?? 0.0)).toStringAsFixed(2)}",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        )
                       ],
                     ),
                   ))
