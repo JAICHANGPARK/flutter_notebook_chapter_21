@@ -48,9 +48,16 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                   width: 84,
                   decoration: BoxDecoration(
                     color: Colors.orangeAccent,
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        widget.menuItem?.img ?? "",
+                      ),
+                    ),
                   ),
                 ),
-                Text("${widget.menuItem?.title ?? ""}",)
+                Text(
+                  "${widget.menuItem?.title ?? ""}",
+                )
               ],
             ),
           ),
