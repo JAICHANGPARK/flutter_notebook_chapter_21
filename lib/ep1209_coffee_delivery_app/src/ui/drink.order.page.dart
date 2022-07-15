@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/model/menu_item.dart';
 
 class DrinkOrderPage extends StatefulWidget {
-  final MenuItem? menuItem;
+  final CoffeeMenuItem? menuItem;
   const DrinkOrderPage({Key? key, this.menuItem}) : super(key: key);
 
   @override
