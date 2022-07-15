@@ -116,7 +116,9 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                 onTap: () {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => DrinkOrderPage(),
+                                      builder: (context) => DrinkOrderPage(
+                                        menuItem: e,
+                                      ),
                                     ),
                                   );
                                 },
