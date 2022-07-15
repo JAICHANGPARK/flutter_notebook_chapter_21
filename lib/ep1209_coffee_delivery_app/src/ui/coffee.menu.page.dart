@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/model/menu_item.dart';
+import 'package:flutter_notebook_chapter_21/ep1209_coffee_delivery_app/src/ui/drink.order.page.dart';
 
 class CoffeeMenuPage extends StatefulWidget {
   const CoffeeMenuPage({Key? key}) : super(key: key);
@@ -111,43 +112,55 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         childAspectRatio: 0.75,
                         children: coffeeMenuItems
                             .map(
-                              (e) => Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                    image: NetworkImage(e.img ?? ""),
-                                    fit: BoxFit.cover,
+                              (e) => GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => DrinkOrderPage(),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(e.img ?? ""),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                ),
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                        right: 8,
-                                        top: 8,
-                                        child: Container(
-                                          padding: EdgeInsets.symmetric(
-                                            horizontal: 8,
-                                            vertical: 4,
-                                          ),
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: BorderRadius.circular(16),
-                                          ),
-                                          child: Text("\$ ${e.price}"),
-                                        )),
-                                    Positioned(
-                                        left: 16,
-                                        bottom: 16,
-                                        right: 0,
-                                        child: Container(
-                                          margin: EdgeInsets.only(right: 24),
-                                          child: Text(
-                                            "${e.title}",
-                                            style: TextStyle(color: Colors.white, fontSize: 20),
-                                          ),
-                                        ))
-                                  ],
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                          right: 8,
+                                          top: 8,
+                                          child: Container(
+                                            padding: EdgeInsets.symmetric(
+                                              horizontal: 8,
+                                              vertical: 4,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(16),
+                                            ),
+                                            child: Text("\$ ${e.price}"),
+                                          )),
+                                      Positioned(
+                                          left: 16,
+                                          bottom: 16,
+                                          right: 0,
+                                          child: Container(
+                                            margin: EdgeInsets.only(right: 24),
+                                            child: Text(
+                                              "${e.title}",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 20,
+                                              ),
+                                            ),
+                                          ))
+                                    ],
+                                  ),
                                 ),
                               ),
                             )
