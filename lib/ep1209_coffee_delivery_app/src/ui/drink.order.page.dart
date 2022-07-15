@@ -11,6 +11,20 @@ class DrinkOrderPage extends StatefulWidget {
 }
 
 class _DrinkOrderPageState extends State<DrinkOrderPage> {
+  int itemCount = 1;
+
+  void incrementItem() {
+    setState(() {
+      itemCount++;
+    });
+  }
+
+  void decrementItem() {
+    setState(() {
+      itemCount--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +49,53 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                   topRight: Radius.circular(24),
                   topLeft: Radius.circular(24),
                 ),
+              ),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      decrementItem();
+                    },
+                    child: Container(
+                      height: 54,
+                      width: 54,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.white,
+                        ),
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.remove,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    "$itemCount",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    height: 54,
+                    width: 54,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.white,
+                      ),
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
               ),
             ),
           ),
