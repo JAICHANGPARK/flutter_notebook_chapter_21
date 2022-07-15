@@ -108,6 +108,17 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                     height: 48,
                     decoration: BoxDecoration(
                       color: Colors.red[100],
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 6),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Add to bag",
+                        ),
+                        Text("${(itemCount * (widget?.menuItem?.price ?? 0.0)).toStringAsFixed(2)}")
+                      ],
                     ),
                   ))
                 ],
