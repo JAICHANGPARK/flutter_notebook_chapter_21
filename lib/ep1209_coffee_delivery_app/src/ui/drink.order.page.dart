@@ -79,19 +79,22 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                       color: Colors.white,
                     ),
                   ),
-                  Container(
-                    height: 54,
-                    width: 54,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Colors.white,
+                  GestureDetector(
+                    onTap: incrementItem,
+                    child: Container(
+                      height: 54,
+                      width: 54,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.white,
+                        ),
                       ),
-                    ),
-                    child: Center(
-                      child: Icon(
-                        Icons.add,
-                        color: Colors.white,
+                      child: Center(
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   )
