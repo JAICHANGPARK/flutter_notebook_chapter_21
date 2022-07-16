@@ -113,16 +113,30 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                       Expanded(
                         child: CircleAvatar(
                           radius: 48,
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.local_drink_outlined),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text("Basic"),
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
                         child: CircleAvatar(
                           radius: 48,
+                          backgroundColor: Colors.red[100],
                         ),
                       ),
                       Expanded(
                         child: CircleAvatar(
                           radius: 48,
+                          backgroundColor: Colors.white,
                         ),
                       ),
                     ],
