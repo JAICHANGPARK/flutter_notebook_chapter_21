@@ -104,7 +104,9 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                   ),
                   Row(
                     children: [
-                      Expanded(child: CircleAvatar()),
+                      Expanded(child: CircleAvatar(
+                        radius: 48,
+                      )),
                       Expanded(child: CircleAvatar()),
                       Expanded(child: CircleAvatar()),
                     ],
