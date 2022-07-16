@@ -87,29 +87,44 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 4,
-                    width: 54,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(8),
+                  Center(
+                    child: Container(
+                      margin: EdgeInsets.symmetric(vertical: 12),
+                      height: 4,
+                      width: 54,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
                   ),
-                  Text(
-                    "Drink Size",
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      "Drink Size",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   Row(
                     children: [
-                      Expanded(child: CircleAvatar(
-                        radius: 48,
-                      )),
-                      Expanded(child: CircleAvatar()),
-                      Expanded(child: CircleAvatar()),
+                      Expanded(
+                        child: CircleAvatar(
+                          radius: 48,
+                        ),
+                      ),
+                      Expanded(
+                        child: CircleAvatar(
+                          radius: 48,
+                        ),
+                      ),
+                      Expanded(
+                        child: CircleAvatar(
+                          radius: 48,
+                        ),
+                      ),
                     ],
                   )
                 ],
