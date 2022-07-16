@@ -90,10 +90,21 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                     margin: EdgeInsets.symmetric(vertical: 16),
                     height: 4,
                     width: 54,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(8)
+                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                  ),
+                  Text(
+                    "Drink Size",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: CircleAvatar()),
+                      Expanded(child: CircleAvatar()),
+                      Expanded(child: CircleAvatar()),
+                    ],
                   )
                 ],
               ),
