@@ -84,6 +84,19 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(16),
               ),
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 4,
+                    width: 54,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
