@@ -237,7 +237,7 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Text(
                       "$itemCount",
                       style: TextStyle(
