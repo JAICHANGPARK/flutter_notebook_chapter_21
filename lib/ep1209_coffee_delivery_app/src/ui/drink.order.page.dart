@@ -85,6 +85,7 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
