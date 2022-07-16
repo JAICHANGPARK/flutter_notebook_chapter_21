@@ -176,16 +176,15 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                   SizedBox(
                     height: 48,
                     child: Container(
-                      color: Colors.blue,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
                             margin: EdgeInsets.symmetric(horizontal: 8),
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(24)
+                              borderRadius: BorderRadius.circular(32),
                             ),
                             child: Center(
                               child: Text(
