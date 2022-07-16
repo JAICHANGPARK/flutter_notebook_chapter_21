@@ -173,6 +173,23 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: 52,
+                    child: Container(
+                      color: Colors.blue,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            child: Text(
+                              "Almond",
+                            ),
+                          );
+                        },
+                        itemCount: 5,
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
