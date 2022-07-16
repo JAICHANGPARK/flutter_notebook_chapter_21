@@ -79,7 +79,7 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height / 1.8,
+              height: MediaQuery.of(context).size.height / 1.9,
               decoration: BoxDecoration(
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(16),
@@ -196,7 +196,18 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                         itemCount: 5,
                       ),
                     ),
-                  )
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      "Additional Req",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
