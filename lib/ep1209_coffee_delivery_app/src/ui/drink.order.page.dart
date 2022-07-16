@@ -183,7 +183,7 @@ class _DrinkOrderPageState extends State<DrinkOrderPage> {
                             margin: EdgeInsets.symmetric(horizontal: 8),
                             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: index == 0 ? Colors.red[100] : Colors.white,
                               borderRadius: BorderRadius.circular(32),
                             ),
                             child: Center(
