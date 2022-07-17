@@ -12,6 +12,8 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
   int screenIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+    );
   }
 }
