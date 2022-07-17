@@ -18,6 +18,15 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
         child: Column(),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: screenIndex,
+        onTap: (idx) {
+          setState(() {
+            screenIndex = idx;
+          });
+        },
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
