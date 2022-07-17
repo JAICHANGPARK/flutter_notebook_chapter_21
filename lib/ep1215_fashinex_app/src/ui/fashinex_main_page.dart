@@ -25,8 +25,18 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
               ),
             ),
             Center(
-              child: Text(""),
-            )
+              child: Text("1"),
+            ),
+            Center(
+              child: Text("2"),
+            ),
+            Center(
+              child: Text("3"),
+            ),
+            Center(
+              child: Text("4"),
+            ),
+
           ],
         ),
       ),
