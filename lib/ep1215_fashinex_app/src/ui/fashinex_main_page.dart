@@ -17,44 +17,48 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
       body: SafeArea(
         child: Column(),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: screenIndex,
-        onTap: (idx) {
-          setState(() {
-            screenIndex = idx;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.grey,
-        backgroundColor: Colors.white,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
-            label: "Home",
-            tooltip: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag_outlined),
-            label: "Cart",
-            tooltip: "Cart",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
-            label: "Orders",
-            tooltip: "Orders",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.wallet),
-            label: "Wallet",
-            tooltip: "Wallet",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: "Profile",
-            tooltip: "Profile",
-          )
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+
+          currentIndex: screenIndex,
+          onTap: (idx) {
+            setState(() {
+              screenIndex = idx;
+            });
+          },
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          backgroundColor: Colors.white,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home",
+              tooltip: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_bag_outlined),
+              label: "Cart",
+              tooltip: "Cart",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart_outlined),
+              label: "Orders",
+              tooltip: "Orders",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.wallet),
+              label: "Wallet",
+              tooltip: "Wallet",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person_outline),
+              label: "Profile",
+              tooltip: "Profile",
+            )
+          ],
+        ),
       ),
     );
   }
