@@ -27,6 +27,7 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
+        backgroundColor: Colors.white,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
