@@ -15,12 +15,22 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(),
+        child: IndexedStack(
+          index: screenIndex,
+          children: [
+            SingleChildScrollView(
+              child: Column(
+                children: [
+
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-
           currentIndex: screenIndex,
           onTap: (idx) {
             setState(() {
