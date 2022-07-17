@@ -5,9 +5,8 @@ class FashinexMenu {
   String? menuTitle;
 
   FashinexMenu({this.iconData, this.menuTitle});
-
-
 }
+
 ///
 ///  BottomNavigationBarItem(
 //               icon: Icon(Icons.home_filled),
@@ -36,6 +35,23 @@ class FashinexMenu {
 //             )
 List<FashinexMenu> fashinexMenuItems = [
   FashinexMenu(
-    iconData:
+    iconData: Icons.home_filled,
+    menuTitle: "Home",
+  ),
+  FashinexMenu(
+    iconData: Icons.shopping_bag_outlined,
+    menuTitle: "Cart",
+  ),
+  FashinexMenu(
+    iconData: Icons.shopping_cart_outlined,
+    menuTitle: "Orders",
+  ),
+  FashinexMenu(
+    iconData: Icons.wallet,
+    menuTitle: "Wallet",
+  ),
+  FashinexMenu(
+    iconData: Icons.person_outline,
+    menuTitle: "Profile",
   )
 ];
