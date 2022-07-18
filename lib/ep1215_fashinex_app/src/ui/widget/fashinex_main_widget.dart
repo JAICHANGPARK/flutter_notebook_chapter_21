@@ -143,12 +143,22 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
             ),
           ),
           SizedBox(
-            height: 52,
+            height: 38,
             child: ListView.builder(
               itemCount: 8,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Container();
+                return Container(
+                  margin: EdgeInsets.symmetric(horizontal: 6),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.circular(24)
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Center(child: Text("Wedding")),
+                );
               },
             ),
           ),
