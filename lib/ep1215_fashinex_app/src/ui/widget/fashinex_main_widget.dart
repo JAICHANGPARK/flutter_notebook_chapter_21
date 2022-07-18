@@ -19,20 +19,22 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
               children: [
                 CircleAvatar(),
                 SizedBox(
-                  width: 8,
+                  width: 16,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Good Morning 👋"),
                     SizedBox(
-                      height: 8,
+                      height: 4,
                     ),
                     Text(
                       "Dreamwalker",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
-
                   ],
                 ),
                 Spacer(),
