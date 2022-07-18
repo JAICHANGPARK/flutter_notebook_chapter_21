@@ -142,6 +142,16 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
               ],
             ),
           ),
+          SizedBox(
+            height: 52,
+            child: ListView.builder(
+              itemCount: 8,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container();
+              },
+            ),
+          ),
         ],
       ),
     );
