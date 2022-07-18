@@ -66,7 +66,7 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -85,13 +85,33 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
             ),
           ),
           Container(
-            height: 140,
+            height: 150,
             margin: EdgeInsets.symmetric(
               horizontal: 16,
             ),
             decoration: BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.circular(16),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            // height: 200,
+            color: Colors.pink,
+            child: GridView.count(
+              shrinkWrap: true,
+              crossAxisCount: 4,
+              children: List.generate(
+                8,
+                (index) => Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 28,
+                    ),
+                    Text("index$index")
+                  ],
+                ),
+              ),
             ),
           )
         ],
