@@ -17,6 +17,7 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
             children: [
               CircleAvatar(),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Good Morning 👋"),
                   Text(
