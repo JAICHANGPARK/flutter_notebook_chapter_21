@@ -12,7 +12,24 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: [],
+        children: [
+          Row(
+            children: [
+              CircleAvatar(),
+              Column(
+                children: [
+                  Text("Good Morning 👋"),
+                  Text(
+                    "Dreamwalker",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              )
+            ],
+          )
+        ],
       ),
     );
   }
