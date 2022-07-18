@@ -13,22 +13,39 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Row(
-            children: [
-              CircleAvatar(),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Good Morning 👋"),
-                  Text(
-                    "Dreamwalker",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              children: [
+                CircleAvatar(),
+                SizedBox(
+                  width: 8,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Good Morning 👋"),
+                    SizedBox(
+                      height: 8,
                     ),
-                  )
-                ],
-              )
-            ],
+                    Text(
+                      "Dreamwalker",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+
+                  ],
+                ),
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.favorite_border),
+                ),
+              ],
+            ),
           )
         ],
       ),
