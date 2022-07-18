@@ -62,6 +62,7 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
                 suffixIcon: Icon(Icons.filter_list),
                 icon: Icon(Icons.search),
                 border: InputBorder.none,
+                hintText: "Search",
               ),
             ),
           ),
@@ -103,7 +104,7 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             // height: 200,
-            color: Colors.pink,
+            // color: Colors.pink,
             child: GridView.count(
               shrinkWrap: true,
               crossAxisCount: 4,
