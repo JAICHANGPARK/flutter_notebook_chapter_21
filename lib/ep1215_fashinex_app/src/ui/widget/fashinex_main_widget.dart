@@ -10,8 +10,10 @@ class FashinexMainWidget extends StatefulWidget {
 class _FashinexMainWidgetState extends State<FashinexMainWidget> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
+    return SingleChildScrollView(
+      child: Column(
+        children: [],
+      ),
     );
   }
 }
