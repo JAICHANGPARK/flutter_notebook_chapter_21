@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1215_fashinex_app/src/model/fashinex_menu.dart';
+import 'package:flutter_notebook_chapter_21/ep1215_fashinex_app/src/ui/widget/fashinex_main_widget.dart';
 
 class FashinexMainPage extends StatefulWidget {
   const FashinexMainPage({Key? key}) : super(key: key);
@@ -19,11 +20,7 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
         child: IndexedStack(
           index: screenIndex,
           children: [
-            SingleChildScrollView(
-              child: Column(
-                children: [],
-              ),
-            ),
+            FashinexMainWidget(),
             Center(
               child: Text("1"),
             ),
@@ -36,7 +33,6 @@ class _FashinexMainPageState extends State<FashinexMainPage> {
             Center(
               child: Text("4"),
             ),
-
           ],
         ),
       ),
