@@ -48,6 +48,51 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
                 ),
               ],
             ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            height: 58,
+            decoration: BoxDecoration(
+              color: Colors.grey[100],
+              borderRadius: BorderRadius.circular(8),
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: TextField(
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.filter_list),
+                icon: Icon(Icons.search),
+                border: InputBorder.none,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Special Offers",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See All"),
+                  style: TextButton.styleFrom(
+                    primary: Colors.black,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Container(
+            height: 140,
+            margin: EdgeInsets.symmetric(
+              horizontal: 16,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.circular(16),
+            ),
           )
         ],
       ),
