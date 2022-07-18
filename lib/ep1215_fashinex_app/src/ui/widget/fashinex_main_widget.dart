@@ -66,13 +66,19 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+            padding: const EdgeInsets.symmetric(
+              vertical: 8,
+              horizontal: 16,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Special Offers",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
                 TextButton(
                   onPressed: () {},
@@ -113,7 +119,29 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
                 ),
               ),
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Most Popular",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See All"),
+                  style: TextButton.styleFrom(
+                    primary: Colors.black,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
