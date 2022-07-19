@@ -114,8 +114,17 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                               child: Stack(
                                 children: [
                                   Positioned(
-                                    child: Container(
-                                      decoration: BoxDecoration(),
+                                    right: 8,
+                                    top: 8,
+                                    child: CircleAvatar(
+                                      radius: 16,
+                                      backgroundColor: Colors.black,
+                                      foregroundColor: Colors.white,
+                                      child: IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.favorite_border),
+                                        iconSize: 16,
+                                      ),
                                     ),
                                   )
                                 ],
