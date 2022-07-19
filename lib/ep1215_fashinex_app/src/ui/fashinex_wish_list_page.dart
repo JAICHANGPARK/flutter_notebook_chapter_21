@@ -88,9 +88,9 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                 padding: const EdgeInsets.all(12.0),
                 child: GridView.count(
                   crossAxisCount: 2,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
-                  childAspectRatio: 0.65,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
+                  childAspectRatio: 0.62,
                   children: List.generate(
                     8,
                     (index) => Container(
@@ -105,6 +105,20 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                               decoration: BoxDecoration(
                                 color: Colors.pink,
                                 borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2020/10/23/16/50/woman-5679284_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Container(
+                                      decoration: BoxDecoration(),
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
                           ),
