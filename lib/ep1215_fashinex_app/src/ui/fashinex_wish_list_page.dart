@@ -14,6 +14,37 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.arrow_back,
+                    ),
+                  ),
+                  Text(
+                    "My Wishlist",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18
+                    ),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.search),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
@@ -29,14 +60,12 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
             backgroundColor: Colors.white,
             items: fashinexMenuItems
                 .map((e) => BottomNavigationBarItem(
-              icon: Icon(e.iconData ?? Icons.home_max),
-              label: e.menuTitle ?? "",
-              tooltip: "Home",
-            ))
+                      icon: Icon(e.iconData ?? Icons.home_max),
+                      label: e.menuTitle ?? "",
+                      tooltip: "Home",
+                    ))
                 .toList()),
       ),
-
     );
   }
 }
-
