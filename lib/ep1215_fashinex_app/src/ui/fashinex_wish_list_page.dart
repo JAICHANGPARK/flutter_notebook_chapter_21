@@ -29,10 +29,7 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                   ),
                   Text(
                     "My Wishlist",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                   Spacer(),
                   IconButton(
@@ -41,7 +38,49 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: SizedBox(
+                height: 32,
+                child: ListView.builder(
+                  itemCount: 8,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    if (index == 0) {
+                      return Container(
+                        margin: EdgeInsets.symmetric(horizontal: 6),
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.black,
+                            ),
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(24)),
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Center(
+                          child: Text(
+                            "All",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      );
+                    }
+                    return Container(
+                      margin: EdgeInsets.symmetric(horizontal: 6),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.black,
+                          ),
+                          borderRadius: BorderRadius.circular(24)),
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      child: Center(child: Text("Wedding")),
+                    );
+                  },
+                ),
+              ),
+            ),
           ],
         ),
       ),
