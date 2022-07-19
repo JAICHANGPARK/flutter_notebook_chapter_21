@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1215_fashinex_app/src/ui/fashinex_wish_list_page.dart';
 
 class FashinexMainWidget extends StatefulWidget {
   const FashinexMainWidget({Key? key}) : super(key: key);
@@ -43,7 +44,13 @@ class _FashinexMainWidgetState extends State<FashinexMainWidget> {
                   icon: Icon(Icons.notifications_none),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => FashinexWishListPage(),
+                      ),
+                    );
+                  },
                   icon: Icon(Icons.favorite_border),
                 ),
               ],
