@@ -13,3 +13,4 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
     return Scaffold();
   }
 }
+
