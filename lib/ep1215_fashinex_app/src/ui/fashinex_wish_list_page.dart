@@ -22,7 +22,9 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
               child: Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
                     icon: Icon(
                       Icons.arrow_back,
                     ),
