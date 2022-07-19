@@ -97,6 +97,22 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              color: Colors.pink,
+                            ),
+                          ),
+                          Text("RUCHED ASYMMETRIC"),
+                          Text("DRESS LIMITED EDITION"),
+                          Row(
+                            children: [
+
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
