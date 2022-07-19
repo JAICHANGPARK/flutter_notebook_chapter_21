@@ -94,21 +94,49 @@ class _FashinexWishListPageState extends State<FashinexWishListPage> {
                   children: List.generate(
                     8,
                     (index) => Container(
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
+                      // decoration: BoxDecoration(
+                      //   color: Colors.blue,
+                      // ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Container(
-                              color: Colors.pink,
+                              decoration: BoxDecoration(
+                                color: Colors.pink,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
                             ),
                           ),
-                          Text("RUCHED ASYMMETRIC"),
-                          Text("DRESS LIMITED EDITION"),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "RUCHED ASYMMETRIC",
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "DRESS LIMITED EDITION",
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
                           Row(
                             children: [
-
+                              Icon(Icons.star_border),
+                              Text("3.2"),
+                              Spacer(),
+                              Text("\$115.00"),
                             ],
                           )
                         ],
