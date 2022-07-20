@@ -14,7 +14,12 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Container(
+              height: 72,
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
           ],
         ),
       ),
