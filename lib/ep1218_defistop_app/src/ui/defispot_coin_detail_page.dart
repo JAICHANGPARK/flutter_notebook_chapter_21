@@ -11,7 +11,13 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
