@@ -20,6 +20,26 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
             Divider(
               color: Colors.grey,
             ),
+            Expanded(child: Placeholder()),
+            Divider(
+              color: Colors.grey,
+            ),
+            Container(
+              height: 72,
+              child: Row(
+                children: [
+                  OutlinedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.add),
+                    label: Text("Add Liqudity"),
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.black,
+                      shape: StadiumBorder(),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
