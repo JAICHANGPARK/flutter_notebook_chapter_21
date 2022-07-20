@@ -15,10 +15,35 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
         child: Column(
           children: [
             Container(
-              height: 72,
+              height: 64,
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.arrow_back_ios),
+                    color: Colors.grey,
+                  ),
+                  CircleAvatar(
+                    radius: 22,
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Chainlink",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                        ),
+                      ),
+                      Text("LINK"),
+                    ],
+                  )
                 ],
               ),
             ),
