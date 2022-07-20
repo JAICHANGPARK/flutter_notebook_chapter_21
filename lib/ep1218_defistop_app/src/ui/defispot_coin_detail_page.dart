@@ -11,7 +11,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
