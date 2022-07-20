@@ -38,10 +38,16 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                         "Chainlink",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 16
+                          fontSize: 16,
                         ),
                       ),
-                      Text("LINK"),
+                      Text(
+                        "LINK",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey,
+                        ),
+                      ),
                     ],
                   )
                 ],
