@@ -16,6 +16,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
           children: [
             Container(
               height: 64,
+              padding: EdgeInsets.only(right: 16),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -41,11 +42,37 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                           fontSize: 16,
                         ),
                       ),
+                      SizedBox(
+                        height: 4,
+                      ),
                       Text(
                         "LINK",
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        "\$1,198.12",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        "12.54%",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
