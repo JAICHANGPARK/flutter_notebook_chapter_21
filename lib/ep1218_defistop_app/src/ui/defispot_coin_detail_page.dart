@@ -16,6 +16,11 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
           children: [
             Container(
               height: 72,
+              child: Row(
+                children: [
+                  
+                ],
+              ),
             ),
             Divider(
               color: Colors.grey,
