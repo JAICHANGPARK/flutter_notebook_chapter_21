@@ -136,10 +136,37 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                         color: Colors.blue,
                       ),
                     ),
-                    ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [],
-                    )
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: SizedBox(
+                        height: 28,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text("1M"),
+                              style: OutlinedButton.styleFrom(
+                                backgroundColor: Colors.grey[200],
+                                shape: StadiumBorder(),
+                                primary: Colors.black,
+                              ),
+                            ),
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text("5M"),
+                              style: OutlinedButton.styleFrom(
+                                shape: StadiumBorder(),
+                                primary: Colors.black,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
                   ],
                 ),
               ),
