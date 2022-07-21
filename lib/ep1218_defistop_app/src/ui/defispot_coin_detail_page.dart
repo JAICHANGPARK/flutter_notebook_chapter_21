@@ -214,8 +214,95 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                     ),
                     Divider(
                       color: Colors.grey,
+                      height: 8,
                     ),
-                    Text("Statistics")
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        "Statistics",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                    Divider(
+                      color: Colors.grey,
+                      height: 0,
+                    ),
+                    IntrinsicHeight(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Market Cap"),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.info_outline),
+                                        splashRadius: 16,
+                                        iconSize: 16,
+                                      )
+                                    ],
+                                  ),
+                                  Text(
+                                    "\$4.5B",
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          VerticalDivider(
+                            color: Colors.grey,
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Market Cap"),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.info_outline),
+                                        splashRadius: 16,
+                                        iconSize: 16,
+                                      )
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "\$4.5B",
+                                      ),
+                                      Spacer(),
+                                      Icon(
+                                        Icons.arrow_upward,
+                                        size: 16,
+                                      ),
+                                      Text(
+                                        "6.8%",
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Divider(
+                      color: Colors.grey,
+                      height: 0,
+                    ),
                   ],
                 ),
               ),
