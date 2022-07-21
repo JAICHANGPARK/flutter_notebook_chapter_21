@@ -89,7 +89,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                   children: [
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      height: 46,
+                      height: 42,
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(32),
