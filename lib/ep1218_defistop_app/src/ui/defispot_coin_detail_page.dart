@@ -94,9 +94,20 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(32),
                       ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 4,
+                        vertical: 4,
+                      ),
                       child: Row(
                         children: [
-                          Expanded(child: Container()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                            ),
+                          ),
                           Expanded(
                               child: Center(
                             child: Text(
