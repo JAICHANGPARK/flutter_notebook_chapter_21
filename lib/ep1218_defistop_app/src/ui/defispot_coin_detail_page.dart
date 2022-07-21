@@ -117,17 +117,28 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                             ),
                           ),
                           Expanded(
-                              child: Center(
-                            child: Text(
-                              "Line",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+                            child: Center(
+                              child: Text(
+                                "Line",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
-                          )),
+                          ),
                         ],
                       ),
+                    ),
+                    Container(
+                      height: 320,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [],
                     )
                   ],
                 ),
