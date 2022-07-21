@@ -106,6 +106,14 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(32),
                               ),
+                              child: Center(
+                                child: Text(
+                                  "Candles",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                           Expanded(
