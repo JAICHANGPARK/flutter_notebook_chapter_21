@@ -86,6 +86,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -152,21 +153,69 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                 primary: Colors.black,
                               ),
                             ),
-                            OutlinedButton(
-                              onPressed: () {},
-                              child: Text("5M"),
-                              style: OutlinedButton.styleFrom(
-                                shape: StadiumBorder(),
-                                primary: Colors.black,
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text("5M"),
+                                style: OutlinedButton.styleFrom(
+                                  shape: StadiumBorder(),
+                                  primary: Colors.black,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text("15M"),
+                                style: OutlinedButton.styleFrom(
+                                  shape: StadiumBorder(),
+                                  primary: Colors.black,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text("30M"),
+                                style: OutlinedButton.styleFrom(
+                                  shape: StadiumBorder(),
+                                  primary: Colors.black,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text("1H"),
+                                style: OutlinedButton.styleFrom(
+                                  shape: StadiumBorder(),
+                                  primary: Colors.black,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text("4H"),
+                                style: OutlinedButton.styleFrom(
+                                  shape: StadiumBorder(),
+                                  primary: Colors.black,
+                                ),
                               ),
                             )
                           ],
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 8,
+                    Divider(
+                      color: Colors.grey,
                     ),
+                    Text("Statistics")
                   ],
                 ),
               ),
