@@ -84,7 +84,35 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
               color: Colors.grey,
             ),
             Expanded(
-              child: Placeholder(),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      height: 46,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(child: Container()),
+                          Expanded(
+                              child: Center(
+                            child: Text(
+                              "Line",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          )),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
             Divider(
               color: Colors.grey,
