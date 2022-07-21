@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 
 class DefispotCoinDetailpage extends StatefulWidget {
   const DefispotCoinDetailpage({Key? key}) : super(key: key);
@@ -377,7 +378,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                       height: 0,
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                       child: Row(
                         children: [
                           Text("Circulating Supply"),
@@ -402,9 +403,39 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                     ),
                     Divider(
                       color: Colors.grey,
-                      height: 0,
+                      height: 8,
                     ),
-
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Text(
+                        "Details",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 12,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Text(
+                        "About Stellar Lumens",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        loremIpsum,
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
