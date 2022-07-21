@@ -22,6 +22,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  candlesticks:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: "999aea4c80c0fca67345d8a8b3846057af7c9a23"
+      url: "https://github.com/r-mzy47/candlesticks"
+    source: git
+    version: "2.1.0"
   characters:
     dependency: transitive
     description:
