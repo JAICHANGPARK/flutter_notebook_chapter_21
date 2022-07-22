@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
+import 'package:candlesticks/candlesticks.dart';
 
 class DefispotCoinDetailpage extends StatefulWidget {
   const DefispotCoinDetailpage({Key? key}) : super(key: key);
@@ -137,6 +138,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
+                      child: ,
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
