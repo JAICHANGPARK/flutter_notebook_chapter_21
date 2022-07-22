@@ -266,7 +266,8 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsets.only(
-                                left: 16
+                                left: 16,
+                                bottom: 16
                               ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -297,7 +298,10 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 16,
+                                  bottom: 16
+                              ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -316,14 +320,22 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                     children: [
                                       Text(
                                         "\$4.5B",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                       Spacer(),
                                       Icon(
                                         Icons.arrow_upward,
                                         size: 16,
+                                          color: Colors.teal
                                       ),
                                       Text(
                                         "6.8%",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.teal
+                                        ),
                                       ),
                                     ],
                                   )
@@ -343,7 +355,10 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 16,
+                                  bottom: 16
+                              ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
