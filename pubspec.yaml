@@ -16,6 +16,8 @@ dependencies:
   flutter_riverpod: ^2.0.0-dev.9
   fl_chart: ^0.55.0
 
+  http: any
+
   candlesticks:
     git:
       url: https://github.com/r-mzy47/candlesticks
