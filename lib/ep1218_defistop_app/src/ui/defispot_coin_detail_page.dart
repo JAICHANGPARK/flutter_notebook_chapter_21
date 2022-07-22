@@ -138,7 +138,12 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
-                      child: ,
+                      child: Candlesticks(
+                        candles: [
+                          
+                        ],
+
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
