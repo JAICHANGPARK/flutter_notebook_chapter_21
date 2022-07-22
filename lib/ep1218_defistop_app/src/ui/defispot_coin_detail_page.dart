@@ -326,7 +326,10 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                       Icon(Icons.arrow_upward, size: 16, color: Colors.teal),
                                       Text(
                                         "6.8%",
-                                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.teal),
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.teal,
+                                        ),
                                       ),
                                     ],
                                   )
@@ -363,6 +366,9 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                   ),
                                   Text(
                                     "\$4.5B",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   )
                                 ],
                               ),
@@ -373,7 +379,11 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(
+                                left: 16,
+                                bottom: 16,
+                                right: 16,
+                              ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -392,6 +402,9 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                     children: [
                                       Text(
                                         "\$4.5B",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                       Spacer(),
                                       Icon(
@@ -400,6 +413,10 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                       ),
                                       Text(
                                         "6.8%",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.teal,
+                                        ),
                                       ),
                                     ],
                                   )
