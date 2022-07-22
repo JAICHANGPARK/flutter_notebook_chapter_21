@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 import 'package:candlesticks/candlesticks.dart';
+import 'package:http/http.dart' as http;
 
 class DefispotCoinDetailpage extends StatefulWidget {
   const DefispotCoinDetailpage({Key? key}) : super(key: key);
@@ -10,6 +13,28 @@ class DefispotCoinDetailpage extends StatefulWidget {
 }
 
 class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
+  List<Candle> candles = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    fetchCandels().then((value) {
+      setState(() {
+        candles = value ?? [];
+      });
+    });
+  }
+
+  Future<List<Candle>?> fetchCandels() async {
+    final uri = Uri.parse("https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h");
+    final resp = await http.get(uri);
+    if (resp.statusCode == 200) {
+      var d = jsonDecode(resp.body) as List<dynamic>;
+      return d.map((e) => Candle.fromJson(e)).toList().reversed.toList();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -139,10 +164,7 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                         color: Colors.blue,
                       ),
                       child: Candlesticks(
-                        candles: [
-                          
-                        ],
-
+                        candles: candles ?? [],
                       ),
                     ),
                     Padding(
@@ -243,7 +265,9 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(
+                                left: 16
+                              ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -260,6 +284,9 @@ class _DefispotCoinDetailpageState extends State<DefispotCoinDetailpage> {
                                   ),
                                   Text(
                                     "\$4.5B",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   )
                                 ],
                               ),
