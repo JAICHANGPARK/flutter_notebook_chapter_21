@@ -1,16 +1,26 @@
 # flutter_notebook_chapter_21
 
-### EP1218
+### EP1221
+
+- Investment App Concept
+- by Michał Mielczarek
+- https://dribbble.com/shots/18859060-Investment-App-Concept/attachments/14036785?mode=media
+
+<img src="https://cdn.dribbble.com/users/71206/screenshots/18859060/media/23cb47f07f798b54c3ffc305c9ef1253.png" width="400px"/>
+
+### EP1218-1220
 
 - Defispot - iOS App / Coin Detail View
 - Kevin Dukkon for Fintory
 - https://dribbble.com/shots/18683387-Defispot-iOS-App-Coin-Detail-View
 
-<img src="https://cdn.dribbble.com/userupload/3066792/file/original-602dbe56674cf868925bdf3bc7c9a816.png?compress=1&resize=1024x768"
-  width="400px"/>
+<img
+src="https://cdn.dribbble.com/userupload/3066792/file/original-602dbe56674cf868925bdf3bc7c9a816.png?compress=1&resize=1024x768"
+width="400px"/>
 
-<img src="https://cdn.dribbble.com/userupload/3066790/file/original-55081c2f1900e273216cb419c9445955.png?compress=1&resize=1024x768&vertical=center"
-  width="400px"/>
+<img
+src="https://cdn.dribbble.com/userupload/3066790/file/original-55081c2f1900e273216cb419c9445955.png?compress=1&resize=1024x768&vertical=center"
+width="400px"/>
 
 ### EP1215-1217
 
