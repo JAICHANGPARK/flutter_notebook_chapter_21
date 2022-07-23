@@ -7,6 +7,7 @@ class InvestmentApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: "/profile",
       routes: {
         "/profile": (context) => InvestmentProfilePage(),
       },
