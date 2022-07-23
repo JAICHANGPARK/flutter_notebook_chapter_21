@@ -89,6 +89,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
               ),
 
             ),
+            SizedBox(height: 16,),
             Column(
               children: [
                 Container(
@@ -111,6 +112,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
+                          fontSize: 18
                         ),
                       ),
                       SizedBox(
