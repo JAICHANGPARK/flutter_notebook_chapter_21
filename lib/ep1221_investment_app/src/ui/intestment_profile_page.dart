@@ -98,6 +98,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                     border: Border.all(
                       color: Colors.blue,
                     ),
+                    shape: BoxShape.circle,
                   ),
                 )
               ],
