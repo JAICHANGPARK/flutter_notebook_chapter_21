@@ -15,75 +15,78 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.arrow_back,
-                  ),
-                  color: Colors.white,
-                ),
-                Spacer(),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: IconButton(
-                    iconSize: 20,
-                    padding: EdgeInsets.zero,
-                    constraints: BoxConstraints(
-                      maxHeight: 24,
-                      maxWidth: 24,
-                    ),
-                    splashRadius: 16,
+            Padding(
+              padding: const EdgeInsets.only(right: 16, top: 16),
+              child: Row(
+                children: [
+                  IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.add),
+                    icon: Icon(
+                      Icons.arrow_back,
+                    ),
                     color: Colors.white,
                   ),
-                ),
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 8),
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: IconButton(
-                    iconSize: 20,
-                    padding: EdgeInsets.zero,
-                    constraints: BoxConstraints(
-                      maxHeight: 24,
-                      maxWidth: 24,
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(4),
                     ),
-                    splashRadius: 16,
-                    onPressed: () {},
-                    icon: Icon(Icons.chat_bubble),
-                    color: Colors.white,
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: IconButton(
-                    iconSize: 20,
-                    padding: EdgeInsets.zero,
-                    constraints: BoxConstraints(
-                      maxHeight: 24,
-                      maxWidth: 24,
+                    padding: EdgeInsets.all(4),
+                    child: IconButton(
+                      iconSize: 20,
+                      padding: EdgeInsets.zero,
+                      constraints: BoxConstraints(
+                        maxHeight: 24,
+                        maxWidth: 24,
+                      ),
+                      splashRadius: 16,
+                      onPressed: () {},
+                      icon: Icon(Icons.add),
+                      color: Colors.white,
                     ),
-                    splashRadius: 16,
-                    onPressed: () {},
-                    icon: Icon(Icons.more_horiz),
-                    color: Colors.white,
                   ),
-                )
-              ],
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    padding: EdgeInsets.all(4),
+                    child: IconButton(
+                      iconSize: 20,
+                      padding: EdgeInsets.zero,
+                      constraints: BoxConstraints(
+                        maxHeight: 24,
+                        maxWidth: 24,
+                      ),
+                      splashRadius: 16,
+                      onPressed: () {},
+                      icon: Icon(Icons.chat_bubble),
+                      color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    padding: EdgeInsets.all(4),
+                    child: IconButton(
+                      iconSize: 20,
+                      padding: EdgeInsets.zero,
+                      constraints: BoxConstraints(
+                        maxHeight: 24,
+                        maxWidth: 24,
+                      ),
+                      splashRadius: 16,
+                      onPressed: () {},
+                      icon: Icon(Icons.more_horiz),
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
