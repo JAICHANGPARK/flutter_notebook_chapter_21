@@ -104,7 +104,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                   child: CircleAvatar(),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -210,7 +210,20 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                 )
               ],
             ),
-            Expanded(child: Placeholder()),
+            SizedBox(
+              height: 8,
+            ),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(.1),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(8),
+                    topRight:  Radius.circular(8),
+                  )
+                ),
+              ),
+            ),
           ],
         ),
       ),
