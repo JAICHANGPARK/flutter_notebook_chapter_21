@@ -10,6 +10,29 @@ class InvestmentProfilePage extends StatefulWidget {
 class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.arrow_back,
+                ),
+              ),
+              Container(
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.add),
+                  color: Colors.white,
+                ),
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
