@@ -125,18 +125,31 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                 Row(
                   children: [
                     Expanded(
-                        child: Column(
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 16, top: 16),
+                          child: Column(
                       children: [
-                        Text(
-                          "245",
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
-                        ),
-                        Text(
-                          "Followers",
-                          style: TextStyle(color: Colors.grey, fontSize: 12),
-                        )
+                          Text(
+                            "245",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "Followers",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12,
+                            ),
+                          )
                       ],
-                    )),
+                    ),
+                        )),
                     Expanded(child: Column()),
                     Expanded(child: Column()),
                   ],
