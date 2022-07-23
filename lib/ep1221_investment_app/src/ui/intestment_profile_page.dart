@@ -219,8 +219,20 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                   color: Colors.white.withOpacity(.1),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(8),
-                    topRight:  Radius.circular(8),
-                  )
+                    topRight: Radius.circular(8),
+                  ),
+                ),
+                padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
+                child: Column(
+                  children: [
+                    Container(
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                    ),
+                    Expanded(child: Placeholder()),
+                  ],
                 ),
               ),
             ),
