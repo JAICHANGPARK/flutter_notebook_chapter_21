@@ -24,6 +24,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                   ),
                   color: Colors.white,
                 ),
+                Spacer(),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey,
@@ -40,6 +41,45 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                     splashRadius: 16,
                     onPressed: () {},
                     icon: Icon(Icons.add),
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 8),
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  padding: EdgeInsets.all(4),
+                  child: IconButton(
+                    iconSize: 20,
+                    padding: EdgeInsets.zero,
+                    constraints: BoxConstraints(
+                      maxHeight: 24,
+                      maxWidth: 24,
+                    ),
+                    splashRadius: 16,
+                    onPressed: () {},
+                    icon: Icon(Icons.chat_bubble),
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  padding: EdgeInsets.all(4),
+                  child: IconButton(
+                    iconSize: 20,
+                    padding: EdgeInsets.zero,
+                    constraints: BoxConstraints(
+                      maxHeight: 24,
+                      maxWidth: 24,
+                    ),
+                    splashRadius: 16,
+                    onPressed: () {},
+                    icon: Icon(Icons.more_horiz),
                     color: Colors.white,
                   ),
                 )
