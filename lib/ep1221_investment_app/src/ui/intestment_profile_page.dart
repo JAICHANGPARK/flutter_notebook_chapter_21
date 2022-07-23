@@ -110,7 +110,11 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                     children: [
                       Text(
                         "Dreamwalker",
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                       SizedBox(
                         width: 6,
@@ -126,9 +130,9 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                   children: [
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.only(bottom: 16, top: 16),
-                          child: Column(
-                      children: [
+                      padding: const EdgeInsets.only(bottom: 16, top: 16),
+                      child: Column(
+                        children: [
                           Text(
                             "245",
                             style: TextStyle(
@@ -147,11 +151,61 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                               fontSize: 12,
                             ),
                           )
-                      ],
-                    ),
-                        )),
-                    Expanded(child: Column()),
-                    Expanded(child: Column()),
+                        ],
+                      ),
+                    )),
+                    Expanded(
+                        child: Padding(
+                      padding: const EdgeInsets.only(bottom: 16, top: 16),
+                      child: Column(
+                        children: [
+                          Text(
+                            "153",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "Following",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12,
+                            ),
+                          )
+                        ],
+                      ),
+                    )),
+                    Expanded(
+                        child: Padding(
+                      padding: const EdgeInsets.only(bottom: 16, top: 16),
+                      child: Column(
+                        children: [
+                          Text(
+                            "53",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "Activities",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12,
+                            ),
+                          )
+                        ],
+                      ),
+                    )),
                   ],
                 )
               ],
