@@ -12,26 +12,41 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.arrow_back,
-                ),
-              ),
-              Container(
-                child: IconButton(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.add),
+                  icon: Icon(
+                    Icons.arrow_back,
+                  ),
                   color: Colors.white,
                 ),
-              )
-            ],
-          )
-        ],
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  padding: EdgeInsets.all(4),
+                  child: IconButton(
+                    iconSize: 20,
+                    padding: EdgeInsets.zero,
+                    constraints: BoxConstraints(
+                      maxHeight: 24,
+                      maxWidth: 24,
+                    ),
+                    splashRadius: 16,
+                    onPressed: () {},
+                    icon: Icon(Icons.add),
+                    color: Colors.white,
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
