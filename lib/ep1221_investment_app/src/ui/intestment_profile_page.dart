@@ -87,7 +87,22 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(
+                child: Column(
+              children: [
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.blue,
+                    ),
+                  ),
+                )
+              ],
+            )),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
