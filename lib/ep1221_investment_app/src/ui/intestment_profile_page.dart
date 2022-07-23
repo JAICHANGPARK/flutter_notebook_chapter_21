@@ -89,20 +89,43 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
               ),
             ),
             Expanded(
-                child: Column(
-              children: [
-                Container(
-                  height: 120,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.blue,
+              child: Column(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.blue, width: 2),
+                      shape: BoxShape.circle,
                     ),
-                    shape: BoxShape.circle,
+                    padding: EdgeInsets.all(3),
+                    child: CircleAvatar(),
                   ),
-                )
-              ],
-            )),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 18),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 6,
+                        ),
+                        CircleAvatar(
+                          radius: 12,
+                          backgroundColor: Colors.orangeAccent,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
             Expanded(child: Placeholder()),
           ],
         ),
