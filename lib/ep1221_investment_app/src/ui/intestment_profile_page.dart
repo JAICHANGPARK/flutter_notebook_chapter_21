@@ -291,7 +291,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: EdgeInsets.only(),
+                            padding: EdgeInsets.only(left: 8, right: 8, bottom: 16, top: 8),
                             child: Row(
                               children: [
                                 Column(
@@ -304,18 +304,45 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 4,
+                                      height: 8,
                                     ),
                                     Text(
                                       "Aspen Aerogels Inc",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.grey,
+                                        fontSize: 12,
                                       ),
                                     ),
                                   ],
                                 ),
                                 Column(
-                                  children: [],
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "\$10.70",
+                                      style: TextStyle(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.arrow_drop_up_outlined,
+                                          color: Colors.green,
+                                        ),
+                                        Text(
+                                          " 10.31%",
+                                          style: TextStyle(
+                                            color: Colors.green,
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
                                 ),
                                 Column(
                                   children: [],
