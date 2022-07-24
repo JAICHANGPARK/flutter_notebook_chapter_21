@@ -290,35 +290,38 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                       child: ListView.builder(
                         itemCount: 10,
                         itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "ASPN",
-                                    style: TextStyle(
-                                      color: Colors.white,
+                          return Padding(
+                            padding: EdgeInsets.only(),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "ASPN",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  Text(
-                                    "Aspen Aerogels Inc",
-                                    style: TextStyle(
-                                      color: Colors.white,
+                                    SizedBox(
+                                      height: 4,
                                     ),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                children: [],
-                              ),
-                              Column(
-                                children: [],
-                              ),
-                            ],
+                                    Text(
+                                      "Aspen Aerogels Inc",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  children: [],
+                                ),
+                                Column(
+                                  children: [],
+                                ),
+                              ],
+                            ),
                           );
                         },
                       ),
