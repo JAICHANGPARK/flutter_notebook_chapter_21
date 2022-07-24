@@ -8,6 +8,8 @@ class InvestmentProfilePage extends StatefulWidget {
 }
 
 class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
+  int tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -235,24 +237,45 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                       child: Row(
                         children: [
                           Expanded(
-                              child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(.1),
-                              borderRadius: BorderRadius.circular(2),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "STOCKS",
+                              child: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                tabIndex = 0;
+                              });
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: tabIndex == 0 ? Colors.white.withOpacity(.1) : Colors.transparent,
+                                borderRadius: BorderRadius.circular(2),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "STOCKS",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             ),
                           )),
                           Expanded(
-                              child: Container(
-                            child: Center(
-                              child: Text(
-                                "LAST POSTS",
-                                style: TextStyle(
-                                  color: Colors.white,
+                              child: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                tabIndex = 1;
+                              });
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: tabIndex == 1 ? Colors.white.withOpacity(.1) : Colors.transparent,
+                                borderRadius: BorderRadius.circular(2),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "LAST POSTS",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
