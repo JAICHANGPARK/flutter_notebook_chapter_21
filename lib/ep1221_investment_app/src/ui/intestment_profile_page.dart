@@ -290,81 +290,97 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                       child: ListView.builder(
                         itemCount: 10,
                         itemBuilder: (context, index) {
+                          bool isOdd = (index % 2) != 0 ? true : false;
                           return Padding(
-                            padding: EdgeInsets.only(left: 8, right: 8, bottom: 16, top: 8),
+                            padding: EdgeInsets.only(
+                              left: 8,
+                              right: 8,
+                              bottom: 16,
+                              top: 8,
+                            ),
                             child: Row(
                               children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "ASPN",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 4,
-                                    ),
-                                    Text(
-                                      "Aspen Aerogels Inc",
-                                      style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 12,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "\$10.70",
-                                      style: TextStyle(
-                                        color: Colors.green,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 4,
-                                    ),
-                                    Row(
-                                      children: [
-                                        Icon(
-                                          Icons.arrow_drop_up_outlined,
-                                          color: Colors.green,
+                                Expanded(
+                                  flex: 5,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        isOdd ? "DREAM" : "WALKER",
+                                        style: TextStyle(
+                                          color: Colors.white,
                                         ),
-                                        Text(
-                                          "10.31%",
-                                          style: TextStyle(
-                                            color: Colors.green,
-                                            fontSize: 12,
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "DREAM WALKER Inc",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 2,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "\$10.70",
+                                        style: TextStyle(
+                                          color: isOdd ? Colors.green : Colors.red,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            isOdd ? Icons.arrow_drop_up_outlined : Icons.arrow_drop_down_outlined,
+                                            color: isOdd ? Colors.green : Colors.red,
+                                            size: 16,
                                           ),
+                                          Text(
+                                            "10.31%",
+                                            style: TextStyle(
+                                              color: isOdd ? Colors.green : Colors.red,
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    children: [
+                                      Text(
+                                        "\$224.70",
+                                        style: TextStyle(
+                                          color: Colors.white,
                                         ),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: [
-                                    Text(
-                                      "\$224.70",
-                                      style: TextStyle(
-                                        color: Colors.white,
                                       ),
-                                    ),
-                                    SizedBox(
-                                      height: 4,
-                                    ),
-                                    Text(
-                                      "21 shares",
-                                      style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 12,
+                                      SizedBox(
+                                        height: 4,
                                       ),
-                                    ),
-                                  ],
-                                ),
+                                      Text(
+                                        "21 shares",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                           );
