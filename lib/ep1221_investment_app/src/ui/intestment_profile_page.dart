@@ -292,7 +292,32 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                         itemBuilder: (context, index) {
                           return Row(
                             children: [
-
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "ASPN",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Aspen Aerogels Inc",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [],
+                              ),
+                              Column(
+                                children: [],
+                              ),
                             ],
                           );
                         },
