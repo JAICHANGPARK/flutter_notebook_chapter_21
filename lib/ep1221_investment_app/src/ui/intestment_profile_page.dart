@@ -226,10 +226,30 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 48,
+                      height: 42,
                       decoration: BoxDecoration(
                         color: Colors.black,
+                        borderRadius: BorderRadius.circular(4),
                       ),
+                      child: Row(
+                        children: [
+                          Expanded(child: Container()),
+                          Expanded(
+                              child: Container(
+                            child: Center(
+                              child: Text(
+                                "LAST POSTS",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          )),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
                     ),
                     Expanded(child: Placeholder()),
                   ],
