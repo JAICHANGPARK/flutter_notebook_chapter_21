@@ -286,7 +286,18 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                     SizedBox(
                       height: 8,
                     ),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Row(
+                            children: [
+
+                            ],
+                          );
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ),
