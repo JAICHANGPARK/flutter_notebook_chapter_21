@@ -304,7 +304,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 8,
+                                      height: 4,
                                     ),
                                     Text(
                                       "Aspen Aerogels Inc",
@@ -325,7 +325,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 8,
+                                      height: 4,
                                     ),
                                     Row(
                                       children: [
@@ -334,7 +334,7 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                                           color: Colors.green,
                                         ),
                                         Text(
-                                          " 10.31%",
+                                          "10.31%",
                                           style: TextStyle(
                                             color: Colors.green,
                                             fontSize: 12,
@@ -345,7 +345,25 @@ class _InvestmentProfilePageState extends State<InvestmentProfilePage> {
                                   ],
                                 ),
                                 Column(
-                                  children: [],
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Text(
+                                      "\$224.70",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text(
+                                      "21 shares",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
