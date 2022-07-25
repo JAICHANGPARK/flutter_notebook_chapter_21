@@ -13,6 +13,31 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      body: Stack(
+        children: [
+          Positioned(
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.black,
+                    Colors.black,
+                    Colors.black.withOpacity(0.5),
+                    Colors.black.withOpacity(0.5),
+                    // Color.fromRGBO(35, 183, 95, 0.4),
+                    Color.fromRGBO(35, 183, 95, 0.7),
+                  ],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight
+                )
+              ),
+            ),)
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _index,
         onTap: (idx){
