@@ -17,6 +17,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
         showUnselectedLabels: false,
         showSelectedLabels: false,
         selectedItemColor: Color.fromRGBO(35, 183, 95, 1),
+        unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
@@ -30,6 +31,24 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                 Icons.search,
               ),
               label: "Search"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.group,
+              ),
+              label: "Person"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.notifications,
+              ),
+              label: "Notification"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              label: "Person"
           )
         ],
       ),
