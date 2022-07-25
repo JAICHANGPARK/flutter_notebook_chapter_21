@@ -58,7 +58,6 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 12,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Row(
@@ -69,7 +68,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 42,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                       Icon(
@@ -92,7 +91,6 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         style: TextStyle(
                           color: Colors.grey,
                           fontSize: 12,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       Icon(
