@@ -34,19 +34,44 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
             ),
           ),
           Positioned(
-            left: 0,
-            top: 48,
+            left: 16,
+            top: 100,
             bottom: 0,
             right: 0,
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Hello, Dream", style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold
-                  ),)
+                  Text(
+                    "Hello, Dream",
+                    style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Text(
+                    "Portfolio value",
+                    style: TextStyle(color: Colors.grey, fontSize: 12, fontWeight: FontWeight.bold),
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "\$15,457.91",
+                        style: TextStyle(color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(
+                        Icons.arrow_drop_up_rounded,
+                        color: Color.fromRGBO(35, 183, 95, 1),
+                      ),
+                      Text(
+                        "3.61%",
+                        style: TextStyle(
+                          color: Color.fromRGBO(35, 183, 95, 1),
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
