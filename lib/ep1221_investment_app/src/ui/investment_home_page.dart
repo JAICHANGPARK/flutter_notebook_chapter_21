@@ -13,11 +13,19 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Color.fromRGBO(35, 183, 95, 1),
         items: [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
             ),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Search"
           )
         ],
       ),
