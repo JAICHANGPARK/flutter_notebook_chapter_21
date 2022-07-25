@@ -10,6 +10,17 @@ class InvestmentHomePage extends StatefulWidget {
 class _InvestmentHomePageState extends State<InvestmentHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
