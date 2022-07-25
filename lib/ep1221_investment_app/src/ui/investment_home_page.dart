@@ -40,7 +40,14 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
             right: 0,
             child: SingleChildScrollView(
               child: Column(
-                children: [],
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Hello, Dream", style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold
+                  ),)
+                ],
               ),
             ),
           )
