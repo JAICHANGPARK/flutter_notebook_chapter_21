@@ -8,11 +8,18 @@ class InvestmentHomePage extends StatefulWidget {
 }
 
 class _InvestmentHomePageState extends State<InvestmentHomePage> {
+  int _index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _index,
+        onTap: (idx){
+          setState(() {
+            _index = idx;
+          });
+        },
         backgroundColor: Colors.black,
         showUnselectedLabels: false,
         showSelectedLabels: false,
