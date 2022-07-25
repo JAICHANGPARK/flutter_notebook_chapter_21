@@ -13,7 +13,11 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
         selectedItemColor: Color.fromRGBO(35, 183, 95, 1),
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
