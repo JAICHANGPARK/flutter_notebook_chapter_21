@@ -44,21 +44,33 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                 children: [
                   Text(
                     "Hello, Dream",
-                    style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   SizedBox(
                     height: 16,
                   ),
                   Text(
                     "Portfolio value",
-                    style: TextStyle(color: Colors.grey, fontSize: 12, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
                         "\$15,457.91",
-                        style: TextStyle(color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 42,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       Icon(
                         Icons.arrow_drop_up_rounded,
@@ -66,6 +78,29 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                       ),
                       Text(
                         "3.61%",
+                        style: TextStyle(
+                          color: Color.fromRGBO(35, 183, 95, 1),
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Last month",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Icon(
+                        Icons.arrow_drop_up_rounded,
+                        color: Color.fromRGBO(35, 183, 95, 1),
+                      ),
+                      Text(
+                        "5.65%",
                         style: TextStyle(
                           color: Color.fromRGBO(35, 183, 95, 1),
                         ),
