@@ -9,6 +9,7 @@ class InvestmentHomePage extends StatefulWidget {
 
 class _InvestmentHomePageState extends State<InvestmentHomePage> {
   int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,25 +23,32 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.black,
-                    Colors.black,
-                    Colors.black.withOpacity(0.5),
-                    Colors.black.withOpacity(0.5),
-                    // Color.fromRGBO(35, 183, 95, 0.4),
-                    Color.fromRGBO(35, 183, 95, 0.7),
-                  ],
-                  begin: Alignment.bottomLeft,
-                  end: Alignment.topRight
-                )
+                  gradient: LinearGradient(colors: [
+                Colors.black,
+                Colors.black,
+                Colors.black.withOpacity(0.5),
+                Colors.black.withOpacity(0.5),
+                // Color.fromRGBO(35, 183, 95, 0.4),
+                Color.fromRGBO(35, 183, 95, 0.7),
+              ], begin: Alignment.bottomLeft, end: Alignment.topRight)),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            top: 48,
+            bottom: 0,
+            right: 0,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
               ),
-            ),)
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _index,
-        onTap: (idx){
+        onTap: (idx) {
           setState(() {
             _index = idx;
           });
@@ -53,35 +61,30 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ),
-            label: "Home"
-          ),
+              icon: Icon(
+                Icons.home,
+              ),
+              label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.search,
               ),
-              label: "Search"
-          ),
+              label: "Search"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.group,
               ),
-              label: "Person"
-          ),
+              label: "Person"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.notifications,
               ),
-              label: "Notification"
-          ),
+              label: "Notification"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
               ),
-              label: "Person"
-          )
+              label: "Person")
         ],
       ),
     );
