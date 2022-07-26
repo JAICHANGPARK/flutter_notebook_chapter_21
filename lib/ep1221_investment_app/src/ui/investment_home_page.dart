@@ -122,7 +122,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                     color: Colors.green,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 16, bottom: 16),
+                    padding: const EdgeInsets.only(right: 16, bottom: 16, top: 8),
                     child: SizedBox(
                       height: 32,
                       child: ListView(
@@ -139,7 +139,12 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         ]
                             .map(
                               (e) => Container(
-                                margin: EdgeInsets.symmetric(horizontal: 12),
+                                margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: e == "1M" ? Colors.white : Colors.black,
+
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 child: Center(
                                   child: Text(
                                     "$e",
