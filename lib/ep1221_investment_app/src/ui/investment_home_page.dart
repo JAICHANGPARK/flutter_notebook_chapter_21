@@ -175,6 +175,31 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.blue,
                         ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Watchlist",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "See all",
+                              style: TextStyle(
+                                decoration: TextDecoration.underline
+                              ),
+                            ),
+                            style: TextButton.styleFrom(
+                              primary: Colors.grey,
+                            ),
+                          )
+                        ],
                       )
                     ],
                   ),
