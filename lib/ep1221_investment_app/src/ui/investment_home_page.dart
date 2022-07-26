@@ -164,6 +164,14 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 24,
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
                     ),
                   )
                 ],
