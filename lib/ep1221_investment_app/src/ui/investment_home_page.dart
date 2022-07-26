@@ -65,7 +65,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                     ),
                   ),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
                         "\$15,457.91",
@@ -75,14 +75,22 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      Icon(
-                        Icons.arrow_drop_up_rounded,
-                        color: Color.fromRGBO(35, 183, 95, 1),
-                      ),
-                      Text(
-                        "3.61%",
-                        style: TextStyle(
-                          color: Color.fromRGBO(35, 183, 95, 1),
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.arrow_drop_up_rounded,
+                              size: 30,
+                              color: Color.fromRGBO(35, 183, 95, 1),
+                            ),
+                            Text(
+                              "3.61%",
+                              style: TextStyle(
+                                color: Color.fromRGBO(35, 183, 95, 1),
+                              ),
+                            )
+                          ],
                         ),
                       )
                     ],
@@ -108,6 +116,43 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         ),
                       )
                     ],
+                  ),
+                  Container(
+                    height: 240,
+                    color: Colors.green,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16, bottom: 16),
+                    child: SizedBox(
+                      height: 32,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          "1D",
+                          "1W",
+                          "1M",
+                          "3M",
+                          "1Y",
+                          "3Y",
+                          "YTD",
+                          "All",
+                        ]
+                            .map(
+                              (e) => Container(
+                                margin: EdgeInsets.symmetric(horizontal: 12),
+                                child: Center(
+                                  child: Text(
+                                    "$e",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            )
+                            .toList(),
+                      ),
+                    ),
                   )
                 ],
               ),
