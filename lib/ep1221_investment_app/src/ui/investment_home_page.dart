@@ -142,9 +142,8 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                               (e) => Container(
                                 margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 decoration: BoxDecoration(
-                                  color: e == "1M" ? Colors.white : Colors.black,
-                                  borderRadius: BorderRadius.circular(2)
-                                ),
+                                    color: e == "1M" ? Colors.white : Colors.black,
+                                    borderRadius: BorderRadius.circular(2)),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 child: Center(
                                   child: Text(
@@ -158,6 +157,13 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                             )
                             .toList(),
                       ),
+                    ),
+                  ),
+                  Text(
+                    "Pending Orders",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   )
                 ],
