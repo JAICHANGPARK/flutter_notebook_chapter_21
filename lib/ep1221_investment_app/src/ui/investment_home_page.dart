@@ -23,14 +23,18 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [
-                Colors.black,
-                Colors.black,
-                Colors.black.withOpacity(0.5),
-                Colors.black.withOpacity(0.5),
-                // Color.fromRGBO(35, 183, 95, 0.4),
-                Color.fromRGBO(35, 183, 95, 0.7),
-              ], begin: Alignment.bottomLeft, end: Alignment.topRight)),
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.black,
+                    Colors.black,
+                    Colors.black.withOpacity(0.5),
+                    Colors.black.withOpacity(0.5),
+                    Color.fromRGBO(35, 183, 95, 0.7),
+                  ],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight,
+                ),
+              ),
             ),
           ),
           Positioned(
