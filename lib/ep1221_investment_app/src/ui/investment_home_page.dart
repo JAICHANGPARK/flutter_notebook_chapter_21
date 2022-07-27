@@ -227,7 +227,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                     ],
                                   ),
                                   SizedBox(
-                                    height: 8,
+                                    height: 16,
                                   ),
                                   Row(
                                     children: [
@@ -236,11 +236,32 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                         size: 16,
                                         color: Colors.white,
                                       ),
+                                      SizedBox(width: 6,),
                                       Text(
                                         "\$151.00",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 12
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.calendar_month_outlined,
+                                        size: 16,
+                                        color: Colors.white,
+                                      ),
+                                      SizedBox(width: 6,),
+                                      Text(
+                                        "02.07.2022",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 12
                                         ),
                                       ),
                                     ],
