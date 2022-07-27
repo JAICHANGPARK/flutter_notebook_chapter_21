@@ -173,13 +173,22 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         margin: EdgeInsets.symmetric(vertical: 12),
                         height: 120,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+
                         ),
                         child: ListView.builder(
                           itemCount: 10,
                           scrollDirection: Axis.horizontal,
-                          itemBuilder: (context,index){
-                            return Container();
+                          itemBuilder: (context, index) {
+                            return Container(
+                              margin: EdgeInsets.only(right: 8),
+                              width: 140,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(4)
+                              ),
+                            );
                           },
                         ),
                       ),
