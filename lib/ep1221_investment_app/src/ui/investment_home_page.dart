@@ -226,6 +226,25 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                       ),
                                     ],
                                   ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.signal_cellular_alt_2_bar,
+                                        size: 16,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        "\$151.00",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12
+                                        ),
+                                      ),
+                                    ],
+                                  )
                                 ],
                               ),
                             );
