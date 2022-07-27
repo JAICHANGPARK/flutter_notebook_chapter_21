@@ -178,6 +178,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Container(
+                              padding: EdgeInsets.all(16),
                               margin: EdgeInsets.only(right: 8),
                               width: 140,
                               decoration: BoxDecoration(
@@ -186,23 +187,43 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                 ),
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              child: Row(
+                              child: Column(
                                 children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                  Row(
                                     children: [
-                                      Text(
-                                        "DREAM",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "DREAM",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "25 shares",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: 12
+                                            ),
+                                          ),
+
+                                        ],
                                       ),
-                                      Text(
-                                        "25 shares",
-                                        style: TextStyle(
-                                          color: Colors.grey,
-                                          fontWeight: FontWeight.bold,
+                                      Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: index % 2 == 0 ? Colors.red : Colors.green,
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        padding:
+                                        EdgeInsets.symmetric(horizontal: 8,vertical: 2),
+                                        child: Center(
+                                          child: Text(
+                                            "Sell",
+                                          ),
                                         ),
                                       ),
                                     ],
