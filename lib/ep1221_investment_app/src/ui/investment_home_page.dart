@@ -175,6 +175,13 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.blue,
                         ),
+                        child: ListView.builder(
+                          itemCount: 10,
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context,index){
+                            return Container();
+                          },
+                        ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
