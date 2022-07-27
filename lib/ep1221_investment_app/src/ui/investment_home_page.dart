@@ -183,7 +183,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                               width: 140,
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.grey,
+                                  color: Colors.white.withOpacity(.2),
                                 ),
                                 borderRadius: BorderRadius.circular(4),
                               ),
