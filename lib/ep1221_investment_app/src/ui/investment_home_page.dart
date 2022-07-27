@@ -204,12 +204,8 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                           Text(
                                             "25 shares",
                                             style: TextStyle(
-                                              color: Colors.grey,
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 12
-                                            ),
+                                                color: Colors.grey, fontWeight: FontWeight.w400, fontSize: 12),
                                           ),
-
                                         ],
                                       ),
                                       Spacer(),
@@ -218,11 +214,13 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                           color: index % 2 == 0 ? Colors.red : Colors.green,
                                           borderRadius: BorderRadius.circular(4),
                                         ),
-                                        padding:
-                                        EdgeInsets.symmetric(horizontal: 8,vertical: 2),
+                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         child: Center(
                                           child: Text(
                                             "Sell",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                         ),
                                       ),
