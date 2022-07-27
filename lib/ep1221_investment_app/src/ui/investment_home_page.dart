@@ -198,6 +198,12 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                             ),
                           )
                         ],
+                      ),
+                      Text(
+                        "6 items",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
                       )
                     ],
                   ),
