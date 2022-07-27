@@ -191,7 +191,9 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                             onPressed: () {},
                             child: Text(
                               "See all",
-                              style: TextStyle(decoration: TextDecoration.underline),
+                              style: TextStyle(
+                                decoration: TextDecoration.underline,
+                              ),
                             ),
                             style: TextButton.styleFrom(
                               primary: Colors.grey,
