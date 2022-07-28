@@ -125,8 +125,29 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16),
                         height: 240,
+                        // color: Colors.green,
                         child: LineChart(
                           LineChartData(
+                            borderData: FlBorderData(
+                              show: false,
+                            ),
+                            titlesData: FlTitlesData(
+                              topTitles: AxisTitles(
+                                sideTitles: SideTitles(
+                                  showTitles: false,
+                                ),
+                              ),
+                              bottomTitles: AxisTitles(
+                                sideTitles: SideTitles(
+                                  showTitles: false,
+                                ),
+                              ),
+                            ),
+                            minY: 10000,
+                            maxY: 16000,
+                            gridData: FlGridData(
+                              show: false,
+                            ),
                             lineBarsData: [
                               LineChartBarData(
                                 dotData: FlDotData(show: false),
