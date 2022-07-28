@@ -142,9 +142,30 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                   showTitles: false,
                                 ),
                               ),
+                              rightTitles: AxisTitles(
+                                sideTitles: SideTitles(
+                                  showTitles: false,
+                                ),
+                              ),
+                              leftTitles: AxisTitles(
+                                sideTitles: SideTitles(
+                                  showTitles: true,
+                                  reservedSize: 84,
+                                  getTitlesWidget: (v, meta) {
+                                    return Text(
+                                      "\$${v.toStringAsFixed(0)}",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                      ),
+                                    );
+                                  },
+                                  interval: 25000,
+                                ),
+                              ),
                             ),
                             minY: 10000,
-                            maxY: 16000,
+                            maxY: 160000,
                             gridData: FlGridData(
                               show: false,
                             ),
@@ -155,7 +176,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                 isCurved: true,
                                 spots: List.generate(
                                   10,
-                                  (index) => FlSpot(index.toDouble(), Random().nextInt(15) * 10000),
+                                  (index) => FlSpot(index.toDouble(), (Random().nextInt(15) * 10000).toDouble()),
                                 ),
                               )
                             ],
