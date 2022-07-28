@@ -179,8 +179,10 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                   gradient: LinearGradient(
                                     colors: [
                                       Color.fromRGBO(35, 183, 95, 1),
-                                      Color.fromRGBO(35, 183, 95, .5),
+                                      Color.fromRGBO(35, 183, 95, .8),
+                                      Color.fromRGBO(35, 183, 95, .4),
                                       Color.fromRGBO(35, 183, 95, .2),
+                                      Colors.black,
                                       Colors.black,
                                       Colors.black
                                     ],
@@ -198,7 +200,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(right: 16, bottom: 16, top: 0),
+                        padding: const EdgeInsets.only(right: 16, bottom: 16, top: 8),
                         child: SizedBox(
                           height: 32,
                           child: ListView(
