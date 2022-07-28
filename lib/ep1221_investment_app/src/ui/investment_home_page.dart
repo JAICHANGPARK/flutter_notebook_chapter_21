@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class InvestmentHomePage extends StatefulWidget {
@@ -123,6 +124,10 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                         margin: EdgeInsets.symmetric(vertical: 16),
                         height: 240,
                         color: Colors.green,
+
+                        child: LineChart(
+                          
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(right: 16, bottom: 16, top: 0),
