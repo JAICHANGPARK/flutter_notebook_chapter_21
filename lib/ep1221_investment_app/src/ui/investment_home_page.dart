@@ -174,6 +174,20 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                 dotData: FlDotData(show: false),
                                 color: Color.fromRGBO(35, 183, 95, 1),
                                 isCurved: true,
+                                belowBarData: BarAreaData(
+                                  show: true,
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      Color.fromRGBO(35, 183, 95, 1),
+                                      Color.fromRGBO(35, 183, 95, .5),
+                                      Color.fromRGBO(35, 183, 95, .2),
+                                      Colors.black,
+                                      Colors.black
+                                    ],
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter
+                                  ),
+                                ),
                                 spots: List.generate(
                                   10,
                                   (index) => FlSpot(index.toDouble(), (Random().nextInt(15) * 10000).toDouble()),
