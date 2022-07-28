@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -123,10 +125,20 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16),
                         height: 240,
-                        color: Colors.green,
-
                         child: LineChart(
-                          
+                          LineChartData(
+                            lineBarsData: [
+                              LineChartBarData(
+                                dotData: FlDotData(show: false),
+                                color: Color.fromRGBO(35, 183, 95, 1),
+                                isCurved: true,
+                                spots: List.generate(
+                                  10,
+                                  (index) => FlSpot(index.toDouble(), Random().nextInt(15) * 10000),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Padding(
@@ -241,13 +253,12 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                         size: 16,
                                         color: Colors.white,
                                       ),
-                                      SizedBox(width: 6,),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
                                       Text(
                                         "\$151.00",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 12
-                                        ),
+                                        style: TextStyle(color: Colors.white, fontSize: 12),
                                       ),
                                     ],
                                   ),
@@ -261,13 +272,12 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                                         size: 16,
                                         color: Colors.white,
                                       ),
-                                      SizedBox(width: 6,),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
                                       Text(
                                         "02.07.2022",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12
-                                        ),
+                                        style: TextStyle(color: Colors.white, fontSize: 12),
                                       ),
                                     ],
                                   )
