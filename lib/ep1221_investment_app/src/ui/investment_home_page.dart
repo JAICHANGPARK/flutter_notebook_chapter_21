@@ -150,7 +150,7 @@ class _InvestmentHomePageState extends State<InvestmentHomePage> {
                               leftTitles: AxisTitles(
                                 sideTitles: SideTitles(
                                   showTitles: true,
-                                  reservedSize: 84,
+                                  reservedSize: 64,
                                   getTitlesWidget: (v, meta) {
                                     return Text(
                                       "\$${v.toStringAsFixed(0)}",
