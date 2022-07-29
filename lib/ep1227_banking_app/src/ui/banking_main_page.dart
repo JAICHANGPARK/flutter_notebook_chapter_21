@@ -66,6 +66,18 @@ class _BankingMainPageState extends State<BankingMainPage> {
                       onPressed: () {},
                       icon: Icon(Icons.bar_chart),
                       color: Colors.grey,
+                    ),
+                    IconButton(
+                      iconSize: 32,
+                      onPressed: () {},
+                      icon: Icon(Icons.add_card_outlined),
+                      color: Colors.grey,
+                    ),
+                    IconButton(
+                      iconSize: 32,
+                      onPressed: () {},
+                      icon: Icon(Icons.account_circle_outlined),
+                      color: Colors.grey,
                     )
                   ],
                 ),
