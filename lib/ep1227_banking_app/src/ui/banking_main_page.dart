@@ -39,6 +39,21 @@ class _BankingMainPageState extends State<BankingMainPage> {
               top: 0,
               bottom: 0,
             ),
+            Positioned(
+              bottom: 0,
+              right: 0,
+              left: 0,
+              child: Container(
+                height: 84,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(8),
+                    topLeft: Radius.circular(8),
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
