@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1227_banking_app/src/provider/banking_index_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BankingMainPage extends StatefulWidget {
@@ -21,12 +22,16 @@ class _BankingMainPageState extends State<BankingMainPage> {
                 builder: (context, ref, _) {
                   AsyncValue<int> indexValue = ref.watch(bankingMainIndexProvider);
                   return indexValue.when(
-                      data: (d) {
-                        return Container();
-                      }, error: (e, s) {
-                    return Text(e.toString())
-                    ,
-                  }, loading: () => Center(child: CircularProgressIndicator(),));
+                    data: (d) {
+                      return Container();
+                    },
+                    error: (e, s) {
+                      return Text(e.toString());
+                    },
+                    loading: () => Center(
+                      child: CircularProgressIndicator(),
+                    ),
+                  );
                 },
               ),
               left: 0,
@@ -34,7 +39,6 @@ class _BankingMainPageState extends State<BankingMainPage> {
               top: 0,
               bottom: 0,
             ),
-
           ],
         ),
       ),
