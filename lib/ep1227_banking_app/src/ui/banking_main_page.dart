@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class BankingMainPage extends StatefulWidget {
@@ -11,6 +10,8 @@ class BankingMainPage extends StatefulWidget {
 class _BankingMainPageState extends State<BankingMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+    );
   }
 }
