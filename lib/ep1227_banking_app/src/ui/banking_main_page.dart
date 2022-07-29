@@ -52,6 +52,23 @@ class _BankingMainPageState extends State<BankingMainPage> {
                     topLeft: Radius.circular(8),
                   ),
                 ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    IconButton(
+                      iconSize: 32,
+                      onPressed: () {},
+                      icon: Icon(Icons.home_filled),
+                      color: Colors.blueAccent,
+                    ),
+                    IconButton(
+                      iconSize: 32,
+                      onPressed: () {},
+                      icon: Icon(Icons.bar_chart),
+                      color: Colors.grey,
+                    )
+                  ],
+                ),
               ),
             )
           ],
