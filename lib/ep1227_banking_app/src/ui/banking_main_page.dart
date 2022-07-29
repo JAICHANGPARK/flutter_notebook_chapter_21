@@ -23,7 +23,14 @@ class _BankingMainPageState extends State<BankingMainPage> {
                   AsyncValue<int> indexValue = ref.watch(bankingMainIndexProvider);
                   return indexValue.when(
                     data: (d) {
-                      return Container();
+                      return Container(
+                        child: Center(
+                          child: Text(
+                            d.toString(),
+                            style: TextStyle(color: Colors.white, fontSize: 64),
+                          ),
+                        ),
+                      );
                     },
                     error: (e, s) {
                       return Text(e.toString());
@@ -43,45 +50,56 @@ class _BankingMainPageState extends State<BankingMainPage> {
               bottom: 0,
               right: 0,
               left: 0,
-              child: Container(
-                height: 84,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(8),
-                    topLeft: Radius.circular(8),
+              child: Consumer(builder: (context, ref, _) {
+                final index = ref.watch(bankingMenuIndex);
+                return Container(
+                  height: 84,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(8),
+                      topLeft: Radius.circular(8),
+                    ),
                   ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    IconButton(
-                      iconSize: 32,
-                      onPressed: () {},
-                      icon: Icon(Icons.home_filled),
-                      color: Colors.blueAccent,
-                    ),
-                    IconButton(
-                      iconSize: 32,
-                      onPressed: () {},
-                      icon: Icon(Icons.bar_chart),
-                      color: Colors.grey,
-                    ),
-                    IconButton(
-                      iconSize: 32,
-                      onPressed: () {},
-                      icon: Icon(Icons.add_card_outlined),
-                      color: Colors.grey,
-                    ),
-                    IconButton(
-                      iconSize: 32,
-                      onPressed: () {},
-                      icon: Icon(Icons.account_circle_outlined),
-                      color: Colors.grey,
-                    )
-                  ],
-                ),
-              ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      IconButton(
+                        iconSize: 32,
+                        onPressed: () {
+                          ref.read(bankingMenuIndex.notifier).state = 0;
+                        },
+                        icon: Icon(Icons.home_filled),
+                        color: Colors.blueAccent,
+                      ),
+                      IconButton(
+                        iconSize: 32,
+                        onPressed: () {
+                          ref.read(bankingMenuIndex.notifier).state = 1;
+                        },
+                        icon: Icon(Icons.bar_chart),
+                        color: Colors.grey,
+                      ),
+                      IconButton(
+                        iconSize: 32,
+                        onPressed: () {
+                          ref.read(bankingMenuIndex.notifier).state = 2;
+                        },
+                        icon: Icon(Icons.add_card_outlined),
+                        color: Colors.grey,
+                      ),
+                      IconButton(
+                        iconSize: 32,
+                        onPressed: () {
+                          ref.read(bankingMenuIndex.notifier).state = 3;
+                        },
+                        icon: Icon(Icons.account_circle_outlined),
+                        color: Colors.grey,
+                      )
+                    ],
+                  ),
+                );
+              }),
             )
           ],
         ),
