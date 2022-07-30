@@ -90,7 +90,10 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                     color: Colors.blueAccent,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 8,
+                                  ),
                                   child: Row(
                                     children: [
                                       Icon(
@@ -109,6 +112,24 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                       ),
                                     ],
                                   ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      padding: EdgeInsets.symmetric(horizontal:12,vertical: 8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(0.2)
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          "Accounts",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
                                 )
                               ],
                             ),
