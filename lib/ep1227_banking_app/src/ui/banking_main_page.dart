@@ -84,7 +84,6 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                     ],
                                   ),
                                 ),
-
                                 Container(
                                   margin: EdgeInsets.symmetric(vertical: 16),
                                   child: Row(
@@ -92,6 +91,9 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                       Icon(
                                         Icons.notifications,
                                         color: Colors.white,
+                                      ),
+                                      SizedBox(
+                                        width: 6,
                                       ),
                                       Text(
                                         "12 New notification",
