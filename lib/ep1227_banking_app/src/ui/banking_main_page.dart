@@ -84,13 +84,21 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                     ],
                                   ),
                                 ),
+
                                 Container(
+                                  margin: EdgeInsets.symmetric(vertical: 16),
                                   child: Row(
                                     children: [
                                       Icon(
-                                        Icons.notification_important,
+                                        Icons.notifications,
                                         color: Colors.white,
-                                      )
+                                      ),
+                                      Text(
+                                        "12 New notification",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
