@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1227_banking_app/src/provider/banking_index_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -27,7 +28,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                   AsyncValue<int> indexValue = ref.watch(bankingMainIndexProvider);
                   return indexValue.when(
                     data: (d) {
-                      switch(d){
+                      switch (d) {
                         case 0:
                           return SingleChildScrollView(
                             child: Column(
@@ -36,9 +37,40 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                   children: [
                                     CircleAvatar(
                                       backgroundColor: Colors.grey,
+                                    ),
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Switch account",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Icon(
+                                              Icons.arrow_drop_down,
+                                              color: Colors.white,
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        CupertinoIcons.search,
+                                      ),
+                                      color: Colors.white,
                                     )
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           );
