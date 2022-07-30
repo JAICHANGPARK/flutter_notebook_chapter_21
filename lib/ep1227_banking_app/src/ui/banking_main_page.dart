@@ -113,26 +113,48 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                     ],
                                   ),
                                 ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      margin: EdgeInsets.only(right: 16),
-                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                                      decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(0.2),
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Center(
-                                        child: Text(
-                                          "Accounts",
-                                          style: TextStyle(
-                                            color: Colors.white,
+                                SizedBox(
+                                  height: 36,
+                                  child: ListView(
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.horizontal,
+                                    children: [
+                                      Container(
+                                        margin: EdgeInsets.only(right: 16),
+                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.2),
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "Accounts",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    )
-                                  ],
-                                )
+                                      Container(
+                                        margin: EdgeInsets.only(right: 16),
+                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0),
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "Cards",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+
                               ],
                             ),
                           ));
