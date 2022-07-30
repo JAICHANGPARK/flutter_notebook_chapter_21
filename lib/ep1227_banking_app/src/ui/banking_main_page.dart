@@ -79,7 +79,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                           ref.read(bankingMenuIndex.notifier).state = 0;
                         },
                         icon: Icon(Icons.home_filled),
-                        color: Colors.blueAccent,
+                        color: index == 0 ? Colors.blueAccent : Colors.grey,
                       ),
                       IconButton(
                         iconSize: 32,
@@ -87,7 +87,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                           ref.read(bankingMenuIndex.notifier).state = 1;
                         },
                         icon: Icon(Icons.bar_chart),
-                        color: Colors.grey,
+                        color: index == 1 ? Colors.blueAccent : Colors.grey,
                       ),
                       IconButton(
                         iconSize: 32,
@@ -95,7 +95,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                           ref.read(bankingMenuIndex.notifier).state = 2;
                         },
                         icon: Icon(Icons.add_card_outlined),
-                        color: Colors.grey,
+                        color: index ==2 ? Colors.blueAccent : Colors.grey,
                       ),
                       IconButton(
                         iconSize: 32,
@@ -103,7 +103,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                           ref.read(bankingMenuIndex.notifier).state = 3;
                         },
                         icon: Icon(Icons.account_circle_outlined),
-                        color: Colors.grey,
+                        color: index == 3 ? Colors.blueAccent : Colors.grey,
                       )
                     ],
                   ),
