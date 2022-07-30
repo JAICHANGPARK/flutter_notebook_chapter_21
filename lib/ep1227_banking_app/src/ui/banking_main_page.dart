@@ -35,49 +35,56 @@ class _BankingMainPageState extends State<BankingMainPage> {
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
                               children: [
-                                Row(
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: Colors.grey,
-                                    ),
-                                    SizedBox(
-                                      width: 16,
-                                    ),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Dreamwalker",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        Row(
-                                          children: [
-                                            Text(
-                                              "Switch account",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                            Icon(
-                                              Icons.arrow_drop_down,
+                                Padding(
+                                  padding: EdgeInsets.only(top: 16),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.grey,
+                                      ),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Dreamwalker",
+                                            style: TextStyle(
                                               color: Colors.white,
                                             ),
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                    Spacer(),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        CupertinoIcons.search,
+                                          ),
+                                          SizedBox(
+                                            height: 6,
+                                          ),
+                                          Row(
+                                            children: [
+                                              Text(
+                                                "Switch account",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
+                                              Icon(
+                                                Icons.arrow_drop_down,
+                                                color: Colors.grey,
+                                              ),
+                                            ],
+                                          )
+                                        ],
                                       ),
-                                      color: Colors.white,
-                                    )
-                                  ],
+                                      Spacer(),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          CupertinoIcons.search,
+                                        ),
+                                        color: Colors.white,
+                                      )
+                                    ],
+                                  ),
                                 ),
+
                               ],
                             ),
                           ));
