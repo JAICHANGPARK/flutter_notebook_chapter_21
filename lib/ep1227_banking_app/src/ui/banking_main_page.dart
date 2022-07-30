@@ -38,7 +38,11 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                     CircleAvatar(
                                       backgroundColor: Colors.grey,
                                     ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "Dreamwalker",
@@ -62,6 +66,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                         )
                                       ],
                                     ),
+                                    Spacer(),
                                     IconButton(
                                       onPressed: () {},
                                       icon: Icon(
