@@ -31,6 +31,8 @@ class _BankingMainPageState extends State<BankingMainPage> {
                       switch (d) {
                         case 0:
                           return SingleChildScrollView(
+                              child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
                               children: [
                                 Row(
@@ -78,7 +80,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                 ),
                               ],
                             ),
-                          );
+                          ));
                       }
                       return Container(
                         child: Center(
