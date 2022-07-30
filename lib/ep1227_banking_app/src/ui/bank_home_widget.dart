@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+
 class BankHomeWidget extends StatefulWidget {
   const BankHomeWidget({Key? key}) : super(key: key);
 
@@ -168,15 +169,25 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
             ),
           ),
           Container(
+            margin: EdgeInsets.symmetric(vertical: 16),
+            padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.2),
             ),
             child: Column(
-
               children: [
                 Row(
                   children: [
-                    
+                    Column(
+                      children: [
+                        Text("Total balance"),
+                        Text.rich(
+                          TextSpan(
+                            children: [],
+                          ),
+                        ),
+                      ],
+                    )
                   ],
                 )
               ],
