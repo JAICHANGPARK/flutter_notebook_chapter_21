@@ -27,11 +27,30 @@ class _BankingMainPageState extends State<BankingMainPage> {
                   AsyncValue<int> indexValue = ref.watch(bankingMainIndexProvider);
                   return indexValue.when(
                     data: (d) {
+                      switch(d){
+                        case 0:
+                          return SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(
+                                      backgroundColor: Colors.grey,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          );
+                      }
                       return Container(
                         child: Center(
                           child: Text(
                             d.toString(),
-                            style: TextStyle(color: Colors.white, fontSize: 64),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 64,
+                            ),
                           ),
                         ),
                       );
@@ -45,7 +64,6 @@ class _BankingMainPageState extends State<BankingMainPage> {
                   );
                 },
               ),
-
             ),
             Positioned(
               bottom: 0,
