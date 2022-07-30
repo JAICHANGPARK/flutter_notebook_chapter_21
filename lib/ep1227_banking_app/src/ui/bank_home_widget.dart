@@ -177,6 +177,7 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       children: [
@@ -187,6 +188,14 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                           ),
                         ),
                       ],
+                    ),
+
+                    CircleAvatar(
+                      backgroundColor: Colors.white.withOpacity(.3),
+                      foregroundColor: Colors.white,
+                      child: Icon(
+                        Icons.more_vert,
+                      ),
                     )
                   ],
                 )
