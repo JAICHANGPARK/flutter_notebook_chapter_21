@@ -34,17 +34,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                         case 0:
                           return BankHomeWidget();
                       }
-                      return Container(
-                        child: Center(
-                          child: Text(
-                            d.toString(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 64,
-                            ),
-                          ),
-                        ),
-                      );
+                      return _DefaultPageWidget(number: d);
                     },
                     error: (e, s) {
                       return Text(e.toString());
@@ -63,6 +53,27 @@ class _BankingMainPageState extends State<BankingMainPage> {
               child: BankBottomBarWidget(),
             )
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _DefaultPageWidget extends StatelessWidget {
+  final int? number;
+
+  const _DefaultPageWidget({Key? key, this.number}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: Text(
+          number.toString(),
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 64,
+          ),
         ),
       ),
     );
