@@ -84,7 +84,16 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                     ],
                                   ),
                                 ),
-
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.notification_important,
+                                        color: Colors.white,
+                                      )
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                           ));
