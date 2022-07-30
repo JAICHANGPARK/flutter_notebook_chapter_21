@@ -116,6 +116,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
                                 Row(
                                   children: [
                                     Container(
+                                      margin: EdgeInsets.only(right: 16),
                                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                       decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(0.2),
