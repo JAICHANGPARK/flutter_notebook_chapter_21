@@ -181,7 +181,12 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                   children: [
                     Column(
                       children: [
-                        Text("Total balance"),
+                        Text(
+                          "Total balance",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
                         Text.rich(
                           TextSpan(
                             children: [],
@@ -189,7 +194,6 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                         ),
                       ],
                     ),
-
                     CircleAvatar(
                       backgroundColor: Colors.white.withOpacity(.3),
                       foregroundColor: Colors.white,
