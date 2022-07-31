@@ -174,7 +174,7 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
             margin: EdgeInsets.symmetric(vertical: 16),
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withOpacity(0.15),
             ),
             child: Column(
               children: [
@@ -225,8 +225,11 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                 Container(
                   margin: EdgeInsets.only(top: 16, bottom: 8),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.blue),
+                    border: Border.all(
+                      color: _tmpRadioValue == 0 ? Colors.blue : Colors.transparent,
+                    ),
                     borderRadius: BorderRadius.circular(6),
+                    color: Colors.white.withOpacity(0.1),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 0, vertical: 8),
                   child: Row(
@@ -237,6 +240,58 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                         onChanged: (i) {
                           setState(() {
                             _tmpRadioValue = i ?? 0;
+                          });
+                        },
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        foregroundColor: Colors.grey,
+                        child: Icon(Icons.credit_card),
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Premium - ****8771",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "Expires on 12/23",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 4, bottom: 8),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: _tmpRadioValue == 1 ? Colors.blue : Colors.transparent,
+                    ),
+                    color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 0, vertical: 8),
+                  child: Row(
+                    children: [
+                      Radio<int>(
+                        value: 1,
+                        groupValue: _tmpRadioValue,
+                        onChanged: (i) {
+                          setState(() {
+                            _tmpRadioValue = i ?? 1;
                           });
                         },
                       ),
