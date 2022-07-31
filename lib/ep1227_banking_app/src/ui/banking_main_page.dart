@@ -27,7 +27,7 @@ class _BankingMainPageState extends State<BankingMainPage> {
               bottom: 0,
               child: Consumer(
                 builder: (context, ref, _) {
-                  AsyncValue<int> indexValue = ref.watch(bankingMainIndexProvider);
+                  AsyncValue<int?> indexValue = ref.watch(bankingMainIndexProvider);
                   return indexValue.when(
                     data: (d) {
                       switch (d) {
