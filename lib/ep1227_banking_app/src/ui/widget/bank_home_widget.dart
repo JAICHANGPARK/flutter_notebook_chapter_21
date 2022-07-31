@@ -238,15 +238,28 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                         backgroundColor: Colors.black,
                         foregroundColor: Colors.grey,
                         child: Icon(Icons.credit_card),
-
+                      ),
+                      SizedBox(
+                        width: 12,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Premium - ****8771",style: TextStyle(
-                            color: Colors.white,
-                          ),),
-                          Text("Expires on 12/23")
+                          Text(
+                            "Premium - ****8771",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "Expires on 12/23",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
                         ],
                       )
                     ],
