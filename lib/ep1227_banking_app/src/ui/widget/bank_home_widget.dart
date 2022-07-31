@@ -325,37 +325,42 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                       )
                     ],
                   ),
-                )
-              ],
-            ),
-          ),
-          Text("Quick action"),
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 16),
-            decoration: BoxDecoration(
-              color: Colors.cyan,
-              borderRadius: BorderRadius.circular(4)
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.add,
-                  color: Colors.white,
-                  size: 16,
                 ),
-                SizedBox(
-                  width: 4,
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                  child: Text(
+                    "Quick action",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
                 ),
-                Text(
-                  "Add fund",
-                  style: TextStyle(
-                    color: Colors.white,
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                  decoration: BoxDecoration(color: Colors.cyan, borderRadius: BorderRadius.circular(4)),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.add,
+                        color: Colors.white,
+                        size: 16,
+                      ),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Text(
+                        "Add fund",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
                   ),
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     ));
