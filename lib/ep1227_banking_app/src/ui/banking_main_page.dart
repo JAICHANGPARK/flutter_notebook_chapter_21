@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1227_banking_app/src/provider/banking_index_provider.dart';
 import 'package:flutter_notebook_chapter_21/ep1227_banking_app/src/ui/widget/bank_bottom_bar_widget.dart';
-import 'package:flutter_notebook_chapter_21/ep1227_banking_app/src/ui/bank_home_widget.dart';
+import 'package:flutter_notebook_chapter_21/ep1227_banking_app/src/ui/widget/bank_home_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BankingMainPage extends StatefulWidget {
