@@ -4,12 +4,11 @@ final bankingMenuIndex = StateProvider<int>((ref) => 0);
 
 final bankingMainIndexProvider = FutureProvider<int?>((ref) async {
   final idx = ref.watch(bankingMenuIndex);
-  return fetchFakeIndex(idx);
+  print(idx);
+  return await fetchFakeIndex(idx);
 });
 
 Future<int?> fetchFakeIndex(int i) async {
-  Future.delayed(Duration(seconds: 1)).then((value) {
-    return i;
-  });
-  return null;
+  await Future.delayed(Duration(seconds: 1));
+  return i;
 }
