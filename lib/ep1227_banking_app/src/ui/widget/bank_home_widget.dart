@@ -187,9 +187,26 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                             color: Colors.grey,
                           ),
                         ),
+                        SizedBox(
+                          height: 4,
+                        ),
                         Text.rich(
                           TextSpan(
-                            children: [],
+                            children: [
+                              TextSpan(
+                                text: "\$20,453",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              TextSpan(
+                                text: ".99",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
                           ),
                         ),
                       ],
