@@ -221,16 +221,23 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                   ],
                 ),
                 Container(
-                  height: 64,
+                  margin: EdgeInsets.only(top: 16, bottom: 8),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.blue),
-                    borderRadius: BorderRadius.circular(6)
+                    borderRadius: BorderRadius.circular(6),
                   ),
-
+                  padding:EdgeInsets.symmetric(horizontal: 0,vertical: 8),
                   child: Row(
                     children: [
-                      Radio(value: 0, groupValue: 0, onChanged: (i) {},
+                      Radio(
+                        value: 0,
+                        groupValue: 0,
+                        onChanged: (i) {},
                       ),
+                      CircleAvatar(),
+                      Column(
+                        children: [],
+                      )
                     ],
                   ),
                 )
