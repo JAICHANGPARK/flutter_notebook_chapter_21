@@ -396,17 +396,42 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
             children: [
               Text(
                 "History",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16
-                ),
+                style: TextStyle(color: Colors.white, fontSize: 16),
               ),
               TextButton(
                 onPressed: () {},
                 child: Text("Show all"),
               ),
             ],
-          )
+          ),
+          Container(
+            height: 200,
+            child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(
+                      "Deposited cash",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    subtitle: Text(
+                      "To Premium - X91",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    trailing: Text(
+                      "\$122.78",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  );
+                }),
+          ),
+          SizedBox(height: 100,),
         ],
       ),
     ));
