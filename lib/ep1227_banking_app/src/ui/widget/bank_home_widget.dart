@@ -9,6 +9,8 @@ class BankHomeWidget extends StatefulWidget {
 }
 
 class _BankHomeWidgetState extends State<BankHomeWidget> {
+  int _tmpRadioValue = 0;
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -229,10 +231,14 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                   padding: EdgeInsets.symmetric(horizontal: 0, vertical: 8),
                   child: Row(
                     children: [
-                      Radio(
+                      Radio<int>(
                         value: 0,
-                        groupValue: 0,
-                        onChanged: (i) {},
+                        groupValue: _tmpRadioValue,
+                        onChanged: (i) {
+                          setState(() {
+                            _tmpRadioValue = i ?? 0;
+                          });
+                        },
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.black,
