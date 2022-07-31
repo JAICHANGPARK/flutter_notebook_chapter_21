@@ -361,7 +361,6 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                     ],
                   ),
                 ),
-
                 Container(
                   margin: EdgeInsets.only(top: 12, bottom: 12),
                   padding: EdgeInsets.symmetric(vertical: 12),
@@ -392,6 +391,22 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
               ],
             ),
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "History",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text("Show all"),
+              ),
+            ],
+          )
         ],
       ),
     ));
