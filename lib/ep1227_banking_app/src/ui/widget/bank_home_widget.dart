@@ -226,7 +226,7 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                     border: Border.all(color: Colors.blue),
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  padding:EdgeInsets.symmetric(horizontal: 0,vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 0, vertical: 8),
                   child: Row(
                     children: [
                       Radio(
@@ -234,9 +234,20 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                         groupValue: 0,
                         onChanged: (i) {},
                       ),
-                      CircleAvatar(),
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        foregroundColor: Colors.grey,
+                        child: Icon(Icons.credit_card),
+
+                      ),
                       Column(
-                        children: [],
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Premium - ****8771",style: TextStyle(
+                            color: Colors.white,
+                          ),),
+                          Text("Expires on 12/23")
+                        ],
                       )
                     ],
                   ),
