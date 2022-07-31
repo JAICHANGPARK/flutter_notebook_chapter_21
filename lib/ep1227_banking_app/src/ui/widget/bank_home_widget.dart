@@ -219,6 +219,20 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                       ),
                     )
                   ],
+                ),
+                Container(
+                  height: 64,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.blue),
+                    borderRadius: BorderRadius.circular(6)
+                  ),
+
+                  child: Row(
+                    children: [
+                      Radio(value: 0, groupValue: 0, onChanged: (i) {},
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
