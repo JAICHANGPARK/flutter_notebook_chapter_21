@@ -336,8 +336,11 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 16),
-                  decoration: BoxDecoration(color: Colors.cyan, borderRadius: BorderRadius.circular(4)),
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -351,6 +354,34 @@ class _BankHomeWidgetState extends State<BankHomeWidget> {
                       ),
                       Text(
                         "Add fund",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                Container(
+                  margin: EdgeInsets.only(top: 12, bottom: 12),
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.transfer_within_a_station,
+                        color: Colors.white,
+                        size: 16,
+                      ),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Text(
+                        "Transfer",
                         style: TextStyle(
                           color: Colors.white,
                         ),
