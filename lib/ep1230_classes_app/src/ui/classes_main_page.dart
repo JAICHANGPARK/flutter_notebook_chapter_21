@@ -25,7 +25,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> {
           ),
           Container(
             decoration: BoxDecoration(color: Colors.black),
-            height: 52,
+            height: 58,
             child: Row(
               children: [
                 Container(
@@ -35,8 +35,9 @@ class _ClassesMainPageState extends State<ClassesMainPage> {
                     color: Color.fromRGBO(220, 85, 90, 1),
                   ),
                 ),
-                Expanded(child: Container(
-                  margin: EdgeInsets.only(top: 2, left: 2, bottom: 2),
+                Expanded(
+                    child: Container(
+                  margin: EdgeInsets.only(top: 2, bottom: 2),
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(220, 85, 90, 1),
                   ),
