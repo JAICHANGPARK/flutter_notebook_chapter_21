@@ -25,14 +25,18 @@ class BankBottomBarWidget extends ConsumerWidget {
             iconSize: 32,
             onPressed: () {
               ref.read(bankingMenuIndex.notifier).state = 0;
+
             },
             icon: Icon(Icons.home_filled),
             color: index == 0 ? Colors.blueAccent : Colors.grey,
           ),
           IconButton(
             iconSize: 32,
-            onPressed: () {
+            onPressed: () async{
               ref.read(bankingMenuIndex.notifier).state = 1;
+
+              ref.refresh(bankingMainIndexProvider);
+              await ref.read(bankingMainIndexProvider.future);
             },
             icon: Icon(Icons.bar_chart),
             color: index == 1 ? Colors.blueAccent : Colors.grey,
