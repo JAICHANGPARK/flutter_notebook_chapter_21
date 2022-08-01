@@ -2,10 +2,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final bankingMenuIndex = StateProvider<int>((ref) => 0);
 
-final bankingMainIndexProvider = FutureProvider<int?>((ref) async {
-  final idx = ref.watch(bankingMenuIndex);
+final bankingMainIndexProvider = FutureProvider<int?>((ref)  {
+  final idx = ref.read(bankingMenuIndex);
   print(idx);
-  return await fetchFakeIndex(idx);
+  return  fetchFakeIndex(idx);
 });
 
 Future<int?> fetchFakeIndex(int i) async {
