@@ -73,9 +73,13 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                 controller: _tabController,
                 indicatorColor: Colors.transparent,
                 labelColor: Colors.black,
+                isScrollable : true,
                 labelStyle: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+                unselectedLabelStyle: TextStyle(
+                  fontWeight: FontWeight.w600
                 ),
                 tabs: [
                   Tab(
