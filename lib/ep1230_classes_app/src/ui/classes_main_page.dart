@@ -7,7 +7,16 @@ class ClassesMainPage extends StatefulWidget {
   State<ClassesMainPage> createState() => _ClassesMainPageState();
 }
 
-class _ClassesMainPageState extends State<ClassesMainPage> {
+class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProviderStateMixin {
+  TabController? _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 6, vsync: this);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,14 +65,12 @@ class _ClassesMainPageState extends State<ClassesMainPage> {
             height: 58,
             decoration: BoxDecoration(color: Colors.black),
             child: Container(
+              margin: EdgeInsets.only(top: 2, bottom: 2),
               decoration: BoxDecoration(
-
                 color: Color.fromRGBO(220, 85, 90, 1),
               ),
               child: TabBar(
-                tabs: [
-
-                ],
+                tabs: [],
               ),
             ),
           )
