@@ -62,21 +62,37 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
             ),
           ),
           Container(
-            height: 58,
+            height: 54,
             decoration: BoxDecoration(color: Colors.black),
             child: Container(
-              margin: EdgeInsets.only(top: 2, bottom: 2),
+              margin: EdgeInsets.only(top: 0, bottom: 2),
               decoration: BoxDecoration(
                 color: Color.fromRGBO(220, 85, 90, 1),
               ),
               child: TabBar(
                 controller: _tabController,
+                indicatorColor: Colors.transparent,
+                labelColor: Colors.black,
+                labelStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16
+                ),
                 tabs: [
-                  Tab(text: "All",),
-                  Tab(text: "Music",),
-                  Tab(text: "Writing",),
-                  Tab(text: "Design & Style",),
-                  Tab(text: "Business",)
+                  Tab(
+                    text: "All",
+                  ),
+                  Tab(
+                    text: "Music",
+                  ),
+                  Tab(
+                    text: "Writing",
+                  ),
+                  Tab(
+                    text: "Design & Style",
+                  ),
+                  Tab(
+                    text: "Business",
+                  )
                 ],
               ),
             ),
