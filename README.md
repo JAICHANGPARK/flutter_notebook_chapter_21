@@ -2,12 +2,9 @@
 
 ### EP1230
 
-- BeBank - Mobile Banking App
-- by Habib Gilang Maulana
-- https://dribbble.com/shots/18899941-BeBank-Mobile-Banking-App/attachments/14074390?mode=media
-
-<img src="https://cdn.dribbble.com/users/3925596/screenshots/18899941/media/6eb5baa83219ae1088d292175df7431e.png"/>
-
+- Classes mobile interaction
+- by Taras Migulko
+- https://dribbble.com/shots/18932734-Classes-mobile-interaction
 
 ### EP1227-1229
 
