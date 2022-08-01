@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1230_classes_app/src/ui/classes_main_page.dart';
 
 
 class ClassesMobileApp extends StatelessWidget {
@@ -7,7 +8,7 @@ class ClassesMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+        home: ClassesMainPage(),
     );
   }
 }
