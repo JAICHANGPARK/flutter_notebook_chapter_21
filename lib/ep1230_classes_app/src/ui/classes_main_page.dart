@@ -14,7 +14,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabController = TabController(length: 6, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -102,7 +102,28 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
           Expanded(
               child: TabBarView(
             controller: _tabController,
-            children: [],
+            children: [
+              Container(
+                color: Colors.black,
+                child: Row(
+                  children: [
+
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.red,
+              ),
+              Container(
+                color: Colors.orangeAccent,
+              ),
+              Container(
+                color: Colors.yellow,
+              ),
+              Container(
+                color: Colors.green,
+              )
+            ],
           )),
           Divider(
             color: Colors.black,
@@ -121,13 +142,15 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                     color: Color.fromRGBO(220, 85, 90, 1),
                   ),
                 ),
-                Expanded(child: Container(
-                  width: 72,
-                  margin: EdgeInsets.only(top: 2, bottom: 2),
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(220, 85, 90, 1),
+                Expanded(
+                  child: Container(
+                    width: 72,
+                    margin: EdgeInsets.only(top: 2, bottom: 2),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(220, 85, 90, 1),
+                    ),
                   ),
-                ),)
+                )
               ],
             ),
           )
