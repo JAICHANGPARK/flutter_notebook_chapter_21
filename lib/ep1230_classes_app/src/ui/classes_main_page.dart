@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ClassesMainPage extends StatefulWidget {
   const ClassesMainPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,8 @@ class ClassesMainPage extends StatefulWidget {
 class _ClassesMainPageState extends State<ClassesMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(220, 85, 90, 1),
+    );
   }
 }
