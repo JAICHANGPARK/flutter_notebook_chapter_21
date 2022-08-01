@@ -70,7 +70,14 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                 color: Color.fromRGBO(220, 85, 90, 1),
               ),
               child: TabBar(
-                tabs: [],
+                controller: _tabController,
+                tabs: [
+                  Tab(text: "All",),
+                  Tab(text: "Music",),
+                  Tab(text: "Writing",),
+                  Tab(text: "Design & Style",),
+                  Tab(text: "Business",)
+                ],
               ),
             ),
           )
