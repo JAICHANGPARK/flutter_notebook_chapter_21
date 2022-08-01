@@ -107,7 +107,25 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                 color: Colors.black,
                 child: Row(
                   children: [
-
+                    Container(
+                      width: 72,
+                      margin: EdgeInsets.only(top: 0, right: 2, bottom: 0),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(220, 85, 90, 1),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        width: 72,
+                        margin: EdgeInsets.only(top: 0, bottom: 0),
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(220, 85, 90, 1),
+                        ),
+                        child: ListView(
+                          children: [],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
