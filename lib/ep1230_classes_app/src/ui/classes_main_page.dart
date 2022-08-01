@@ -51,6 +51,21 @@ class _ClassesMainPageState extends State<ClassesMainPage> {
                 )
               ],
             ),
+          ),
+          Container(
+            height: 58,
+            decoration: BoxDecoration(color: Colors.black),
+            child: Container(
+              decoration: BoxDecoration(
+
+                color: Color.fromRGBO(220, 85, 90, 1),
+              ),
+              child: TabBar(
+                tabs: [
+
+                ],
+              ),
+            ),
           )
         ],
       )),
