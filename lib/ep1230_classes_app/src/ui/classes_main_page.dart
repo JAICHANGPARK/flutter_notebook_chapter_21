@@ -14,12 +14,45 @@ class _ClassesMainPageState extends State<ClassesMainPage> {
       backgroundColor: Color.fromRGBO(220, 85, 90, 1),
       // backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          children: [
-            Divider()
-          ],
-        )
-      ),
+          child: Column(
+        children: [
+          SizedBox(
+            height: 42,
+          ),
+          Divider(
+            color: Colors.black,
+            height: 0,
+          ),
+          Container(
+            decoration: BoxDecoration(color: Colors.black),
+            height: 52,
+            child: Row(
+              children: [
+                Container(
+                  width: 72,
+                  margin: EdgeInsets.only(top: 2, right: 2, bottom: 2),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(220, 85, 90, 1),
+                  ),
+                ),
+                Expanded(child: Container(
+                  margin: EdgeInsets.only(top: 2, left: 2, bottom: 2),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(220, 85, 90, 1),
+                  ),
+                )),
+                Container(
+                  width: 72,
+                  margin: EdgeInsets.only(top: 2, left: 2, bottom: 2),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(220, 85, 90, 1),
+                  ),
+                )
+              ],
+            ),
+          )
+        ],
+      )),
     );
   }
 }
