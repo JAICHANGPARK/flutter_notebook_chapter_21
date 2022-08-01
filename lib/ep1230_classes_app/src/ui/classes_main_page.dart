@@ -11,14 +11,14 @@ class _ClassesMainPageState extends State<ClassesMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Color.fromRGBO(220, 85, 90, 1),
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromRGBO(220, 85, 90, 1),
+      // backgroundColor: Colors.black,
       body: SafeArea(
-        child: Stack(
+        child: Column(
           children: [
-            
+            Divider()
           ],
-        ),
+        )
       ),
     );
   }
