@@ -106,12 +106,29 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
           )),
           Divider(
             color: Colors.black,
+            thickness: 1,
             height: 0,
           ),
-          SizedBox(
-            height: 32,
+          Container(
+            color: Colors.black,
+            height: 48,
             child: Row(
-              children: [],
+              children: [
+                Container(
+                  width: 72,
+                  margin: EdgeInsets.only(top: 2, right: 2, bottom: 2),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(220, 85, 90, 1),
+                  ),
+                ),
+                Expanded(child: Container(
+                  width: 72,
+                  margin: EdgeInsets.only(top: 2, bottom: 2),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(220, 85, 90, 1),
+                  ),
+                ),)
+              ],
             ),
           )
         ],
