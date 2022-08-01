@@ -73,14 +73,12 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                 controller: _tabController,
                 indicatorColor: Colors.transparent,
                 labelColor: Colors.black,
-                isScrollable : true,
+                isScrollable: true,
                 labelStyle: TextStyle(
                   fontWeight: FontWeight.w800,
                   fontSize: 16,
                 ),
-                unselectedLabelStyle: TextStyle(
-                  fontWeight: FontWeight.w600
-                ),
+                unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w600),
                 tabs: [
                   Tab(
                     text: "All",
@@ -99,6 +97,21 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                   )
                 ],
               ),
+            ),
+          ),
+          Expanded(
+              child: TabBarView(
+            controller: _tabController,
+            children: [],
+          )),
+          Divider(
+            color: Colors.black,
+            height: 0,
+          ),
+          SizedBox(
+            height: 32,
+            child: Row(
+              children: [],
             ),
           )
         ],
