@@ -175,8 +175,26 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                                       fontSize: 15,
                                     ),
                                   ),
-                                  SizedBox(height: 4,),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
                                   Text("Flutter Development Class"),
+                                  SizedBox(
+                                    height: 24,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("Learn more"),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.arrow_forward),
+                                        iconSize: 16,
+                                        splashRadius: 16,
+                                        padding: EdgeInsets.zero,
+
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             );
