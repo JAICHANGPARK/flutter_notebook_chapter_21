@@ -134,10 +134,15 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(220, 85, 90, 1),
                       ),
-                      child: RotatedBox(
-                        quarterTurns: 3,
-                        child: Text(
-                          "WELCOME TO MASTERCLASS",
+                      child: Center(
+                        child: RotatedBox(
+                          quarterTurns: 3,
+                          child: Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Text(
+                              "WELCOME TO MASTERCLASS",
+                            ),
+                          ),
                         ),
                       ),
                     ),
