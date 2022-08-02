@@ -158,7 +158,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                         child: ListView.separated(
                           separatorBuilder: (context, _) => Divider(
                             color: Colors.black,
-                            thickness: 1,
+                            thickness: 1.5,
                             height: 0,
                           ),
                           itemCount: 10,
@@ -180,7 +180,11 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                                   ),
                                   Text("Flutter Development Class"),
                                   SizedBox(
-                                    height: 16,
+                                    height: 4,
+                                  ),
+                                  index % 2 == 1 ? Text("State Management") : Container(),
+                                  SizedBox(
+                                    height: 12,
                                   ),
                                   Row(
                                     children: [
