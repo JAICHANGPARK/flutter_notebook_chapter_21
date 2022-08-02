@@ -175,7 +175,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                                       fontSize: 15,
                                     ),
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(height: 4,),
                                   Text("Flutter Development Class"),
                                 ],
                               ),
