@@ -134,7 +134,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(220, 85, 90, 1),
                       ),
-                      padding: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                      padding: EdgeInsets.only(left: 0, right: 20, bottom: 16, top: 8),
                       child: Center(
                         child: RotatedBox(
                           quarterTurns: 3,
@@ -142,6 +142,10 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                             alignment: Alignment.bottomLeft,
                             child: Text(
                               "WELCOME TO MASTERCLASS",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 28
+                              ),
                             ),
                           ),
                         ),
