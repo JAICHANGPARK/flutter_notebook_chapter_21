@@ -158,8 +158,19 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                         decoration: BoxDecoration(
                           color: Color.fromRGBO(220, 85, 90, 1),
                         ),
-                        child: ListView(
-                          children: [],
+                        child: ListView.separated(
+
+                          separatorBuilder: (context, _) => Divider(
+                            color: Colors.black,
+                            thickness: 1,
+                            height: 0,
+                          ),
+                          itemCount: 10,
+                          itemBuilder: (context, index){
+                            return Container(
+                              
+                            );
+                          },
                         ),
                       ),
                     )
