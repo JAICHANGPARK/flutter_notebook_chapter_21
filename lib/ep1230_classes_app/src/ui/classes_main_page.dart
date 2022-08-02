@@ -20,7 +20,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        resizeToAvoidBottomInset : false,
+      resizeToAvoidBottomInset: false,
       backgroundColor: Color.fromRGBO(220, 85, 90, 1),
       // backgroundColor: Colors.black,
       body: SafeArea(
@@ -71,6 +71,12 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                   margin: EdgeInsets.only(top: 2, left: 2, bottom: 2),
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(220, 85, 90, 1),
+                  ),
+                  child: Center(
+                    child: IconButton(
+                      icon: Icon(Icons.menu),
+                      onPressed: () {},
+                    ),
                   ),
                 )
               ],
@@ -127,6 +133,12 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                       margin: EdgeInsets.only(top: 0, right: 2, bottom: 0),
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(220, 85, 90, 1),
+                      ),
+                      child: RotatedBox(
+                        quarterTurns: 3,
+                        child: Text(
+                          "WELCOME TO MASTERCLASS",
+                        ),
                       ),
                     ),
                     Expanded(
