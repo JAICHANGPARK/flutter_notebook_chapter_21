@@ -164,7 +164,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
-                              padding: EdgeInsets.only(left: 16,bottom: 0, top: 16),
+                              padding: EdgeInsets.only(left: 16, bottom: 0, top: 16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -184,14 +184,18 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                                   ),
                                   Row(
                                     children: [
-                                      Text("Learn more"),
+                                      Text(
+                                        "Learn more",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                       IconButton(
                                         onPressed: () {},
                                         icon: Icon(Icons.arrow_forward),
                                         iconSize: 16,
                                         splashRadius: 16,
                                         padding: EdgeInsets.zero,
-
                                       )
                                     ],
                                   )
