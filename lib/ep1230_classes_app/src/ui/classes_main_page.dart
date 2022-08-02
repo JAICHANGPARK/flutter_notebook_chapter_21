@@ -20,6 +20,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset : false,
       backgroundColor: Color.fromRGBO(220, 85, 90, 1),
       // backgroundColor: Colors.black,
       body: SafeArea(
@@ -43,14 +44,28 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(220, 85, 90, 1),
                   ),
+                  child: Center(
+                    child: IconButton(
+                      icon: Icon(Icons.search),
+                      onPressed: () {},
+                    ),
+                  ),
                 ),
                 Expanded(
-                    child: Container(
-                  margin: EdgeInsets.only(top: 2, bottom: 2),
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(220, 85, 90, 1),
+                  child: Container(
+                    margin: EdgeInsets.only(top: 2, bottom: 2),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(220, 85, 90, 1),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search",
+                      ),
+                    ),
                   ),
-                )),
+                ),
                 Container(
                   width: 72,
                   margin: EdgeInsets.only(top: 2, left: 2, bottom: 2),
