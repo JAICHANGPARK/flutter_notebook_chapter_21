@@ -142,10 +142,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                             alignment: Alignment.bottomLeft,
                             child: Text(
                               "WELCOME TO MASTERCLASS",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 28
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                             ),
                           ),
                         ),
@@ -159,16 +156,29 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                           color: Color.fromRGBO(220, 85, 90, 1),
                         ),
                         child: ListView.separated(
-
                           separatorBuilder: (context, _) => Divider(
                             color: Colors.black,
                             thickness: 1,
                             height: 0,
                           ),
                           itemCount: 10,
-                          itemBuilder: (context, index){
+                          itemBuilder: (context, index) {
                             return Container(
-                              
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                  SizedBox(height: 8,),
+                                  Text("Flutter Development Class"),
+                                ],
+                              ),
                             );
                           },
                         ),
