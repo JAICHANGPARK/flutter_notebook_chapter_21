@@ -164,7 +164,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                              padding: EdgeInsets.only(left: 16,bottom: 0, top: 16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -180,7 +180,7 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                                   ),
                                   Text("Flutter Development Class"),
                                   SizedBox(
-                                    height: 24,
+                                    height: 16,
                                   ),
                                   Row(
                                     children: [
