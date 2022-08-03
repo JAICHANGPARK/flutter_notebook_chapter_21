@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1230_classes_app/src/ui/classes_lesson_page.dart';
 
 class ClassesMainPage extends StatefulWidget {
   const ClassesMainPage({Key? key}) : super(key: key);
@@ -165,7 +166,11 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                           itemBuilder: (context, index) {
                             return GestureDetector(
                               onTap: () {
-                                
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => ClassedLessonPage(),
+                                  ),
+                                );
                               },
                               child: Container(
                                 padding: EdgeInsets.only(left: 16, bottom: 0, top: 16),
