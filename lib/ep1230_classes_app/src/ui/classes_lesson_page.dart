@@ -98,11 +98,17 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     width: 72,
                     margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
-                    child: ListView.builder(
+                    child: ListView.separated(
+                      padding: EdgeInsets.zero,
                       itemCount: 10,
+                      separatorBuilder: (context, index) => Divider(
+                        height: 0,
+                        color: Colors.black,
+                        thickness: 1.5,
+                      ),
                       itemBuilder: (context, index) {
                         return Container(
-                          height: 200,
+                          height: 320,
                           color: Colors.blue,
                         );
                       },
