@@ -28,6 +28,12 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     width: 72,
                     margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.clear,
+                      ),
+                      onPressed: () {},
+                    ),
                   ),
                   Expanded(
                       child: Container(
@@ -43,9 +49,23 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
             ),
           ),
           Expanded(
-              child: Row(
-            children: [],
-          ))
+            child: Row(
+              children: [
+                Container(
+                  width: 72,
+                  margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
+                  color: Color.fromRGBO(206, 203, 191, 1),
+                ),
+                Expanded(
+                  child: Container(
+                    width: 72,
+                    margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                    color: Color.fromRGBO(206, 203, 191, 1),
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
