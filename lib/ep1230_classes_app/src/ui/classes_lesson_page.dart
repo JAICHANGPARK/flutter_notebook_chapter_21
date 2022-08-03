@@ -15,7 +15,7 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
       body: Column(
         children: [
           Container(
-            height: 120,
+            height: 100,
             color: Color.fromRGBO(206, 203, 191, 1),
           ),
           Padding(
@@ -28,11 +28,14 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     width: 72,
                     margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.clear,
+
+                    child: Center(
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.clear,
+                        ),
+                        onPressed: () {},
                       ),
-                      onPressed: () {},
                     ),
                   ),
                   Expanded(
@@ -43,6 +46,14 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     width: 72,
                     margin: EdgeInsets.fromLTRB(2, 0, 0, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
+                    child: Center(
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.more_horiz,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
                   )
                 ],
               ),
