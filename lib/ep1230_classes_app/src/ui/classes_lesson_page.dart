@@ -33,7 +33,9 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                         icon: Icon(
                           Icons.clear,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                       ),
                     ),
                   ),
