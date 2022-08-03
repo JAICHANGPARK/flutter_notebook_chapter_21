@@ -163,47 +163,52 @@ class _ClassesMainPageState extends State<ClassesMainPage> with SingleTickerProv
                           ),
                           itemCount: 10,
                           itemBuilder: (context, index) {
-                            return Container(
-                              padding: EdgeInsets.only(left: 16, bottom: 0, top: 16),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Dreamwalker",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  Text("Flutter Development Class"),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
-                                  index % 2 == 1 ? Text("State Management") : Container(),
-                                  SizedBox(
-                                    height: 12,
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Learn more",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                            return GestureDetector(
+                              onTap: () {
+                                
+                              },
+                              child: Container(
+                                padding: EdgeInsets.only(left: 16, bottom: 0, top: 16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
                                       ),
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(Icons.arrow_forward),
-                                        iconSize: 16,
-                                        splashRadius: 16,
-                                        padding: EdgeInsets.zero,
-                                      )
-                                    ],
-                                  )
-                                ],
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text("Flutter Development Class"),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    index % 2 == 1 ? Text("State Management") : Container(),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Learn more",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(Icons.arrow_forward),
+                                          iconSize: 16,
+                                          splashRadius: 16,
+                                          padding: EdgeInsets.zero,
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             );
                           },
