@@ -28,7 +28,6 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     width: 72,
                     margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
-
                     child: Center(
                       child: IconButton(
                         icon: Icon(
@@ -39,9 +38,36 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     ),
                   ),
                   Expanded(
-                      child: Container(
-                    color: Color.fromRGBO(206, 203, 191, 1),
-                  )),
+                    child: Container(
+                      color: Color.fromRGBO(206, 203, 191, 1),
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.keyboard_arrow_left,
+                              ),
+                            ),
+                            Text(
+                              "Lesson",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.keyboard_arrow_right,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                   Container(
                     width: 72,
                     margin: EdgeInsets.fromLTRB(2, 0, 0, 0),
@@ -72,6 +98,15 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                     width: 72,
                     margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
+                    child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 200,
+                          color: Colors.blue,
+                        );
+                      },
+                    ),
                   ),
                 )
               ],
