@@ -21,7 +21,7 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 2),
             child: SizedBox(
-              height: 54,
+              height: 56,
               child: Row(
                 children: [
                   Container(
@@ -35,12 +35,17 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                   )),
                   Container(
                     width: 72,
+                    margin: EdgeInsets.fromLTRB(2, 0, 0, 0),
                     color: Color.fromRGBO(206, 203, 191, 1),
                   )
                 ],
               ),
             ),
-          )
+          ),
+          Expanded(
+              child: Row(
+            children: [],
+          ))
         ],
       ),
     );
