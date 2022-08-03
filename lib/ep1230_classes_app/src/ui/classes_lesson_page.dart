@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ClassedLessonPage extends StatefulWidget {
   const ClassedLessonPage({Key? key}) : super(key: key);
 
@@ -19,14 +18,27 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
             height: 120,
             color: Color.fromRGBO(206, 203, 191, 1),
           ),
-          SizedBox(
-            height: 72,
-            child: Row(
-              children: [
-                Container(
-                  width: 72,
-                )
-              ],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 2),
+            child: SizedBox(
+              height: 54,
+              child: Row(
+                children: [
+                  Container(
+                    width: 72,
+                    margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
+                    color: Color.fromRGBO(206, 203, 191, 1),
+                  ),
+                  Expanded(
+                      child: Container(
+                    color: Color.fromRGBO(206, 203, 191, 1),
+                  )),
+                  Container(
+                    width: 72,
+                    color: Color.fromRGBO(206, 203, 191, 1),
+                  )
+                ],
+              ),
             ),
           )
         ],
