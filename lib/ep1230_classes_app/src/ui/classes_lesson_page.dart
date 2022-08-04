@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 
 class ClassedLessonPage extends StatefulWidget {
   const ClassedLessonPage({Key? key}) : super(key: key);
@@ -115,14 +116,15 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                           child: Column(
                             children: [
                               Expanded(child: Placeholder()),
-                              Expanded(child: Column(
-                                children: [
-                                  Text("Meet your instructor"),
-                                  
-
-                                ],
-                              )),
-
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Meet your instructor"),
+                                    Text("${loremIpsum.substring(0, 200)}")
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         );
