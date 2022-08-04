@@ -107,7 +107,7 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                       separatorBuilder: (context, index) => Divider(
                         height: 0,
                         color: Colors.black,
-                        thickness: 1.5,
+                        thickness: 2
                       ),
                       itemBuilder: (context, index) {
                         return Container(
