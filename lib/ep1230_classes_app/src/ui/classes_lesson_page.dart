@@ -135,10 +135,20 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                               color: Color.fromRGBO(206, 203, 191, 1),
                                             ),
                                           ),
-                                          Divider(),
+                                          Divider(
+                                            color: Colors.black,
+                                            thickness: 1.5,
+                                            height: 0,
+                                          ),
                                           Container(
-                                            height: 64,
+                                            height: 52,
                                             color: Color.fromRGBO(206, 203, 191, 1),
+                                            child: Center(
+                                              child: IconButton(
+                                                icon: Icon(Icons.play_arrow),
+                                                onPressed: () {},
+                                              ),
+                                            ),
                                           ),
                                         ],
                                       ))
