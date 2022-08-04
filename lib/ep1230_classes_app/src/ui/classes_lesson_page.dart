@@ -130,7 +130,7 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                     ),
                                   ),
                                   VerticalDivider(
-                                    thickness: 1.5,
+                                    thickness: 2,
                                     width: 0,
                                     color: Colors.black,
                                   ),
@@ -159,7 +159,7 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                           ),
                                           Divider(
                                             color: Colors.black,
-                                            thickness: 1.5,
+                                            thickness:2,
                                             height: 0,
                                           ),
                                           Container(
