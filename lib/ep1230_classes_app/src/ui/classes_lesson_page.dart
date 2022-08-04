@@ -133,6 +133,18 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                           Expanded(
                                             child: Container(
                                               color: Color.fromRGBO(206, 203, 191, 1),
+                                              child: Center(
+                                                child: RotatedBox(
+                                                  quarterTurns: 3,
+                                                  child: Text(
+                                                    "LESSON ${index + 1}",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 16
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
                                             ),
                                           ),
                                           Divider(
