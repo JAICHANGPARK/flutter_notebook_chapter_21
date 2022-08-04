@@ -134,7 +134,12 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                             child: Container(
                                               color: Color.fromRGBO(206, 203, 191, 1),
                                             ),
-                                          )
+                                          ),
+                                          Divider(),
+                                          Container(
+                                            height: 64,
+                                            color: Color.fromRGBO(206, 203, 191, 1),
+                                          ),
                                         ],
                                       ))
                                 ],
