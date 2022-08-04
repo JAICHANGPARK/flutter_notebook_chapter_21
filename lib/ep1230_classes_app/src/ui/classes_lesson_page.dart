@@ -120,7 +120,13 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Meet your instructor"),
+                                    Text(
+                                      "Meet your instructor",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
                                     Text("${loremIpsum.substring(0, 200)}")
                                   ],
                                 ),
