@@ -112,13 +112,23 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           height: 320,
-                          color: Colors.blue,
                           child: Column(
                             children: [
                               Expanded(
                                   child: Row(
                                 children: [
-                                  Expanded(child: Container()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg",
+                                          ),
+                                          fit: BoxFit.cover
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                                   VerticalDivider(
                                     thickness: 1.5,
                                     width: 0,
@@ -140,7 +150,7 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                                     "LESSON ${index + 1}",
                                                     style: TextStyle(
                                                       fontWeight: FontWeight.bold,
-                                                      fontSize: 16
+                                                      fontSize: 16,
                                                     ),
                                                   ),
                                                 ),
@@ -187,7 +197,9 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                       SizedBox(
                                         height: 16,
                                       ),
-                                      Text("${loremIpsum.substring(0, 200)}")
+                                      Text(
+                                        "${loremIpsum.substring(0, 200)}",
+                                      )
                                     ],
                                   ),
                                 ),
