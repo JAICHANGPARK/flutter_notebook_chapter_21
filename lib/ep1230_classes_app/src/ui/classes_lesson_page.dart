@@ -119,6 +119,11 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                   child: Row(
                                 children: [
                                   Expanded(child: Container()),
+                                  VerticalDivider(
+                                    thickness: 1.5,
+                                    width: 0,
+                                    color: Colors.black,
+                                  ),
                                   Container(
                                     width: 72,
                                     margin: EdgeInsets.fromLTRB(2, 0, 0, 0),
