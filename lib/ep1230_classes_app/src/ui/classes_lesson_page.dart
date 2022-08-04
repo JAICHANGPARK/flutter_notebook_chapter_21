@@ -117,18 +117,21 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                             children: [
                               Expanded(child: Placeholder()),
                               Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Meet your instructor",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Meet your instructor",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                        ),
                                       ),
-                                    ),
-                                    Text("${loremIpsum.substring(0, 200)}")
-                                  ],
+                                      Text("${loremIpsum.substring(0, 200)}")
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
