@@ -116,6 +116,11 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                           child: Column(
                             children: [
                               Expanded(child: Placeholder()),
+                              Divider(
+                                color: Colors.black,
+                                thickness: 1.5,
+                                height: 0,
+                              ),
                               Expanded(
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
@@ -128,6 +133,9 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20,
                                         ),
+                                      ),
+                                      SizedBox(
+                                        height: 16,
                                       ),
                                       Text("${loremIpsum.substring(0, 200)}")
                                     ],
