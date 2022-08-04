@@ -115,7 +115,13 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                           child: Column(
                             children: [
                               Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Column(
+                                children: [
+                                  Text("Meet your instructor"),
+                                  
+
+                                ],
+                              )),
 
                             ],
                           ),
