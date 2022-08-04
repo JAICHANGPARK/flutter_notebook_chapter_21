@@ -125,18 +125,18 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                                     color: Colors.black,
                                   ),
                                   Container(
-                                    width: 72,
-                                    margin: EdgeInsets.fromLTRB(2, 0, 0, 0),
-                                    color: Color.fromRGBO(206, 203, 191, 1),
-                                    child: Center(
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.more_horiz,
-                                        ),
-                                        onPressed: () {},
-                                      ),
-                                    ),
-                                  )
+                                      width: 72,
+                                      margin: EdgeInsets.fromLTRB(2, 0, 0, 0),
+                                      color: Color.fromRGBO(206, 203, 191, 1),
+                                      child: Column(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              color: Color.fromRGBO(206, 203, 191, 1),
+                                            ),
+                                          )
+                                        ],
+                                      ))
                                 ],
                               )),
                               Divider(
