@@ -112,6 +112,13 @@ class _ClassedLessonPageState extends State<ClassedLessonPage> {
                         return Container(
                           height: 320,
                           color: Colors.blue,
+                          child: Column(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+
+                            ],
+                          ),
                         );
                       },
                     ),
