@@ -15,7 +15,48 @@ class FoodDeliveryApp extends StatelessWidget {
             child: IndexedStack(
               index: index,
               children: [
-                SingleChildScrollView(),
+                SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar(),
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text("Delivery Location"),
+                                  Icon(
+                                    Icons.keyboard_arrow_down,
+                                    color: Colors.teal,
+                                  )
+                                ],
+                              ),
+                              Text(
+                                "50 Molynes Rd, Kingston",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Center(
+                  child: Text("$index"),
+                ),
+                Center(
+                  child: Text("$index"),
+                ),
+                Center(
+                  child: Text("$index"),
+                ),
+                Center(
+                  child: Text("$index"),
+                ),
               ],
             ),
           );
