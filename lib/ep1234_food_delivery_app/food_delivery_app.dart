@@ -6,6 +6,17 @@ class FoodDeliveryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: SingleChildScrollView(),
+        ),
+        bottomNavigationBar: Builder(
+          builder: (context) {
+            return BottomNavigationBar();
+          }
+        ),
+      ),
+    );
   }
 }
