@@ -18,17 +18,16 @@ class FoodDeliveryApp extends StatelessWidget {
             type: BottomNavigationBarType.fixed,
             selectedItemColor: Colors.teal,
             unselectedItemColor: Colors.grey,
+            currentIndex: index,
+            onTap: (idx) {
+              
+            },
             items: [
-              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined),
-              label: "Home"),
-              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined),
-                  label: "Orders"),
-              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined),
-                  label: "7Kmart"),
-              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined),
-                  label: "Pro"),
-              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined),
-                  label: "Account"),
+              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined), label: "Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined), label: "Orders"),
+              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined), label: "7Kmart"),
+              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined), label: "Pro"),
+              BottomNavigationBarItem(icon: Icon(Icons.add_home_work_outlined), label: "Account"),
             ],
           );
         }),
