@@ -18,30 +18,46 @@ class FoodDeliveryApp extends StatelessWidget {
                 SingleChildScrollView(
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          CircleAvatar(),
-                          Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text("Delivery Location"),
-                                  Icon(
-                                    Icons.keyboard_arrow_down,
-                                    color: Colors.teal,
-                                  )
-                                ],
-                              ),
-                              Text(
-                                "50 Molynes Rd, Kingston",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 24,
+                            ),
+                            SizedBox(width: 8,),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Delivery Location"),
+                                    Icon(
+                                      Icons.keyboard_arrow_down,
+                                      color: Colors.teal,
+                                    )
+                                  ],
                                 ),
-                              )
-                            ],
-                          )
-                        ],
-                      )
+                                Text(
+                                  "50 Molynes Rd, Kingston",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              width: 64,
+                              height: 42,
+                              decoration: BoxDecoration(
+                                color: Colors.brown[200],
+                                borderRadius: BorderRadius.circular(24)
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
