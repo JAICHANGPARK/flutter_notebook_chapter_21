@@ -9,9 +9,17 @@ class FoodDeliveryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: SafeArea(
-          child: SingleChildScrollView(),
-        ),
+        body: Consumer(builder: (context, ref, _) {
+          final index = ref.watch(fdPageIndex);
+          return SafeArea(
+            child: IndexedStack(
+              index: index,
+              children: [
+                SingleChildScrollView(),
+              ],
+            ),
+          );
+        }),
         bottomNavigationBar: Consumer(builder: (context, ref, _) {
           final index = ref.watch(fdPageIndex);
           return BottomNavigationBar(
