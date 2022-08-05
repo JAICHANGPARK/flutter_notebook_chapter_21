@@ -25,7 +25,9 @@ class FoodDeliveryApp extends StatelessWidget {
                             CircleAvatar(
                               radius: 24,
                             ),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -40,19 +42,27 @@ class FoodDeliveryApp extends StatelessWidget {
                                 ),
                                 Text(
                                   "50 Molynes Rd, Kingston",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                                 )
                               ],
                             ),
+                            Spacer(),
                             Container(
                               width: 64,
                               height: 42,
                               decoration: BoxDecoration(
                                 color: Colors.brown[200],
-                                borderRadius: BorderRadius.circular(24)
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "0",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
                               ),
                             )
                           ],
