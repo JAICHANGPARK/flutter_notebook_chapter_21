@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1234_food_delivery_app/src/provider/fd_page_index.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
 class FoodDeliveryApp extends StatelessWidget {
@@ -11,8 +13,9 @@ class FoodDeliveryApp extends StatelessWidget {
         body: SafeArea(
           child: SingleChildScrollView(),
         ),
-        bottomNavigationBar: Builder(
-          builder: (context) {
+        bottomNavigationBar: Consumer(
+          builder: (context, ref, _) {
+            final index = ref.watch(fdPageIndex);
             return BottomNavigationBar();
           }
         ),
