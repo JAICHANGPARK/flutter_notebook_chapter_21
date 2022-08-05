@@ -54,12 +54,23 @@ class FoodDeliveryApp extends StatelessWidget {
                                 color: Colors.brown[200],
                                 borderRadius: BorderRadius.circular(24),
                               ),
+                              padding: EdgeInsets.all(2),
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text(
                                     "0",
                                     style: TextStyle(
                                       color: Colors.white,
+                                    ),
+                                  ),
+                                  CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Colors.white,
+                                    foregroundColor: Colors.brown,
+                                    child: Icon(
+                                      Icons.shopping_cart_outlined,
+                                      size: 16,
                                     ),
                                   )
                                 ],
