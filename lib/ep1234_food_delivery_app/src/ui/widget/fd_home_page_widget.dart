@@ -95,13 +95,27 @@ class FdHomePageWidget extends StatelessWidget {
             height: 140,
             color: Colors.blue,
             child: Column(
-              children: [],
+              children: [
+                Container(
+                  color: Colors.pink,
+                )
+              ],
             ),
           ),
           Container(
             height: 64,
-            color: Colors.green,
-            child: ListView.builder(itemBuilder: (context, index) {}),
+            margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(
+                  width: 64,
+                  margin: EdgeInsets.only(right: 8),
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey[300]!), borderRadius: BorderRadius.circular(4)),
+                );
+              },
+              scrollDirection: Axis.horizontal,
+            ),
           )
         ],
       ),
