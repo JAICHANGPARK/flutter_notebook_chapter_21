@@ -79,6 +79,13 @@ class FdHomePageWidget extends StatelessWidget {
               color: Colors.grey[300],
               borderRadius: BorderRadius.circular(8),
             ),
+            child: TextField(
+              decoration: InputDecoration(
+                icon: Icon(Icons.search),
+                hintText: "Search food or resturant",
+                border: InputBorder.none,
+              ),
+            ),
           )
         ],
       ),
