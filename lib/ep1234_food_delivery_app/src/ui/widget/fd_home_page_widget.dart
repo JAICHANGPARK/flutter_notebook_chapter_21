@@ -75,15 +75,18 @@ class FdHomePageWidget extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             height: 52,
+            padding: EdgeInsets.symmetric(horizontal: 12),
             decoration: BoxDecoration(
-              color: Colors.grey[300],
+              color: Colors.grey[200],
               borderRadius: BorderRadius.circular(8),
             ),
-            child: TextField(
-              decoration: InputDecoration(
-                icon: Icon(Icons.search),
-                hintText: "Search food or resturant",
-                border: InputBorder.none,
+            child: Center(
+              child: TextField(
+                decoration: InputDecoration(
+                  icon: Icon(Icons.search),
+                  hintText: "Search food or resturant",
+                  border: InputBorder.none,
+                ),
               ),
             ),
           )
