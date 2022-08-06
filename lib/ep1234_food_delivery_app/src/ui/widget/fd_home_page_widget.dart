@@ -111,7 +111,9 @@ class FdHomePageWidget extends StatelessWidget {
                   width: 64,
                   margin: EdgeInsets.only(right: 8),
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey[300]!), borderRadius: BorderRadius.circular(4)),
+                    border: Border.all(color: Colors.grey[300]!),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
                 );
               },
               scrollDirection: Axis.horizontal,
