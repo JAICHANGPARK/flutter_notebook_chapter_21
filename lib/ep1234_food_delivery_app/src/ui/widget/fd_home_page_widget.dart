@@ -129,7 +129,10 @@ class FdHomePageWidget extends StatelessWidget {
                       ),
                       Text(
                         "Burger",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12,
+                        ),
                       ),
                     ],
                   ),
