@@ -72,6 +72,14 @@ class FdHomePageWidget extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+            height: 52,
+            decoration: BoxDecoration(
+              color: Colors.grey[300],
+              borderRadius: BorderRadius.circular(8),
+            ),
+          )
         ],
       ),
     );
