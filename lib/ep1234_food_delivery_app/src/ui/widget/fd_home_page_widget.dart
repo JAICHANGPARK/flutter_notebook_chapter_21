@@ -7,6 +7,7 @@ class FdHomePageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
@@ -117,6 +118,25 @@ class FdHomePageWidget extends StatelessWidget {
                 );
               },
               scrollDirection: Axis.horizontal,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "✨ In the spotlight",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                ),
+                SizedBox(
+                  height: 4,
+                ),
+                Text(
+                  "Restaurants that will engage your taste bud",
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+              ],
             ),
           )
         ],
