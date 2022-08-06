@@ -138,7 +138,48 @@ class FdHomePageWidget extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 12),
+            height: 180,
+            color: Colors.teal,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16, right: 12),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "✨ All Nearby Restaurants",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      "Restaurants that will engage your taste bud",
+                      style: TextStyle(fontSize: 12, color: Colors.grey),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Text(
+                  "See all",
+                  style: TextStyle(
+                    color: Colors.teal,
+                  ),
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                  size: 14,
+                  color: Colors.teal,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
