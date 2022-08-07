@@ -178,20 +178,30 @@ class FdHomePageWidget extends ConsumerWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+            padding: const EdgeInsets.only(
+              left: 16,
+              top: 16,
+              bottom: 16,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "✨ In the spotlight",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
                 ),
                 SizedBox(
                   height: 4,
                 ),
                 Text(
                   "Restaurants that will engage your taste bud",
-                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.grey,
+                  ),
                 ),
               ],
             ),
@@ -202,7 +212,12 @@ class FdHomePageWidget extends ConsumerWidget {
             color: Colors.teal,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16, right: 12),
+            padding: const EdgeInsets.only(
+              left: 16,
+              top: 16,
+              bottom: 16,
+              right: 12,
+            ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -211,14 +226,20 @@ class FdHomePageWidget extends ConsumerWidget {
                   children: [
                     Text(
                       "✨ All Nearby Restaurants",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                     SizedBox(
                       height: 4,
                     ),
                     Text(
                       "Restaurants that will engage your taste bud",
-                      style: TextStyle(fontSize: 12, color: Colors.grey),
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey,
+                      ),
                     ),
                   ],
                 ),
