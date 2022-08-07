@@ -230,6 +230,11 @@ class FdHomePageWidget extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_960_720.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             )
