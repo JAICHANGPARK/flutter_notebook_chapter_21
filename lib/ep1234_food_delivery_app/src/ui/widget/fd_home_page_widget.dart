@@ -237,8 +237,9 @@ class FdHomePageWidget extends ConsumerWidget {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.brown[50],
+                                  borderRadius: BorderRadius.circular(24),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                padding: EdgeInsets.symmetric(horizontal: 3, vertical: 3),
                                 child: Row(
                                   children: [
                                     Icon(
@@ -251,7 +252,7 @@ class FdHomePageWidget extends ConsumerWidget {
                                     ),
                                     Text(
                                       "4.4",
-                                      style: TextStyle(fontSize: 12),
+                                      style: TextStyle(fontSize: 10),
                                     )
                                   ],
                                 ),
@@ -259,7 +260,7 @@ class FdHomePageWidget extends ConsumerWidget {
                             ],
                           ),
                           SizedBox(
-                            height: 8,
+                            height: 4,
                           ),
                           Text(
                             "Burger, Fast Food - 30 ~ 40 min",
