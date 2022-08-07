@@ -217,8 +217,16 @@ class FdHomePageWidget extends ConsumerWidget {
                   color: Colors.pink,
                   width: 170,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      
+                      Expanded(
+                        child: Container(
+                          color: Colors.blue,
+                        ),
+                      ),
+                      Column(
+                        children: [],
+                      )
                     ],
                   ),
                 );
