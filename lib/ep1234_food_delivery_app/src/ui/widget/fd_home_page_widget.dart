@@ -208,8 +208,25 @@ class FdHomePageWidget extends ConsumerWidget {
           ),
           Container(
             margin: EdgeInsets.only(left: 12),
-            height: 180,
+            height: 170,
             color: Colors.teal,
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: EdgeInsets.only(right: 12),
+                  color: Colors.pink,
+                  width: 170,
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
+                );
+              },
+              scrollDirection: Axis.horizontal,
+              controller: ScrollController(),
+              itemCount: 10,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(
