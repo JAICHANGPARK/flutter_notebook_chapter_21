@@ -209,12 +209,10 @@ class FdHomePageWidget extends ConsumerWidget {
           Container(
             margin: EdgeInsets.only(left: 12),
             height: 160,
-            color: Colors.teal,
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.only(right: 12),
-                  color: Colors.pink,
                   width: 180,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -230,6 +228,7 @@ class FdHomePageWidget extends ConsumerWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_960_720.jpg"),
@@ -241,6 +240,7 @@ class FdHomePageWidget extends ConsumerWidget {
                           ],
                         ),
                       ),
+                      SizedBox(height: 4,),
                       Column(
                         children: [
                           Row(
