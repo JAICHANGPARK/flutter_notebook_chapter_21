@@ -225,7 +225,18 @@ class FdHomePageWidget extends ConsumerWidget {
                         ),
                       ),
                       Column(
-                        children: [],
+                        children: [
+                          Row(
+                            children: [
+                              Expanded(child: Text("Chicken & Tinder Buger")),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.brown[50],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
                       )
                     ],
                   ),
