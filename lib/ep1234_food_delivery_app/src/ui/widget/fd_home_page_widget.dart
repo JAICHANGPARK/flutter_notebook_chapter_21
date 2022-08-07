@@ -1,10 +1,14 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1234_food_delivery_app/src/provider/fd_page_controller.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class FdHomePageWidget extends StatelessWidget {
+class FdHomePageWidget extends ConsumerWidget {
   const FdHomePageWidget({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
+    final cip = ref.watch(currentIndexPage);
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -94,12 +98,44 @@ class FdHomePageWidget extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 12),
             height: 140,
-            color: Colors.blue,
             child: Column(
               children: [
-                Container(
-                  color: Colors.pink,
-                )
+                Expanded(
+                  child: PageView(
+                    controller: ref.read(fdHomeBannerPageController),
+                    onPageChanged: (idx) {
+                      ref.refresh(currentIndexPage.state).state = idx;
+                    },
+                    children: [
+                      Container(
+
+                        decoration: BoxDecoration(
+                          color: Colors.pink,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Container(
+
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      Container(
+
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+                DotsIndicator(
+                  dotsCount: 6,
+                  position: cip.toDouble(),
+                ),
               ],
             ),
           ),
