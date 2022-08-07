@@ -208,20 +208,32 @@ class FdHomePageWidget extends ConsumerWidget {
           ),
           Container(
             margin: EdgeInsets.only(left: 12),
-            height: 170,
+            height: 160,
             color: Colors.teal,
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.only(right: 12),
                   color: Colors.pink,
-                  width: 170,
+                  width: 180,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
-                        child: Container(
-                          color: Colors.blue,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 0,
+                              top: 0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                       Column(
