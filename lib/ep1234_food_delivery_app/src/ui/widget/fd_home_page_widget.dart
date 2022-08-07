@@ -110,6 +110,13 @@ class FdHomePageWidget extends ConsumerWidget {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.pink,
+                          gradient: LinearGradient(colors: [
+                            Colors.pinkAccent[100]!,
+                            Colors.red[100]!,
+                            Colors.red[50]!,
+                            Colors.brown[50]!,
+                            Colors.teal[100]!,
+                          ], begin: Alignment.topLeft, end: Alignment.bottomRight),
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
