@@ -221,7 +221,7 @@ class FdHomePageWidget extends ConsumerWidget {
                         child: Stack(
                           children: [
                             Positioned(
-                              left: 0,
+                              left: 2,
                               right: 0,
                               bottom: 0,
                               top: 0,
@@ -236,11 +236,30 @@ class FdHomePageWidget extends ConsumerWidget {
                                   ),
                                 ),
                               ),
+                            ),
+                            Positioned(
+                              left: 0,
+                              top: 16,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.teal[400],
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                                child: Text(
+                                  "20% Discount",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
                             )
                           ],
                         ),
                       ),
-                      SizedBox(height: 4,),
+                      SizedBox(
+                        height: 4,
+                      ),
                       Column(
                         children: [
                           Row(
