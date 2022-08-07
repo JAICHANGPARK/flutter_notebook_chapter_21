@@ -228,13 +228,45 @@ class FdHomePageWidget extends ConsumerWidget {
                         children: [
                           Row(
                             children: [
-                              Expanded(child: Text("Chicken & Tinder Buger")),
+                              Expanded(
+                                child: Text(
+                                  "Chicken & Tinder Buger",
+                                  style: TextStyle(fontSize: 18, overflow: TextOverflow.ellipsis),
+                                ),
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.brown[50],
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orangeAccent,
+                                      size: 12,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "4.4",
+                                      style: TextStyle(fontSize: 12),
+                                    )
+                                  ],
+                                ),
                               )
                             ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "Burger, Fast Food - 30 ~ 40 min",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12,
+                            ),
                           )
                         ],
                       )
