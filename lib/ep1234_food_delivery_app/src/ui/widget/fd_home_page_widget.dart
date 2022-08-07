@@ -97,7 +97,7 @@ class FdHomePageWidget extends ConsumerWidget {
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 12),
-            height: 140,
+            height: 170,
             child: Column(
               children: [
                 Expanded(
@@ -108,33 +108,33 @@ class FdHomePageWidget extends ConsumerWidget {
                     },
                     children: [
                       Container(
-
                         decoration: BoxDecoration(
                           color: Colors.pink,
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       Container(
-
                         decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       Container(
-
                         decoration: BoxDecoration(
                           color: Colors.green,
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-
                     ],
                   ),
                 ),
                 DotsIndicator(
                   dotsCount: 6,
                   position: cip.toDouble(),
+                  decorator: DotsDecorator(
+                    activeColor: Colors.teal,
+                    color: Colors.grey[300]!,
+                  ),
                 ),
               ],
             ),
