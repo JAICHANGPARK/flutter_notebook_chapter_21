@@ -15,7 +15,19 @@ class JobFinderStartPage extends StatelessWidget {
                   image: NetworkImage(
                     "https://cdn.pixabay.com/photo/2017/08/02/10/03/people-2570596_960_720.jpg",
                   ),
+                  fit: BoxFit.cover,
                 ),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: 320,
+              decoration: BoxDecoration(
+                color: Colors.white,
               ),
             ),
           )
