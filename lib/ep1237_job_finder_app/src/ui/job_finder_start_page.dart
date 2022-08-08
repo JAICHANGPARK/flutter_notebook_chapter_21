@@ -49,13 +49,20 @@ class JobFinderStartPage extends StatelessWidget {
                   ),
                   Text(
                     "Don't worry to be jobless, we provide various categories & easy access jobs.",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    height: 32,
                   ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    width: 160,
+                    width: 180,
                     height: 48,
                     child: Center(
                       child: Text(
