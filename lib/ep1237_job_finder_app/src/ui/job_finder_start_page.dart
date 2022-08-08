@@ -57,20 +57,25 @@ class JobFinderStartPage extends StatelessWidget {
                   SizedBox(
                     height: 32,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    width: 180,
-                    height: 48,
-                    child: Center(
-                      child: Text(
-                        "Get Started",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed("/home");
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      width: 180,
+                      height: 48,
+                      child: Center(
+                        child: Text(
+                          "Get Started",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
