@@ -33,6 +33,7 @@ class JobFinderStartPage extends StatelessWidget {
                   topLeft: Radius.circular(42),
                 ),
               ),
+              padding: EdgeInsets.all(32),
               child: Column(
                 children: [
                   Text(
@@ -49,7 +50,7 @@ class JobFinderStartPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white
+                          color: Colors.white,
                         ),
                       ),
                     ),
