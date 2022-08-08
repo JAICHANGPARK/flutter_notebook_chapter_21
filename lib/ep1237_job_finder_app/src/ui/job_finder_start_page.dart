@@ -38,12 +38,21 @@ class JobFinderStartPage extends StatelessWidget {
                 children: [
                   Text(
                     "New way to discover your perfect Job",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  Text("Don't worry to be jobless, we provide various categories & easy access jobs."),
+                  Text(
+                    "Don't worry to be jobless, we provide various categories & easy access jobs.",
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.black,
+                      borderRadius: BorderRadius.circular(8),
                     ),
+                    width: 160,
+                    height: 48,
                     child: Center(
                       child: Text(
                         "Get Started",
