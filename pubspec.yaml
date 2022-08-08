@@ -25,6 +25,8 @@ dependencies:
       url: https://github.com/r-mzy47/candlesticks
       ref: master
 
+  google_fonts: any
+
 
 dev_dependencies:
   flutter_test:
