@@ -29,8 +29,8 @@ class JobFinderStartPage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(32),
-                  topLeft: Radius.circular(32),
+                  topRight: Radius.circular(42),
+                  topLeft: Radius.circular(42),
                 ),
               ),
             ),
