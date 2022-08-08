@@ -7,7 +7,7 @@ class JobFinderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: JobFinderStartPage()s,
+      home: JobFinderStartPage(),
     );
   }
 }
