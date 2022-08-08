@@ -36,11 +36,15 @@ class JobFinderStartPage extends StatelessWidget {
               padding: EdgeInsets.all(32),
               child: Column(
                 children: [
-                  Text(
-                    "New way to discover your perfect Job",
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Text(
+                      "New way to discover your perfect Job",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                   Text(
