@@ -33,6 +33,29 @@ class JobFinderStartPage extends StatelessWidget {
                   topLeft: Radius.circular(42),
                 ),
               ),
+              child: Column(
+                children: [
+                  Text(
+                    "New way to discover your perfect Job",
+                  ),
+                  Text("Don't worry to be jobless, we provide various categories & easy access jobs."),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
