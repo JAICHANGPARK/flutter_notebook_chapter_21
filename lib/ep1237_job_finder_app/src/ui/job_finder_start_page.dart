@@ -6,6 +6,18 @@ class JobFinderStartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage()
+              )
+            ),
+          ))
+        ],
+      ),
+    );
   }
 }
