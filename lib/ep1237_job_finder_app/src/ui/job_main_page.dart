@@ -130,7 +130,10 @@ class _JobMainPageState extends State<JobMainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hot Jot This Month"),
+                  Text(
+                    "Hot Jot This Month",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: Text("Show All"),
@@ -141,6 +144,41 @@ class _JobMainPageState extends State<JobMainPage> {
                 ],
               ),
             ),
+            Container(
+              height: 180,
+              color: Colors.blue,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Recent Post",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Show All"),
+                    style: TextButton.styleFrom(
+                      primary: Colors.deepOrangeAccent,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+                child: Container(
+              color: Colors.pink,
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) => Container(
+                  margin: EdgeInsets.only(bottom: 8),
+                  height: 100,
+                  color: Colors.green,
+                ),
+              ),
+            )),
           ],
         ),
       ),
