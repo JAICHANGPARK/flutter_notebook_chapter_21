@@ -17,61 +17,93 @@ class _JobMainPageState extends State<JobMainPage> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              child: Row(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
                     children: [
-                      Text(
-                        "Current Location",
-                        style: TextStyle(
-                          color: Colors.grey,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 3,
-                      ),
-                      Row(
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
-                            Icons.location_on_outlined,
-                            size: 18,
-                            color: Colors.deepOrangeAccent,
+                          Text(
+                            "Current Location",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
                           ),
                           SizedBox(
-                            width: 4,
+                            height: 3,
                           ),
-                          Text(
-                            "Jakarta, Indonesia",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          )
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.location_on_outlined,
+                                size: 18,
+                                color: Colors.deepOrangeAccent,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "Jakarta, Indonesia",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          ),
                         ],
                       ),
+                      Spacer(),
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.black87,
+                        ),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.notifications_none,
+                            ),
+                            color: Colors.white,
+                          ),
+                        ),
+                      )
                     ],
                   ),
-                  Spacer(),
                   Container(
-                    height: 42,
-                    width: 42,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      color: Colors.black87,
-                    ),
-                    child: Center(
-                      child: IconButton(
-                        onPressed:(){},
-                        icon: Icon(
-                          Icons.notifications_none,
-                        ),
-                        color: Colors.white,
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 58,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        Expanded(child: Container()),
+                        Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.black87,
+                          ),
+                          child: Center(
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.search,
+                              ),
+                              color: Colors.white,
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
