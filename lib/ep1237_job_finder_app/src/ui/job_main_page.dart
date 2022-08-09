@@ -92,6 +92,9 @@ class _JobMainPageState extends State<JobMainPage> {
                             child: TextField(
                               decoration: InputDecoration(
                                 hintText: "Find your job now",
+                                hintStyle: TextStyle(
+                                  fontSize: 13,
+                                ),
                               ),
                             ),
                           ),
