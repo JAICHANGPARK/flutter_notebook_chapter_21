@@ -49,7 +49,6 @@ class _JobMainPageState extends State<JobMainPage> {
                           )
                         ],
                       ),
-
                     ],
                   ),
                   Spacer(),
@@ -57,7 +56,17 @@ class _JobMainPageState extends State<JobMainPage> {
                     height: 42,
                     width: 42,
                     decoration: BoxDecoration(
-                      
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.black,
+                    ),
+                    child: Center(
+                      child: IconButton(
+                        onPressed:(){},
+                        icon: Icon(
+                          Icons.notifications_none,
+                        ),
+                        color: Colors.white,
+                      ),
                     ),
                   )
                 ],
