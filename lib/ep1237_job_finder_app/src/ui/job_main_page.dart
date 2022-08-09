@@ -76,11 +76,29 @@ class _JobMainPageState extends State<JobMainPage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 58,
+                    height: 52,
                     color: Colors.blue,
                     child: Row(
                       children: [
-                        Expanded(child: Container()),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 16,
+                            ),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: "Find your job now",
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Container(
                           height: 42,
                           width: 42,
