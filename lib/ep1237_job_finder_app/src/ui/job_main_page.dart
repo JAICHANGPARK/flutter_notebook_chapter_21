@@ -57,7 +57,7 @@ class _JobMainPageState extends State<JobMainPage> {
                     width: 42,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.black,
+                      color: Colors.black87,
                     ),
                     child: Center(
                       child: IconButton(
