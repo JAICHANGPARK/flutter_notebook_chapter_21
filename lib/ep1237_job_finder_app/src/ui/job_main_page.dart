@@ -11,6 +11,28 @@ class _JobMainPageState extends State<JobMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Current Location"),
+                    Row(
+                      children: [
+                        Icon(Icons.location_on_outlined, size: 14,)
+                      ],
+                    )
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 64,
