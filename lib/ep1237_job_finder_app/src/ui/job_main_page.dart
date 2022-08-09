@@ -20,10 +20,27 @@ class _JobMainPageState extends State<JobMainPage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Current Location"),
+                    Text(
+                      "Current Location",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 3,
+                    ),
                     Row(
                       children: [
-                        Icon(Icons.location_on_outlined, size: 14,)
+                        Icon(
+                          Icons.location_on_outlined,
+                          size: 16,
+                        ),
+                        Text(
+                          "Jakarta, Indonesia",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
                       ],
                     )
                   ],
