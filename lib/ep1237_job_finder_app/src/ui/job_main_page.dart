@@ -11,6 +11,7 @@ class _JobMainPageState extends State<JobMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,7 +78,7 @@ class _JobMainPageState extends State<JobMainPage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
                     height: 52,
-                    color: Colors.blue,
+                    // color: Colors.blue,
                     child: Row(
                       children: [
                         Expanded(
