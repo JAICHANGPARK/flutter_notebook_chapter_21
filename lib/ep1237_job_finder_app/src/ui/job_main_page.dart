@@ -15,37 +15,53 @@ class _JobMainPageState extends State<JobMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Current Location",
-                      style: TextStyle(
-                        color: Colors.grey,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 3,
-                    ),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.location_on_outlined,
-                          size: 16,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Current Location",
+                        style: TextStyle(
+                          color: Colors.grey,
                         ),
-                        Text(
-                          "Jakarta, Indonesia",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                      ),
+                      SizedBox(
+                        height: 3,
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.location_on_outlined,
+                            size: 18,
+                            color: Colors.deepOrangeAccent,
                           ),
-                        )
-                      ],
-                    )
-                  ],
-                )
-              ],
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Text(
+                            "Jakarta, Indonesia",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      ),
+
+                    ],
+                  ),
+                  Spacer(),
+                  Container(
+                    height: 42,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
