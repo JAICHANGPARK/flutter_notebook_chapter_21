@@ -16,21 +16,83 @@ class _JobMainPageState extends State<JobMainPage> {
           height: 64,
           decoration: BoxDecoration(),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.home_filled,
-                    color : Colors.deepOrange,
+                    color: Colors.deepOrange,
                     size: 28,
                   ),
-                  SizedBox(height: 4,),
+                  SizedBox(
+                    height: 4,
+                  ),
                   CircleAvatar(
                     radius: 3,
                     backgroundColor: Colors.deepOrange,
                   )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.shopping_bag_outlined,
+                    color: Colors.grey,
+                    size: 28,
+                  ),
+                  // SizedBox(height: 4,),
+                  // CircleAvatar(
+                  //   radius: 3,
+                  //   backgroundColor: Colors.deepOrange,
+                  // )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.chat_bubble_outline_outlined,
+                    color: Colors.grey,
+                    size: 28,
+                  ),
+                  // SizedBox(height: 4,),
+                  // CircleAvatar(
+                  //   radius: 3,
+                  //   backgroundColor: Colors.deepOrange,
+                  // )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.bookmark_border,
+                    color: Colors.grey,
+                    size: 28,
+                  ),
+                  // SizedBox(height: 4,),
+                  // CircleAvatar(
+                  //   radius: 3,
+                  //   backgroundColor: Colors.deepOrange,
+                  // )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.perm_identity,
+                    color: Colors.grey,
+                    size: 28,
+                  ),
+                  // SizedBox(height: 4,),
+                  // CircleAvatar(
+                  //   radius: 3,
+                  //   backgroundColor: Colors.deepOrange,
+                  // )
                 ],
               )
             ],
