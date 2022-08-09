@@ -146,6 +146,7 @@ class _JobMainPageState extends State<JobMainPage> {
             ),
             Container(
               height: 180,
+              margin: EdgeInsets.only(left: 16),
               color: Colors.blue,
               child: ListView.builder(
                 itemCount: 10,
@@ -178,12 +179,13 @@ class _JobMainPageState extends State<JobMainPage> {
             ),
             Expanded(
                 child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
               color: Colors.pink,
               child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (context, index) => Container(
                   margin: EdgeInsets.only(bottom: 8),
-                  height: 100,
+                  height: 84,
                   color: Colors.green,
                 ),
               ),
