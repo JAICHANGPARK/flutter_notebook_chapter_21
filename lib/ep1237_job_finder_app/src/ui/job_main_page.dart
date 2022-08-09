@@ -17,7 +17,7 @@ class _JobMainPageState extends State<JobMainPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -77,7 +77,7 @@ class _JobMainPageState extends State<JobMainPage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 52,
+                    height: 46,
                     // color: Colors.blue,
                     child: Row(
                       children: [
@@ -87,21 +87,20 @@ class _JobMainPageState extends State<JobMainPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 16,
-                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: TextField(
                               decoration: InputDecoration(
                                 hintText: "Find your job now",
                                 hintStyle: TextStyle(
                                   fontSize: 13,
                                 ),
+                                border: InputBorder.none,
                               ),
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 12,
                         ),
                         Container(
                           height: 42,
@@ -122,7 +121,23 @@ class _JobMainPageState extends State<JobMainPage> {
                         )
                       ],
                     ),
-                  )
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Hot Jot This Month"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Show All"),
+                    style: TextButton.styleFrom(
+                      primary: Colors.deepOrangeAccent,
+                    ),
+                  ),
                 ],
               ),
             ),
