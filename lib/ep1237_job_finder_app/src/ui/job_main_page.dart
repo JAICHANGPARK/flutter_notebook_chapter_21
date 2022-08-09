@@ -147,6 +147,15 @@ class _JobMainPageState extends State<JobMainPage> {
             Container(
               height: 180,
               color: Colors.blue,
+              child: ListView.builder(
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) => Container(
+                  margin: EdgeInsets.only(right: 8),
+                  width: 320,
+                  color: Colors.brown,
+                ),
+              ),
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 16),
