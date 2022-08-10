@@ -195,6 +195,7 @@ class _JobMainPageState extends State<JobMainPage> {
                               ],
                             ),
                           ),
+                          Spacer(),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(
@@ -203,6 +204,12 @@ class _JobMainPageState extends State<JobMainPage> {
                           ),
                         ],
                       ),
+                      Text(
+                        "Senio UI Designer",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
                     ],
                   ),
                 ),
