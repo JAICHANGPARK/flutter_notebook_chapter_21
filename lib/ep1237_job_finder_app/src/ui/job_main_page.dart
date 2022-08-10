@@ -308,7 +308,9 @@ class _JobMainPageState extends State<JobMainPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
                   ),
+                  padding: EdgeInsets.symmetric(horizontal: 12),
                   child: Row(
+
                     children: [
                       Container(
                         height: 58,
