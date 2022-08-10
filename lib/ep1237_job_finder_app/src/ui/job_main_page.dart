@@ -177,12 +177,23 @@ class _JobMainPageState extends State<JobMainPage> {
                               ),
                             ),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("LinkedIn, ID"),
-                              Text("Dream"),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "LinkedIn, ID",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text("Dream"),
+                              ],
+                            ),
                           ),
                           IconButton(
                             onPressed: () {},
