@@ -154,7 +154,10 @@ class _JobMainPageState extends State<JobMainPage> {
                 itemBuilder: (context, index) => Container(
                   margin: EdgeInsets.only(right: 8),
                   width: 320,
-                  color: Colors.brown,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)
+                  ),
                 ),
               ),
             ),
@@ -165,7 +168,10 @@ class _JobMainPageState extends State<JobMainPage> {
                 children: [
                   Text(
                     "Recent Post",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                   TextButton(
                     onPressed: () {},
