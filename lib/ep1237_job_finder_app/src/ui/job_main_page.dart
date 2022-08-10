@@ -171,14 +171,24 @@ class _JobMainPageState extends State<JobMainPage> {
                             child: Center(
                               child: Text(
                                 "in",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                               ),
                             ),
-                          )
+                          ),
+                          Column(
+                            children: [
+                              Text("LinkedIn, ID"),
+                              Text("Dream"),
+                            ],
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.bookmark_border,
+                            ),
+                          ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
