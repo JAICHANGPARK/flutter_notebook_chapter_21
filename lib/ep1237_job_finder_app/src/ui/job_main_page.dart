@@ -147,7 +147,6 @@ class _JobMainPageState extends State<JobMainPage> {
             Container(
               height: 180,
               margin: EdgeInsets.only(left: 16),
-              color: Colors.blue,
               child: ListView.builder(
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
@@ -156,7 +155,31 @@ class _JobMainPageState extends State<JobMainPage> {
                   width: 320,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(8)
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "in",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 ),
               ),
