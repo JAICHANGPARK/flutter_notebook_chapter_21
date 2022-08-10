@@ -310,7 +310,6 @@ class _JobMainPageState extends State<JobMainPage> {
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 12),
                   child: Row(
-
                     children: [
                       Container(
                         height: 58,
@@ -327,12 +326,24 @@ class _JobMainPageState extends State<JobMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Slack"),
-                                      Text("Visual Designer"),
+                                      Text(
+                                        "Slack",
+                                        style: TextStyle(
+                                          color: Colors.deepOrangeAccent,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Visual Designer",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   IconButton(
@@ -345,9 +356,27 @@ class _JobMainPageState extends State<JobMainPage> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text("\$1200/m"),
-                                  Text("New York, USA"),
-                                  Text("Fuul Time"),
+                                  Text(
+                                    "\$1200/m",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Text(
+                                    "New York, USA",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Fuul Time",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                 ],
                               )
                             ],
