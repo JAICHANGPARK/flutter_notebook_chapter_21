@@ -152,7 +152,7 @@ class _JobMainPageState extends State<JobMainPage> {
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) => Container(
-                  margin: EdgeInsets.only(right: 8),
+                  margin: EdgeInsets.only(right: 12),
                   width: 320,
                   decoration: BoxDecoration(
                     color: Colors.white,
