@@ -209,6 +209,32 @@ class _JobMainPageState extends State<JobMainPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Row(
+                        children: [
+                          Text('2 day ago'),
+                          Text('- 120 Applicants'),
+                        ],
+                      ),
+                      Wrap(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              "Fulltime",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          )
+                        ],
                       )
                     ],
                   ),
