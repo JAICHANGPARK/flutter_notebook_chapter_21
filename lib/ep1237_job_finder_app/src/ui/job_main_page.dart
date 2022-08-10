@@ -210,10 +210,7 @@ class _JobMainPageState extends State<JobMainPage> {
                       ),
                       Text(
                         "Senio UI Designer",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                       SizedBox(
                         height: 4,
@@ -302,13 +299,52 @@ class _JobMainPageState extends State<JobMainPage> {
             Expanded(
                 child: Container(
               margin: EdgeInsets.symmetric(horizontal: 16),
-              color: Colors.pink,
               child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (context, index) => Container(
                   margin: EdgeInsets.only(bottom: 8),
                   height: 84,
-                  color: Colors.green,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 58,
+                        width: 58,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("Slack"),
+                                  Text("Visual Designer"),
+                                ],
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.book),
+                                color: Colors.deepOrange,
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text("")
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             )),
