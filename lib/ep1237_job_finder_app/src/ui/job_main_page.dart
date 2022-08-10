@@ -318,29 +318,39 @@ class _JobMainPageState extends State<JobMainPage> {
                           borderRadius: BorderRadius.circular(4),
                         ),
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Column(
+                              Row(
                                 children: [
-                                  Text("Slack"),
-                                  Text("Visual Designer"),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Slack"),
+                                      Text("Visual Designer"),
+                                    ],
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.book),
+                                    color: Colors.deepOrange,
+                                  )
                                 ],
                               ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: Icon(Icons.book),
-                                color: Colors.deepOrange,
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("\$1200/m"),
+                                  Text("New York, USA"),
+                                  Text("Fuul Time"),
+                                ],
                               )
                             ],
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [Text("\$1200/m"), Text("New York, USA"), Text("Fuul Time")],
-                          )
-                        ],
+                        ),
                       )
                     ],
                   ),
