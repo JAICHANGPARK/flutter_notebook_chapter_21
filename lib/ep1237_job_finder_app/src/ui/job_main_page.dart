@@ -212,6 +212,7 @@ class _JobMainPageState extends State<JobMainPage> {
                         "Senio UI Designer",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 16
                         ),
                       ),
                       SizedBox(
@@ -219,7 +220,13 @@ class _JobMainPageState extends State<JobMainPage> {
                       ),
                       Row(
                         children: [
-                          Text('2 day ago'),
+                          Text(
+                            '2 day ago',
+                            style: TextStyle(
+                              color: Colors.deepOrange,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Text('- 120 Applicants'),
                         ],
                       ),
@@ -238,10 +245,7 @@ class _JobMainPageState extends State<JobMainPage> {
                             ),
                             child: Text(
                               "Fulltime",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                             ),
                           ),
                           Container(
@@ -252,10 +256,7 @@ class _JobMainPageState extends State<JobMainPage> {
                             ),
                             child: Text(
                               "On Site",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                             ),
                           ),
                           Container(
@@ -266,10 +267,7 @@ class _JobMainPageState extends State<JobMainPage> {
                             ),
                             child: Text(
                               "1-2 Years",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                             ),
                           )
                         ],
