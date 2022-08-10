@@ -222,7 +222,7 @@ class _JobMainPageState extends State<JobMainPage> {
                       Wrap(
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(4),
@@ -231,6 +231,35 @@ class _JobMainPageState extends State<JobMainPage> {
                               "Fulltime",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                fontSize: 12
+                              ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              "On Site",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12
+                              ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              "1-2 Years",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12
                               ),
                             ),
                           )
