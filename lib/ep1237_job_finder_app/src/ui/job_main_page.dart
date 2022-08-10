@@ -157,7 +157,9 @@ class _JobMainPageState extends State<JobMainPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
                   ),
+                  padding: EdgeInsets.all(16),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -176,6 +178,7 @@ class _JobMainPageState extends State<JobMainPage> {
                             ),
                           ),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("LinkedIn, ID"),
                               Text("Dream"),
