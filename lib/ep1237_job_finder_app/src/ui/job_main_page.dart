@@ -150,128 +150,129 @@ class _JobMainPageState extends State<JobMainPage> {
               child: ListView.builder(
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) => Container(
-                  margin: EdgeInsets.only(right: 12),
-                  width: 320,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  padding: EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Row(
+                itemBuilder: (context, index) =>
+                    Container(
+                      margin: EdgeInsets.only(right: 12),
+                      width: 320,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Container(
-                            height: 42,
-                            width: 42,
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "in",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "LinkedIn, ID",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                          Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[300],
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "in",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                                   ),
                                 ),
-                                SizedBox(
-                                  height: 4,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "LinkedIn, ID",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
+                                    Text("Dream"),
+                                  ],
                                 ),
-                                Text("Dream"),
-                              ],
-                            ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.bookmark_border,
+                                ),
+                              ),
+                            ],
                           ),
-                          Spacer(),
-                          IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.bookmark_border,
-                            ),
+                          SizedBox(
+                            height: 12,
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      Text(
-                        "Senio UI Designer",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                      ),
-                      SizedBox(
-                        height: 4,
-                      ),
-                      Row(
-                        children: [
                           Text(
-                            '2 day ago',
-                            style: TextStyle(
-                              color: Colors.deepOrange,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            "Senio UI Designer",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                           ),
-                          Text('- 120 Applicants'),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      Wrap(
-                        runSpacing: 8,
-                        spacing: 8,
-                        children: [
-                          Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            child: Text(
-                              "Fulltime",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                            ),
+                          SizedBox(
+                            height: 4,
                           ),
-                          Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            child: Text(
-                              "On Site",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                            ),
+                          Row(
+                            children: [
+                              Text(
+                                '2 day ago',
+                                style: TextStyle(
+                                  color: Colors.deepOrange,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text('- 120 Applicants'),
+                            ],
                           ),
-                          Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            child: Text(
-                              "1-2 Years",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                            ),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Wrap(
+                            runSpacing: 8,
+                            spacing: 8,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Text(
+                                  "Fulltime",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                ),
+                              ),
+                              Container(
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Text(
+                                  "On Site",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                ),
+                              ),
+                              Container(
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Text(
+                                  "1-2 Years",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                ),
+                              )
+                            ],
                           )
                         ],
-                      )
-                    ],
-                  ),
-                ),
+                      ),
+                    ),
               ),
             ),
             Padding(
@@ -298,56 +299,60 @@ class _JobMainPageState extends State<JobMainPage> {
             ),
             Expanded(
                 child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (context, index) => Container(
-                  margin: EdgeInsets.only(bottom: 8),
-                  height: 84,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 58,
-                        width: 58,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
+                  margin: EdgeInsets.symmetric(horizontal: 16),
+                  child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (context, index) =>
+                        Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          height: 84,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
                             children: [
-                              Column(
-                                children: [
-                                  Text("Slack"),
-                                  Text("Visual Designer"),
-                                ],
+                              Container(
+                                height: 58,
+                                width: 58,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[300],
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
                               ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: Icon(Icons.book),
-                                color: Colors.deepOrange,
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Column(
+                                        children: [
+                                          Text("Slack"),
+                                          Text("Visual Designer"),
+                                        ],
+                                      ),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.book),
+                                        color: Colors.deepOrange,
+                                      )
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("\$1200/m"),
+                                      Text("New York, USA"),
+                                      Text("Fuul Time")
+                                    ],
+                                  )
+                                ],
                               )
                             ],
                           ),
-                          Row(
-                            children: [
-                              Text("")
-                            ],
-                          )
-                        ],
-                      )
-                    ],
+                        ),
                   ),
-                ),
-              ),
-            )),
+                )),
           ],
         ),
       ),
