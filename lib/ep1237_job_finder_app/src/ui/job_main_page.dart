@@ -316,7 +316,7 @@ class _JobMainPageState extends State<JobMainPage> {
                         width: 58,
                         decoration: BoxDecoration(
                           color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(4),
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       Expanded(
