@@ -131,7 +131,7 @@ class _JobMainPageState extends State<JobMainPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Hot Jot This Month",
+                    "Hot Job This Month",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   ),
                   TextButton(
