@@ -160,6 +160,7 @@ class _JobMainPageState extends State<JobMainPage> {
                   padding: EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Row(
                         children: [
@@ -204,6 +205,9 @@ class _JobMainPageState extends State<JobMainPage> {
                           ),
                         ],
                       ),
+                      SizedBox(
+                        height: 12,
+                      ),
                       Text(
                         "Senio UI Designer",
                         style: TextStyle(
@@ -219,7 +223,12 @@ class _JobMainPageState extends State<JobMainPage> {
                           Text('- 120 Applicants'),
                         ],
                       ),
+                      SizedBox(
+                        height: 12,
+                      ),
                       Wrap(
+                        runSpacing: 8,
+                        spacing: 8,
                         children: [
                           Container(
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
