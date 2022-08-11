@@ -22,12 +22,19 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       Container(
                         height: 42,
                         width: 42,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
                         child: Icon(
                           Icons.keyboard_arrow_left,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Expanded(child: Center()),
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                        child: Icon(
+                          Icons.bookmark_border,
                           color: Colors.white,
                         ),
                       ),
