@@ -203,9 +203,10 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.black,
+                          borderRadius: BorderRadius.circular(8)
                         ),
                         padding: EdgeInsets.symmetric(
-                          vertical: 24,
+                          vertical: 20,
                         ),
                         child: Center(
                           child: Text(
