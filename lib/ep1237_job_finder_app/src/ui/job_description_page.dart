@@ -16,7 +16,12 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
         child: Stack(
           children: [
             Positioned(
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -65,7 +70,10 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     height: 280,
-                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                   ),
                   SizedBox(
                     height: 42,
