@@ -90,7 +90,34 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                             child: Center(
-                              child: Text("Job Description"),
+                              child: Text(
+                                "Job Description",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                            child: Center(
+                              child: Text("Company"),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                            child: Center(
+                              child: Text("Company"),
                             ),
                           ),
                           Container(
@@ -108,14 +135,24 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       ),
                     ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Description",
-                      ),
-                      Text("${loremIpsum.substring(0, 150)}"),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Description",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("${loremIpsum.substring(0, 150)}"),
+                      ],
+                    ),
                   ),
                   Text(
                     "Requirements",
