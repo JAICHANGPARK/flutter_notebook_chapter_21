@@ -150,13 +150,21 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                         SizedBox(
                           height: 8,
                         ),
-                        Text("${loremIpsum.substring(0, 150)}"),
+                        Text("${loremIpsum.substring(0, 150)}", style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 13
+                        ),),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Requirements",
+                        ),
+
                       ],
                     ),
                   ),
-                  Text(
-                    "Requirements",
-                  ),
+
                   Expanded(
                     child: ListView.builder(
                       itemCount: 10,
