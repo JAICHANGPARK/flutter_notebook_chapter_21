@@ -11,13 +11,34 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Icon(
+                          Icons.keyboard_arrow_left,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
-
     );
   }
 }
