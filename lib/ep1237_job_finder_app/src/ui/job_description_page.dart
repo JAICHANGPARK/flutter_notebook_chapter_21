@@ -142,38 +142,30 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       children: [
                         Text(
                           "Description",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
                         SizedBox(
                           height: 8,
                         ),
-                        Text("${loremIpsum.substring(0, 150)}", style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 13
-                        ),),
+                        Text(
+                          "${loremIpsum.substring(0, 150)}",
+                          style: TextStyle(color: Colors.grey, fontSize: 13),
+                        ),
                         SizedBox(
                           height: 16,
                         ),
                         Text(
                           "Requirements",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
-
                       ],
                     ),
                   ),
-
                   Expanded(
                     child: ListView.builder(
                       itemCount: 10,
                       itemBuilder: (context, index) => Padding(
-                        padding: const EdgeInsets.only(left: 16 , bottom: 4),
+                        padding: const EdgeInsets.only(left: 16, bottom: 4),
                         child: Text(" - ${loremIpsum.substring(0, 50)}"),
                       ),
                     ),
@@ -181,13 +173,54 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                 ],
               ),
             ),
-             Positioned(
-               left: 0,
-                 right: 0,
-                 bottom: 0,
-                 child: Container(
-               child: Stack(),
-             ))
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.white,
+                      Colors.white.withOpacity(.8),
+                      Colors.white.withOpacity(.6),
+                      Colors.white.withOpacity(.4),
+                      Colors.white.withOpacity(.2),
+                      Colors.white.withOpacity(.1),
+                    ],
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                  ),
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 64,
+                      right: 64,
+                      bottom: 24,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          vertical: 24,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Apply for this job",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
