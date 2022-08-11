@@ -75,14 +75,37 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       borderRadius: BorderRadius.circular(16),
                     ),
                   ),
-                  SizedBox(
-                    height: 42,
-                    child: ListView(
-                      children: [
-                        Container(
-                          child: Center(),
-                        )
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: SizedBox(
+                      height: 42,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            child: Center(
+                              child: Text("Job Description"),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            child: Center(
+                              child: Text("Company"),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Column(
