@@ -81,12 +81,23 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       children: [],
                     ),
                   ),
-                  Text(
-                    "Description",
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Description",
+                      ),
+                      Text("${loremIpsum.substring(0, 150)}"),
+                    ],
                   ),
-                  Text("${loremIpsum.substring(0, 150)}"),
                   Text(
                     "Requirements",
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context, index) => Text(""),
+                    ),
                   ),
                 ],
               ),
