@@ -10,6 +10,8 @@ class JobDescriptionPage extends StatefulWidget {
 class _JobDescriptionPageState extends State<JobDescriptionPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
