@@ -21,25 +21,26 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
                       children: [
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Icon(
-                            Icons.keyboard_arrow_left,
-                            color: Colors.white,
+                        GestureDetector(
+                          onTap: () => Navigator.of(context).pop(),
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Icon(
+                              Icons.keyboard_arrow_left,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                         Expanded(
                             child: Center(
                           child: Text(
                             "Job Description",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                           ),
                         )),
                         Container(
