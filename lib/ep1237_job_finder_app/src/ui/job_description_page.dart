@@ -60,6 +60,14 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                         ),
                       ],
                     ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    height: 280,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
                   )
                 ],
               ),
