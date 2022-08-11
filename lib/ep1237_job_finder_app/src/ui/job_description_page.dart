@@ -78,7 +78,11 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   SizedBox(
                     height: 42,
                     child: ListView(
-                      children: [],
+                      children: [
+                        Container(
+                          child: Center(),
+                        )
+                      ],
                     ),
                   ),
                   Column(
@@ -96,7 +100,7 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   Expanded(
                     child: ListView.builder(
                       itemCount: 10,
-                      itemBuilder: (context, index) => Text(""),
+                      itemBuilder: (context, index) => Text(" - ${loremIpsum.substring(0, 50)}"),
                     ),
                   ),
                 ],
