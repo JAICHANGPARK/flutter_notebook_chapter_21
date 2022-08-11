@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 
 class JobDescriptionPage extends StatefulWidget {
   const JobDescriptionPage({Key? key}) : super(key: key);
@@ -64,17 +65,21 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     height: 280,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(16)
-                    ),
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                   ),
                   SizedBox(
                     height: 42,
                     child: ListView(
                       children: [],
                     ),
-                  )
+                  ),
+                  Text(
+                    "Description",
+                  ),
+                  Text("${loremIpsum.substring(0, 150)}"),
+                  Text(
+                    "Requirements",
+                  ),
                 ],
               ),
             )
