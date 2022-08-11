@@ -20,9 +20,12 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   Row(
                     children: [
                       Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                         child: Icon(
                           Icons.keyboard_arrow_left,
                           color: Colors.white,
@@ -30,9 +33,12 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       ),
                       Expanded(child: Center()),
                       Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                         child: Icon(
                           Icons.bookmark_border,
                           color: Colors.white,
