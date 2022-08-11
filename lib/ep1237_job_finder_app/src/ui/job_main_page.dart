@@ -174,7 +174,10 @@ class _JobMainPageState extends State<JobMainPage> {
                             child: Center(
                               child: Text(
                                 "in",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
                               ),
                             ),
                           ),
@@ -210,7 +213,10 @@ class _JobMainPageState extends State<JobMainPage> {
                       ),
                       Text(
                         "Senio UI Designer",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       ),
                       SizedBox(
                         height: 4,
