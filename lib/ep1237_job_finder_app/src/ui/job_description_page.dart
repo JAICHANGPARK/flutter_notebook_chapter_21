@@ -40,7 +40,10 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                             child: Center(
                           child: Text(
                             "Job Description",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                         )),
                         Container(
