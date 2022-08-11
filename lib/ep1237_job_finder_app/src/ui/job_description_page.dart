@@ -68,6 +68,12 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(16)
                     ),
+                  ),
+                  SizedBox(
+                    height: 42,
+                    child: ListView(
+                      children: [],
+                    ),
                   )
                 ],
               ),
