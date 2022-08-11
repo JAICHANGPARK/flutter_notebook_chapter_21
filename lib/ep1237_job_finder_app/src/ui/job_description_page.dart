@@ -172,12 +172,22 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   Expanded(
                     child: ListView.builder(
                       itemCount: 10,
-                      itemBuilder: (context, index) => Text(" - ${loremIpsum.substring(0, 50)}"),
+                      itemBuilder: (context, index) => Padding(
+                        padding: const EdgeInsets.only(left: 16 , bottom: 4),
+                        child: Text(" - ${loremIpsum.substring(0, 50)}"),
+                      ),
                     ),
                   ),
                 ],
               ),
-            )
+            ),
+             Positioned(
+               left: 0,
+                 right: 0,
+                 bottom: 0,
+                 child: Container(
+               child: Stack(),
+             ))
           ],
         ),
       ),
