@@ -11,6 +11,12 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+
+        ],
+      ),
 
     );
   }
