@@ -159,6 +159,10 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                         ),
                         Text(
                           "Requirements",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16
+                          ),
                         ),
 
                       ],
