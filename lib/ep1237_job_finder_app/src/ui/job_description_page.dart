@@ -78,7 +78,7 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                   Padding(
                     padding: const EdgeInsets.only(left: 16),
                     child: SizedBox(
-                      height: 42,
+                      height: 38,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
@@ -88,7 +88,7 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                               color: Colors.deepOrange,
                               borderRadius: BorderRadius.circular(6),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                             child: Center(
                               child: Text("Job Description"),
                             ),
@@ -99,7 +99,7 @@ class _JobDescriptionPageState extends State<JobDescriptionPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                             child: Center(
                               child: Text("Company"),
                             ),
