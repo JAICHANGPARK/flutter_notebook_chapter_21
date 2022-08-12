@@ -10,23 +10,26 @@ class SkyrentStartPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Skyrent",
-                  style: GoogleFonts.federo(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w500,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Skyrent",
+                    style: GoogleFonts.federo(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.menu,
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.menu,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             )
           ],
         ),
