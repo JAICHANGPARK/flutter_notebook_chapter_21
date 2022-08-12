@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1237_job_finder_app/src/ui/job_description_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+final testStateCounter = StateProvider((ref) => 0);
 class JobMainPage extends StatefulWidget {
   const JobMainPage({Key? key}) : super(key: key);
 
@@ -495,6 +497,16 @@ class _JobMainPageState extends State<JobMainPage> {
             ],
           ),
         ),
+      ),
+      floatingActionButton: Consumer(
+        builder: (context, ref, _) {
+          final cnt = ref.watch(testStateCounter);
+          return FloatingActionButton(
+            onPressed: (){
+
+            },
+          );
+        }
       ),
     );
   }
