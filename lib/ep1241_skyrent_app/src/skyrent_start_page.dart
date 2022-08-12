@@ -30,7 +30,15 @@ class SkyrentStartPage extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+            Text(
+              "APARTMENTS",
+              style: GoogleFonts.federo(
+                fontSize: 32,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Text("FOR RENT IN NYC")
           ],
         ),
       ),
