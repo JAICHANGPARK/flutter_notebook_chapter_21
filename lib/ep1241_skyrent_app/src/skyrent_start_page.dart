@@ -73,16 +73,21 @@ class SkyrentStartPage extends StatelessWidget {
                       color: Colors.grey,
                     ),
                   ),
+                  SizedBox(
+                    height: 58,
+                  ),
                   Container(
-                    decoration: BoxDecoration(),
-                    child: Text("Let's find",
+                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 32),
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                    child: Text(
+                      "Let's find",
                       style: GoogleFonts.federo(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-
+                        fontSize: 16,
+                        color: Colors.white,
                       ),
                     ),
-
                   )
                 ],
               ),
