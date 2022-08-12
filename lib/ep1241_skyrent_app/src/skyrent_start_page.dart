@@ -32,26 +32,60 @@ class SkyrentStartPage extends StatelessWidget {
                 ],
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "APARTMENTS",
-                  style: GoogleFonts.federo(
-                    fontSize: 32,
-                    fontWeight: FontWeight.w500,
+            SizedBox(
+              height: 100,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "APARTMENTS",
+                    style: GoogleFonts.federo(
+                      fontSize: 32,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                ),
-                Text(
-                  "FOR RENT IN NYC",
-                  style: GoogleFonts.federo(
-                    fontSize: 32,
-                    fontWeight: FontWeight.w500,
+                  Text(
+                    "FOR RENT IN NYC",
+                    style: GoogleFonts.federo(
+                      fontSize: 32,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                ),
-                Text("Search for luxury apartments"),
-                Text('in NYC according to your criteria')
-              ],
+                  SizedBox(
+                    height: 32,
+                  ),
+                  Text(
+                    "Search for luxury apartments",
+                    style: GoogleFonts.federo(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Text(
+                    'in NYC according to your criteria',
+                    style: GoogleFonts.federo(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(),
+                    child: Text("Let's find",
+                      style: GoogleFonts.federo(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+
+                      ),
+                    ),
+
+                  )
+                ],
+              ),
             )
           ],
         ),
