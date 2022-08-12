@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_about_us_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
 class SkyrentStartPage extends StatelessWidget {
   const SkyrentStartPage({Key? key}) : super(key: key);
@@ -7,6 +10,9 @@ class SkyrentStartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      key: scaffoldKey,
+      endDrawer: Drawer(),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,7 +30,9 @@ class SkyrentStartPage extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      scaffoldKey.currentState!.openEndDrawer();
+                    },
                     icon: Icon(
                       Icons.menu,
                     ),
@@ -76,16 +84,25 @@ class SkyrentStartPage extends StatelessWidget {
                   SizedBox(
                     height: 58,
                   ),
-                  Container(
-                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 32),
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                    ),
-                    child: Text(
-                      "Let's find",
-                      style: GoogleFonts.federo(
-                        fontSize: 16,
-                        color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => SkyrentAboutUsPage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 32),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                      child: Text(
+                        "Let's find",
+                        style: GoogleFonts.federo(
+                          fontSize: 16,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   )
