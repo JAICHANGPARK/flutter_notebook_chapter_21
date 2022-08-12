@@ -11,12 +11,19 @@ class SkyrentStartPage extends StatelessWidget {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Skyrent",
                   style: GoogleFonts.federo(
                     fontSize: 28,
                     fontWeight: FontWeight.w500,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.menu,
                   ),
                 ),
               ],
