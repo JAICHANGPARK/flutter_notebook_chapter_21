@@ -63,7 +63,15 @@ class SkyrentAboutUsPage extends StatelessWidget {
                       ),
                       child: Stack(
                         children: [
-
+                          Positioned(
+                            left: 0,
+                              right:0,
+                              top: 0,
+                              child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                            ),
+                          ))
                         ],
                       ),
                     )
