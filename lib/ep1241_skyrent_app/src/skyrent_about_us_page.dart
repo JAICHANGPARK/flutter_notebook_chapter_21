@@ -57,6 +57,56 @@ class SkyrentAboutUsPage extends StatelessWidget {
                 child: ListView(
                   children: [
                     Container(
+                      margin: EdgeInsets.only(bottom: 16),
+                      height: 220,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                            bottom: 28,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 24,
+                            bottom: 0,
+                            child: Container(
+                              height: 42,
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                color: Colors.black,
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 24),
+                              child: Row(
+                                children: [
+                                  Text("Read",
+                                    style: GoogleFonts.federo(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(width: 8,),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
                       height: 220,
                       decoration: BoxDecoration(
                         color: Colors.blue,
