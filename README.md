@@ -6,8 +6,8 @@
 - by Desire Creative Agency
 - https://dribbble.com/shots/19060859-Mobile-Skyrent
 
-<img src="https://cdn.dribbble.com/userupload/3261281/file/original-2ddcb5401442ac62d0dc0bb1799ae0cd.png?compress=1&resize=1024x768&vertical=center"/>
-<img src="https://cdn.dribbble.com/userupload/3261282/file/original-1b12356d4d250651972c9ec1f21c0ae9.png?compress=1&resize=1024x768&vertical=center"/>
+<img src="https://cdn.dribbble.com/userupload/3261281/file/original-2ddcb5401442ac62d0dc0bb1799ae0cd.png?compress=1&resize=1024x768&vertical=center"  width="400px"/>
+<img src="https://cdn.dribbble.com/userupload/3261282/file/original-1b12356d4d250651972c9ec1f21c0ae9.png?compress=1&resize=1024x768&vertical=center"  width="400px"/>
 
 ### EP1237-1240
 
@@ -15,7 +15,7 @@
 - by Rizal
 - https://dribbble.com/shots/19016131-Joki-Job-Finder-App/attachments/14182950?mode=media
 
-<img src="https://cdn.dribbble.com/users/10221461/screenshots/19016131/media/889186d5ed889e33b7c20e9fdccf0ebd.png"/>
+<img src="https://cdn.dribbble.com/users/10221461/screenshots/19016131/media/889186d5ed889e33b7c20e9fdccf0ebd.png"  width="400px"/>
 
 ### EP1234-1236
 
@@ -23,7 +23,7 @@
 - by Zesan h
 - https://dribbble.com/shots/18974931-Food-Delivery-App
 
-<img src="https://cdn.dribbble.com/userupload/3240989/file/original-5d9c323a1f0d1584257a20c50185f53a.jpg?compress=1&resize=1200x900"/>
+<img src="https://cdn.dribbble.com/userupload/3240989/file/original-5d9c323a1f0d1584257a20c50185f53a.jpg?compress=1&resize=1200x900" width="400px/>
 
 ### EP1230-1233
 
@@ -37,7 +37,7 @@
 - by Habib Gilang Maulana
 - https://dribbble.com/shots/18899941-BeBank-Mobile-Banking-App/attachments/14074390?mode=media
 
-<img src="https://cdn.dribbble.com/users/3925596/screenshots/18899941/media/6eb5baa83219ae1088d292175df7431e.png"/>
+<img src="https://cdn.dribbble.com/users/3925596/screenshots/18899941/media/6eb5baa83219ae1088d292175df7431e.png" width="400px"/>
 
 ### EP1221-1226
 
