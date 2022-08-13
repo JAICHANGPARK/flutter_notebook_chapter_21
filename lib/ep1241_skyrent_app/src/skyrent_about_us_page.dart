@@ -91,7 +91,9 @@ class SkyrentAboutUsPage extends StatelessWidget {
                                     bottom: 0,
                                     child: Container(
                                       height: 72,
-                                      decoration: BoxDecoration(color: Colors.white.withOpacity(0.8)),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(0.8),
+                                      ),
                                       padding: EdgeInsets.only(top: 16, left: 16),
                                       child: Text(
                                         "How we grew into a big company",
@@ -172,8 +174,13 @@ class SkyrentAboutUsPage extends StatelessWidget {
                                     bottom: 0,
                                     child: Container(
                                       height: 72,
-                                      decoration: BoxDecoration(color: Colors.white.withOpacity(0.8)),
-                                      padding: EdgeInsets.only(top: 16, left: 16),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(0.8),
+                                      ),
+                                      padding: EdgeInsets.only(
+                                        top: 16,
+                                        left: 16,
+                                      ),
                                       child: Text(
                                         "How we grew into a big company",
                                         style: GoogleFonts.federo(),
