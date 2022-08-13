@@ -58,7 +58,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
                   children: [
                     Container(
                       margin: EdgeInsets.only(bottom: 16),
-                      height: 220,
+                      height: 230,
                       // decoration: BoxDecoration(
                       //   color: Colors.blue,
                       // ),
@@ -143,10 +143,11 @@ class SkyrentAboutUsPage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 220,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
+                      margin: EdgeInsets.only(bottom: 16),
+                      height: 230,
+                      // decoration: BoxDecoration(
+                      //   color: Colors.blue,
+                      // ),
                       child: Stack(
                         children: [
                           Positioned(
@@ -156,7 +157,40 @@ class SkyrentAboutUsPage extends StatelessWidget {
                             bottom: 28,
                             child: Container(
                               decoration: BoxDecoration(
-                                border: Border.all(),
+                                border: Border.all(width: 1.5),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2016/10/28/16/43/usa-1778564_960_720.jpg",
+                                  ),
+                                  colorFilter: ColorFilter.mode(
+                                    Colors.black.withOpacity(1),
+                                    BlendMode.color,
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 0,
+                                    right: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      height: 72,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.8)
+                                      ),
+                                      padding: EdgeInsets.only(
+                                          top: 16,
+                                          left: 16
+                                      ),
+                                      child: Text(
+                                        "How we grew into a big company",
+                                        style: GoogleFonts.federo(),
+                                      ),
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
                           ),
@@ -193,7 +227,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
                           )
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
