@@ -12,6 +12,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -35,6 +36,11 @@ class SkyrentAboutUsPage extends StatelessWidget {
               ),
               Text(
                 "Our service since 1999 always allows",
+                style: GoogleFonts.federo(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey,
+                ),
               ),
               Text("you to quickly find a comforatable apartment"),
               SizedBox(
