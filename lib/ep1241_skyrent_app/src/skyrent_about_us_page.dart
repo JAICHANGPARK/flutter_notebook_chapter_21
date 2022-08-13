@@ -54,7 +54,21 @@ class SkyrentAboutUsPage extends StatelessWidget {
                 height: 32,
               ),
               Expanded(
-                child: Placeholder(),
+                child: ListView(
+                  children: [
+                    Container(
+                      height: 240,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: Stack(
+                        children: [
+                          
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               SizedBox(
                 height: 72,
