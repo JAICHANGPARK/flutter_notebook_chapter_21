@@ -80,6 +80,17 @@ class SkyrentAboutUsPage extends StatelessWidget {
                               height: 52,
                               decoration: BoxDecoration(
                                 border: Border.all(),
+                                color: Colors.black,
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 32),
+                              child: Row(
+                                children: [
+                                  Text("Read"),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
                               ),
                             ),
                           )
