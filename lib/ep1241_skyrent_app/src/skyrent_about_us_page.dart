@@ -63,7 +63,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
                       ),
                       child: Stack(
                         children: [
-                          
+
                         ],
                       ),
                     )
