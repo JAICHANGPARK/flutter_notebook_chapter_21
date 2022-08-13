@@ -57,7 +57,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
                 child: ListView(
                   children: [
                     Container(
-                      height: 240,
+                      height: 220,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
@@ -67,7 +67,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
                             left: 0,
                             right: 0,
                             top: 0,
-                            bottom: 42,
+                            bottom: 28,
                             child: Container(
                               decoration: BoxDecoration(
                                 border: Border.all(),
