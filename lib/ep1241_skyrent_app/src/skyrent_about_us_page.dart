@@ -37,14 +37,27 @@ class SkyrentAboutUsPage extends StatelessWidget {
               Text(
                 "Our service since 1999 always allows",
                 style: GoogleFonts.federo(
-                  fontSize: 13,
+                  fontSize: 14,
                   fontWeight: FontWeight.w500,
                   color: Colors.grey,
                 ),
               ),
-              Text("you to quickly find a comforatable apartment"),
+              Text(
+                "you to quickly find a comforatable apartment",
+                style: GoogleFonts.federo(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey,
+                ),
+              ),
               SizedBox(
                 height: 32,
+              ),
+              Expanded(
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 72,
               ),
             ],
           ),
