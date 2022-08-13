@@ -37,7 +37,7 @@ class SkyrentAboutUsPage extends StatelessWidget {
               Text(
                 "Our service since 1999 always allows",
                 style: GoogleFonts.federo(
-                  fontSize: 14,
+                  fontSize: 13,
                   fontWeight: FontWeight.w500,
                   color: Colors.grey,
                 ),
