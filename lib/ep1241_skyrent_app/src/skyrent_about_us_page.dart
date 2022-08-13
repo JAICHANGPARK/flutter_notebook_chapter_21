@@ -71,7 +71,17 @@ class SkyrentAboutUsPage extends StatelessWidget {
                             bottom: 28,
                             child: Container(
                               decoration: BoxDecoration(
-                                border: Border.all(),
+                                border: Border.all(width: 1.5),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2016/11/22/19/17/buildings-1850129_960_720.jpg",
+                                  ),
+                                  colorFilter: ColorFilter.mode(
+                                    Colors.black.withOpacity(1),
+                                    BlendMode.color,
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
@@ -87,14 +97,17 @@ class SkyrentAboutUsPage extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: 24),
                               child: Row(
                                 children: [
-                                  Text("Read",
+                                  Text(
+                                    "Read",
                                     style: GoogleFonts.federo(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.white,
                                     ),
                                   ),
-                                  SizedBox(width: 8,),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Icon(
                                     Icons.arrow_forward,
                                     color: Colors.white,
@@ -136,14 +149,17 @@ class SkyrentAboutUsPage extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: 24),
                               child: Row(
                                 children: [
-                                  Text("Read",
+                                  Text(
+                                    "Read",
                                     style: GoogleFonts.federo(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.white,
                                     ),
                                   ),
-                                  SizedBox(width: 8,),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Icon(
                                     Icons.arrow_forward,
                                     color: Colors.white,
