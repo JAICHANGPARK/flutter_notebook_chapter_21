@@ -20,6 +20,9 @@ class SkyrentAboutUsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 72,
+              ),
               Text(
                 "ABOUT US",
                 style: GoogleFonts.federo(
@@ -27,8 +30,16 @@ class SkyrentAboutUsPage extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              Text("Our service since 1999 always allows"),
+              SizedBox(
+                height: 32,
+              ),
+              Text(
+                "Our service since 1999 always allows",
+              ),
               Text("you to quickly find a comforatable apartment"),
+              SizedBox(
+                height: 32,
+              ),
             ],
           ),
         ),
