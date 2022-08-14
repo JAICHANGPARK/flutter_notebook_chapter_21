@@ -35,33 +35,55 @@ class SkyrentHomePage extends StatelessWidget {
       ),
       key: scaffoldKey2,
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Skyrent",
-                    style: GoogleFonts.federo(
-                      fontSize: 28,
-                      fontWeight: FontWeight.w500,
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(0.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Skyrent",
+                      style: GoogleFonts.federo(
+                        fontSize: 28,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      scaffoldKey2.currentState!.openEndDrawer();
-                      // scaffoldKey.currentState!.openEndDrawer();
-                    },
-                    icon: Icon(
-                      Icons.menu,
+                    IconButton(
+                      onPressed: () {
+                        scaffoldKey2.currentState!.openEndDrawer();
+                        // scaffoldKey.currentState!.openEndDrawer();
+                      },
+                      icon: Icon(
+                        Icons.menu,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+              SizedBox(
+                height: 64,
+              ),
+              Container(
+                height: 220,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2016/11/22/19/17/buildings-1850129_960_720.jpg",
+                    ),
+                    colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(1),
+                      BlendMode.color,
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Text("20 July, 2022"),
+            ],
+          ),
         ),
       ),
     );
