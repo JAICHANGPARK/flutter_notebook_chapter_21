@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_about_us_page.dart';
 import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_start_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,11 +20,15 @@ class SkyrentHomePage extends StatelessWidget {
                   fontSize: 24,
                 ),
               ),
-              onTap: (){
-                Navigator.of(context)
+              onTap: () {
+                scaffoldKey2.currentState!.closeEndDrawer();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => SkyrentAboutUsPage(),
+                  ),
+                );
               },
             ),
-            
             Divider(),
           ],
         ),
