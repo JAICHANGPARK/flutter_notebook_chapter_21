@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_about_us_page.dart';
+import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -88,7 +89,7 @@ class SkyrentStartPage extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => SkyrentAboutUsPage(),
+                          builder: (context) => SkyrentHomePage(),
                         ),
                       );
                     },
