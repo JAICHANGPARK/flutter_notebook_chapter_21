@@ -38,6 +38,7 @@ class SkyrentHomePage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.all(0.0),
@@ -81,10 +82,31 @@ class SkyrentHomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 24,
+              ),
               Text("20 July, 2022"),
-              Text("THE COST OF RENTING A HOUSE IN THE USA", style: GoogleFonts.federo(
-                fontSize: 24,
-              ),),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                "THE COST OF RENTING A HOUSE IN THE USA",
+                style: GoogleFonts.federo(
+                  fontSize: 24,
+                ),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Text(
+                "Hot much does it cost to renta house in the USA? First of all, "
+                "this question is asked by those who are planning threir initial budget for "
+                "moving to the United States.",
+                style: GoogleFonts.federo(
+                  fontSize: 16,
+                  color: Colors.black.withOpacity(0.6),
+                ),
+              ),
             ],
           ),
         ),
