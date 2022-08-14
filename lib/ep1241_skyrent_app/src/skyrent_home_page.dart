@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class SkylentHomePage extends StatelessWidget {
-  const SkylentHomePage({super.key});
+class SkyrentHomePage extends StatelessWidget {
+  const SkyrentHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
