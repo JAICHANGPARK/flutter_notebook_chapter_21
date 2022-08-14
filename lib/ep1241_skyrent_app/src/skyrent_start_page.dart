@@ -4,7 +4,7 @@ import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_home_
 import 'package:google_fonts/google_fonts.dart';
 
 GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
-
+GlobalKey<ScaffoldState> scaffoldKey2 = GlobalKey();
 class SkyrentStartPage extends StatelessWidget {
   const SkyrentStartPage({Key? key}) : super(key: key);
 
