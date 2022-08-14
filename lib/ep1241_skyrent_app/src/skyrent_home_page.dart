@@ -82,6 +82,9 @@ class SkyrentHomePage extends StatelessWidget {
                 ),
               ),
               Text("20 July, 2022"),
+              Text("THE COST OF RENTING A HOUSE IN THE USA", style: GoogleFonts.federo(
+                fontSize: 24,
+              ),),
             ],
           ),
         ),
