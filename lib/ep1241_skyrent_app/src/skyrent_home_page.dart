@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1241_skyrent_app/src/skyrent_start_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class SkyrentHomePage extends StatelessWidget {
   const SkyrentHomePage({super.key});
 
@@ -10,7 +9,25 @@ class SkyrentHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      endDrawer: Drawer(),
+      endDrawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              title: Text(
+                "Aout Us",
+                style: GoogleFonts.federo(
+                  fontSize: 24,
+                ),
+              ),
+              onTap: (){
+                Navigator.of(context)
+              },
+            ),
+            
+            Divider(),
+          ],
+        ),
+      ),
       key: scaffoldKey2,
       body: SafeArea(
         child: Column(
