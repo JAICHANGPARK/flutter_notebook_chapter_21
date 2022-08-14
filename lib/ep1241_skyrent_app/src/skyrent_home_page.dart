@@ -11,7 +11,7 @@ class SkyrentHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       endDrawer: Drawer(),
-      key: scaffoldKey,
+      key: scaffoldKey2,
       body: SafeArea(
         child: Column(
           children: [
@@ -29,7 +29,7 @@ class SkyrentHomePage extends StatelessWidget {
                   ),
                   IconButton(
                     onPressed: () {
-                      scaffoldKey.currentState!.openEndDrawer();
+                      scaffoldKey2.currentState!.openEndDrawer();
                       // scaffoldKey.currentState!.openEndDrawer();
                     },
                     icon: Icon(
