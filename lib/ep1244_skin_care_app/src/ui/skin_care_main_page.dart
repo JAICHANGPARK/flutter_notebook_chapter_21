@@ -11,6 +11,11 @@ class SkinCareMainPage extends StatefulWidget {
 class _SkinCareMainPageState extends State<SkinCareMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+
+      ),
+    );
   }
 }
