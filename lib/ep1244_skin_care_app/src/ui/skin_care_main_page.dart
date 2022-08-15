@@ -74,6 +74,27 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                   ),
                 )
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                top: 16,
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 34,
+                      color: Colors.grey[200],
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.tune),
+                  )
+                ],
+              ),
             )
           ],
         ),
