@@ -15,6 +15,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 8,
@@ -91,11 +92,62 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.tune),
+                    icon: Icon(
+                      Icons.tune,
+                    ),
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(top: 8, left: 16),
+                      height: 280,
+                      color: Colors.blue,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 6,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 160,
+                            margin: EdgeInsets.only(right: 8),
+                            color: Colors.pink,
+                          );
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      child: Text(
+                        "Trending",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 24,
+                        ),
+                        // style: GoogleFonts.federo(
+                        //   fontSize: 24,
+                        //   fontWeight: FontWeight.normal,
+                        // ),
+                      ),
+                    ),
+                    Column(
+                      children: List.generate(
+                        5,
+                        (index) => Container(
+                          height: 140,
+                          margin: EdgeInsets.only(left: 16, right: 16, bottom: 8),
+                          color: Colors.brown,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
