@@ -88,15 +88,18 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                   Expanded(
                     child: Container(
                       height: 34,
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       color: Colors.grey[200],
                       child: TextField(
                         decoration: InputDecoration(
-                          icon: Icon(
-                            CupertinoIcons.search,
-                          ),
-                          hintText: "Search products...",
-                          border: InputBorder.none
-                        ),
+                            icon: Icon(
+                              CupertinoIcons.search,
+                            ),
+                            hintText: "Search products...",
+                            hintStyle: GoogleFonts.cormorantGaramond(
+                              fontSize: 15
+                            ),
+                            border: InputBorder.none),
                       ),
                     ),
                   ),
