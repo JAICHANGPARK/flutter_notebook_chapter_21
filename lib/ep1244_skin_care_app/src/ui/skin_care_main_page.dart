@@ -32,9 +32,9 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                   child: Center(
                     child: Text(
                       "SkinLab",
-                      style: GoogleFonts.federo(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w300,
+                      style: GoogleFonts.cormorantGaramond(
+                        fontSize: 28,
+                        // fontWeight: FontWeight.w300,
                       ),
                     ),
                   ),
@@ -124,7 +124,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                       padding: EdgeInsets.only(left: 16, top: 16, bottom: 16),
                       child: Text(
                         "Trending",
-                        style: TextStyle(
+                        style: GoogleFonts.cormorantGaramond(
                           fontWeight: FontWeight.w300,
                           fontSize: 24,
                         ),
