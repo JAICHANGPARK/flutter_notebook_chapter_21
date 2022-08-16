@@ -118,7 +118,6 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                     Container(
                       margin: EdgeInsets.only(top: 8, left: 16),
                       height: 280,
-                      color: Colors.blue,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 6,
