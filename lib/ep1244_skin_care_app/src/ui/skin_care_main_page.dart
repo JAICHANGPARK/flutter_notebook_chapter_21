@@ -180,17 +180,40 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                         (index) => Container(
                           height: 140,
                           margin: EdgeInsets.only(left: 16, right: 16, bottom: 8),
-                          color: Colors.brown,
                           child: Stack(
                             children: [
                               Positioned(
                                 left: 64,
                                 top: 8,
-                                bottom: 8,
+                                bottom: 4,
                                 right: 0,
                                 child: Container(
-                                  color: Colors.grey,
-                                  child: Column(),
+                                  padding: EdgeInsets.only(
+                                    left: 16,
+                                    top: 8,
+                                    bottom: 8,
+                                  ),
+                                  color: Colors.grey[200],
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          ...List.generate(
+                                            5,
+                                            (index) => Icon(
+                                              Icons.star,
+                                              size: 12,
+                                              color: Colors.brown,
+                                            ),
+                                          ),
+                                          Text(
+                                            "(305 reviews)",
+                                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                               Positioned(
