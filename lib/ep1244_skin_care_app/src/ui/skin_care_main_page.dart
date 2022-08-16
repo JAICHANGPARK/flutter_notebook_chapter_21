@@ -195,6 +195,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                   ),
                                   color: Colors.grey[200],
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         children: [
@@ -206,11 +207,25 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                               color: Colors.brown,
                                             ),
                                           ),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
                                           Text(
                                             "(305 reviews)",
-                                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.grey,
+                                            ),
                                           ),
+                                          IconButton(onPressed: () {}, icon: Icon(Icons.bookmark_border)),
                                         ],
+                                      ),
+                                      Text(
+                                        "Vitamin C Face Serum",
+                                        style: GoogleFonts.cormorantGaramond(
+                                          fontSize: 20,
+                                          decoration: TextDecoration.underline,
+                                        ),
                                       ),
                                     ],
                                   ),
