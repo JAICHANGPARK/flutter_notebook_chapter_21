@@ -192,6 +192,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                     left: 16,
                                     top: 8,
                                     bottom: 8,
+                                    right: 8,
                                   ),
                                   color: Colors.grey[200],
                                   child: Column(
