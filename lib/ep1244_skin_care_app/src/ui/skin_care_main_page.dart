@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -88,6 +89,15 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                     child: Container(
                       height: 34,
                       color: Colors.grey[200],
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(
+                            CupertinoIcons.search,
+                          ),
+                          hintText: "Search products...",
+                          border: InputBorder.none
+                        ),
+                      ),
                     ),
                   ),
                   IconButton(
