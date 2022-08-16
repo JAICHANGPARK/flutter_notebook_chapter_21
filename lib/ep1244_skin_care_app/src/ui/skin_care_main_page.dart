@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1244_skin_care_app/src/data/skin_care_data.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SkinCareMainPage extends StatefulWidget {
@@ -120,8 +121,9 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                       height: 280,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 6,
+                        itemCount: skinCareHomeItems.length,
                         itemBuilder: (context, index) {
+                          var item = skinCareHomeItems[index];
                           return Container(
                             width: 160,
                             margin: EdgeInsets.only(right: 8),
@@ -134,7 +136,9 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247_960_720.jpg"),
+                                          item.img ??
+                                              "https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247_960_720.jpg",
+                                        ),
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -143,7 +147,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    "Facial Tools",
+                                    item.title ?? "Facial Tools",
                                     style: GoogleFonts.cormorantGaramond(
                                       fontSize: 24,
                                       decoration: TextDecoration.underline,
