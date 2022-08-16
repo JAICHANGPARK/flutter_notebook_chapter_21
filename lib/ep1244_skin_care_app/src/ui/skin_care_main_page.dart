@@ -96,9 +96,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                               CupertinoIcons.search,
                             ),
                             hintText: "Search products...",
-                            hintStyle: GoogleFonts.cormorantGaramond(
-                              fontSize: 15
-                            ),
+                            hintStyle: GoogleFonts.cormorantGaramond(fontSize: 15),
                             border: InputBorder.none),
                       ),
                     ),
@@ -128,7 +126,21 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                           return Container(
                             width: 160,
                             margin: EdgeInsets.only(right: 8),
-                            color: Colors.pink,
+                            decoration: BoxDecoration(border: Border.all()),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(),
+                                )),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Facial Tools",
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
