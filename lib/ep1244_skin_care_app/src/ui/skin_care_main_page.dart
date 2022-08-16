@@ -181,6 +181,31 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                           height: 140,
                           margin: EdgeInsets.only(left: 16, right: 16, bottom: 8),
                           color: Colors.brown,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 64,
+                                top: 8,
+                                bottom: 8,
+                                right: 0,
+                                child: Container(
+                                  color: Colors.grey,
+                                  child: Column(),
+                                ),
+                              ),
+                              Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  child: Container(
+                                    width: 64,
+                                    color: Colors.blue,
+                                    child: Center(
+                                      child: Text("Place Picture"),
+                                    ),
+                                  ))
+                            ],
+                          ),
                         ),
                       ),
                     )
