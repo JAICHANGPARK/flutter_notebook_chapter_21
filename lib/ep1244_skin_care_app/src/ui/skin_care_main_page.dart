@@ -196,6 +196,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                   color: Colors.grey[200],
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Row(
                                         children: [
@@ -217,7 +218,11 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                               color: Colors.grey,
                                             ),
                                           ),
-                                          IconButton(onPressed: () {}, icon: Icon(Icons.bookmark_border)),
+                                          Spacer(),
+                                          IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(Icons.bookmark_border),
+                                          ),
                                         ],
                                       ),
                                       Text(
@@ -227,6 +232,36 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                           decoration: TextDecoration.underline,
                                         ),
                                       ),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "\$ 39.99",
+                                            style: GoogleFonts.cormorantGaramond(
+                                              fontSize: 20,
+                                              color: Colors.brown,
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          Icon(
+                                            Icons.remove,
+                                            size: 12,
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            child: Text(
+                                              "01",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                              ),
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.add,
+                                            size: 12,
+                                          ),
+                                        ],
+                                      )
                                     ],
                                   ),
                                 ),
