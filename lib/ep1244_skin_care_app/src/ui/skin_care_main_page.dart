@@ -128,6 +128,7 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                             margin: EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(border: Border.all()),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
                                     child: Container(
@@ -137,6 +138,10 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
                                     "Facial Tools",
+                                    style: GoogleFonts.cormorantGaramond(
+                                      fontSize: 24,
+                                      decoration: TextDecoration.underline,
+                                    ),
                                   ),
                                 )
                               ],
