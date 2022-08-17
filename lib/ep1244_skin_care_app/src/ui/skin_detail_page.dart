@@ -79,9 +79,24 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                   ),
                 ],
               ),
-              Expanded(child: Placeholder()),
+              Expanded(
+                  child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Vitamin C\nFace Serum", s),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.bookmark_border,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              )),
               Container(
-                height: 64,
+                height: 58,
                 decoration: BoxDecoration(border: Border.all()),
                 child: Row(
                   children: [
@@ -92,7 +107,10 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                       child: Row(
                         children: [
                           Icon(Icons.remove),
-                          Text("01"),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("01"),
+                          ),
                           Icon(Icons.add),
                         ],
                       ),
@@ -115,7 +133,10 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                               ),
                               Text(
                                 "\$ 39.99",
-                                style: GoogleFonts.cormorantGaramond(fontSize: 24, color: Colors.white),
+                                style: GoogleFonts.cormorantGaramond(
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                ),
                               ),
                             ],
                           ),
