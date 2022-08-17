@@ -177,108 +177,113 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                     Column(
                       children: List.generate(
                         5,
-                        (index) => Container(
-                          height: 140,
-                          margin: EdgeInsets.only(left: 16, right: 16, bottom: 8),
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 64,
-                                top: 8,
-                                bottom: 4,
-                                right: 0,
-                                child: Container(
-                                  padding: EdgeInsets.only(
-                                    left: 16,
-                                    top: 8,
-                                    bottom: 8,
-                                    right: 8,
-                                  ),
-                                  color: Colors.grey[200],
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          ...List.generate(
-                                            5,
-                                            (index) => Icon(
-                                              Icons.star,
-                                              size: 12,
-                                              color: Colors.brown,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 4,
-                                          ),
-                                          Text(
-                                            "(305 reviews)",
-                                            style: TextStyle(
-                                              fontSize: 12,
-                                              color: Colors.grey,
-                                            ),
-                                          ),
-                                          Spacer(),
-                                          IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(Icons.bookmark_border),
-                                          ),
-                                        ],
-                                      ),
-                                      Text(
-                                        "Vitamin C Face Serum",
-                                        style: GoogleFonts.cormorantGaramond(
-                                          fontSize: 20,
-                                          decoration: TextDecoration.underline,
-                                        ),
-                                      ),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            "\$ 39.99",
-                                            style: GoogleFonts.cormorantGaramond(
-                                              fontSize: 20,
-                                              color: Colors.brown,
-                                            ),
-                                          ),
-                                          Spacer(),
-                                          Icon(
-                                            Icons.remove,
-                                            size: 12,
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 8),
-                                            child: Text(
-                                              "01",
-                                              style: TextStyle(
-                                                fontSize: 12,
+                        (index) => GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            height: 140,
+                            margin: EdgeInsets.only(left: 16, right: 16, bottom: 8),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 64,
+                                  top: 8,
+                                  bottom: 4,
+                                  right: 0,
+                                  child: Container(
+                                    padding: EdgeInsets.only(
+                                      left: 16,
+                                      top: 8,
+                                      bottom: 8,
+                                      right: 8,
+                                    ),
+                                    color: Colors.grey[200],
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            ...List.generate(
+                                              5,
+                                              (index) => Icon(
+                                                Icons.star,
+                                                size: 12,
+                                                color: Colors.brown,
                                               ),
                                             ),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
+                                            Text(
+                                              "(305 reviews)",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                            Spacer(),
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.bookmark_border),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          "Vitamin C Face Serum",
+                                          style: GoogleFonts.cormorantGaramond(
+                                            fontSize: 20,
+                                            decoration: TextDecoration.underline,
                                           ),
-                                          Icon(
-                                            Icons.add,
-                                            size: 12,
-                                          ),
-                                        ],
-                                      )
-                                    ],
+                                        ),
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              "\$ 39.99",
+                                              style: GoogleFonts.cormorantGaramond(
+                                                fontSize: 20,
+                                                color: Colors.brown,
+                                              ),
+                                            ),
+                                            Spacer(),
+                                            Icon(
+                                              Icons.remove,
+                                              size: 12,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                                              child: Text(
+                                                "01",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                ),
+                                              ),
+                                            ),
+                                            Icon(
+                                              Icons.add,
+                                              size: 12,
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Positioned(
-                                  left: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                  child: Container(
-                                    width: 64,
-                                    color: Colors.blue,
-                                    child: Center(
-                                      child: Text("Place Picture"),
-                                    ),
-                                  ))
-                            ],
+                                Positioned(
+                                    left: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      width: 64,
+                                      color: Colors.blue,
+                                      child: Center(
+                                        child: Text("Place Picture"),
+                                      ),
+                                    ))
+                              ],
+                            ),
                           ),
                         ),
                       ),
