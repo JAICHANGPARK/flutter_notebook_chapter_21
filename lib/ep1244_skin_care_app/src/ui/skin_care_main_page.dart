@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1244_skin_care_app/src/data/skin_care_data.dart';
+import 'package:flutter_notebook_chapter_21/ep1244_skin_care_app/src/ui/skin_detail_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SkinCareMainPage extends StatefulWidget {
@@ -178,8 +179,12 @@ class _SkinCareMainPageState extends State<SkinCareMainPage> {
                       children: List.generate(
                         5,
                         (index) => GestureDetector(
-                          onTap: (){
-
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => SkinDetailPage(),
+                              ),
+                            );
                           },
                           child: Container(
                             height: 140,
