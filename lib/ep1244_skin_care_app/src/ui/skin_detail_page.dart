@@ -80,21 +80,86 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                 ],
               ),
               Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Column(
-                children: [
-                  Row(
                     children: [
-                      Text("Vitamin C\nFace Serum", s),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.bookmark_border,
-                        ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Vitamin C\nFace Serum",
+                            style: GoogleFonts.cormorantGaramond(
+                              fontSize: 38,
+                            ),
+                          ),
+                          Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.bookmark_border,
+                            ),
+                          ),
+                        ],
                       ),
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 8),
+                        height: 180,
+                        color: Colors.blue,
+                      ),
+                      Divider(
+                        color: Colors.black,
+                      ),
+                      Row(
+                        children: [
+                          Text("In stock"),
+                          Spacer(),
+                          Icon(
+                            Icons.star,
+                            size: 14,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 14,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 14,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 14,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 14,
+                          ),
+                          Text("(305 reviews)"),
+                          Spacer(),
+                          Icon(
+                            Icons.message,
+                            size: 14,
+                          ),
+                          Text("152"),
+                        ],
+                      ),
+                      Divider(
+                        color: Colors.black,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(),
+                            child: Center(
+                              child: Text("Vegan"),
+                            ),
+                          )
+                        ],
+                      )
                     ],
-                  )
-                ],
-              )),
+                  ),
+                ),
+              ),
               Container(
                 height: 58,
                 decoration: BoxDecoration(border: Border.all()),
