@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SkinDetailPage extends StatefulWidget {
@@ -83,6 +84,7 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -154,14 +156,37 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             child: Center(
-                              child: Text("Vegan", style: TextStyle(
-                                fontSize: 12,
-
-                              ),),
+                              child: Text(
+                                "Vegan",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
                             ),
-                          )
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            child: Center(
+                              child: Text(
+                                "Cruelty free",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
-                      )
+                      ),
+                      Text(
+                        "${loremIpsum.substring(0, 100)}",
+                      ),
+                      Text("Read more"),
                     ],
                   ),
                 ),
