@@ -107,10 +107,64 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 8),
                         height: 180,
-                        color: Colors.blue,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              bottom: 0,
+                              right: 84,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 0,
+                              bottom: 0,
+                              right: 0,
+                              child: Container(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    RotatedBox(
+                                      quarterTurns: 3,
+                                      child: Text("Sensitive"),
+                                    ),
+                                    Container(
+                                      width: 100,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(),
+                                      ),
+                                      padding: EdgeInsets.symmetric(vertical: 4),
+                                      child: Align(
+                                        alignment: Alignment.topRight,
+                                        child: RotatedBox(
+                                          quarterTurns: 3,
+                                          child: Text("Oily"),
+                                        ),
+                                      ),
+                                    ),
+                                    RotatedBox(
+                                      quarterTurns: 3,
+                                      child: Text("Dry"),
+                                    ),
+                                    RotatedBox(
+                                      quarterTurns: 3,
+                                      child: Text("Normal"),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       Divider(
                         color: Colors.black,
+                        height: 24,
                       ),
                       Row(
                         children: [
@@ -147,6 +201,10 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                       ),
                       Divider(
                         color: Colors.black,
+                        height: 24,
+                      ),
+                      SizedBox(
+                        height: 16,
                       ),
                       Row(
                         children: [
@@ -183,10 +241,69 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                           ),
                         ],
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Text(
-                        "${loremIpsum.substring(0, 100)}",
+                        "${loremIpsum.substring(0, 200)}",
                       ),
                       Text("Read more"),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                        ),
+                        padding: EdgeInsets.only(
+                          left: 16,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "How to Use",
+                              style: GoogleFonts.cormorantGaramond(
+                                fontSize: 24,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                        ),
+                        padding: EdgeInsets.only(
+                          left: 16,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Reviews",
+                              style: GoogleFonts.cormorantGaramond(
+                                fontSize: 24,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
