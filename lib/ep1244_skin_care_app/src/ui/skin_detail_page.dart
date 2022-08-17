@@ -149,9 +149,15 @@ class _SkinDetailPageState extends State<SkinDetailPage> {
                       Row(
                         children: [
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             child: Center(
-                              child: Text("Vegan"),
+                              child: Text("Vegan", style: TextStyle(
+                                fontSize: 12,
+
+                              ),),
                             ),
                           )
                         ],
