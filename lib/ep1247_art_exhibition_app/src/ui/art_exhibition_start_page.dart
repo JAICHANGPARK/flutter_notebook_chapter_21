@@ -64,7 +64,7 @@ class ArtExhibitonStartPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 64,
+                  height: 58,
                   child: Stack(
                     children: [
                       Positioned(
