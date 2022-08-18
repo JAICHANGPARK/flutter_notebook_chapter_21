@@ -16,9 +16,15 @@ class ArtExhibitonStartPage extends StatelessWidget {
             child: Container(),
           ),
           Positioned(
+            left: 16,
+            right: 16,
+            top: 72,
+            bottom: 0,
             child: Column(
               children: [
-                
+                Text(
+                  "Arexs",
+                )
               ],
             ),
           )
