@@ -47,7 +47,7 @@ class ArtExhibitonStartPage extends StatelessWidget {
                 Text(
                   "Discover amazing art around the world",
                   style: TextStyle(
-                    fontSize: 32,
+                    fontSize: 38,
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
@@ -63,7 +63,9 @@ class ArtExhibitonStartPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 24,),
+                SizedBox(
+                  height: 24,
+                ),
                 Container(
                   height: 58,
                   child: Stack(
@@ -75,7 +77,9 @@ class ArtExhibitonStartPage extends StatelessWidget {
                         top: 8,
                         child: Container(
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
