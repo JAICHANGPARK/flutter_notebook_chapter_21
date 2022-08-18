@@ -37,8 +37,11 @@ class ArtExhibitonStartPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Arexs",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  "Arexs.",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
                 ),
                 Spacer(),
                 Text(
@@ -85,7 +88,6 @@ class ArtExhibitonStartPage extends StatelessWidget {
                     ],
                   ),
                 ),
-
               ],
             ),
           )
