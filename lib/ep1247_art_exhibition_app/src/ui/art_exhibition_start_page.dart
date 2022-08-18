@@ -51,13 +51,20 @@ class ArtExhibitonStartPage extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                Text(
-                  "Feel the experience of seeing art from around the world in the palm of your"
-                  "hard without having to come directly to the museum",
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: Text(
+                    "Feel the experience of seeing art from around the world in the palm of your"
+                    "hard without having to come directly to the museum",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  ),
                 ),
                 Container(
                   height: 64,
-                  decoration: BoxDecoration(color: Colors.orangeAccent),
                   child: Stack(
                     children: [
                       Positioned(
