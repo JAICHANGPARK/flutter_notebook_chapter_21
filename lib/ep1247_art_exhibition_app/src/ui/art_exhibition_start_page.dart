@@ -29,8 +29,8 @@ class ArtExhibitonStartPage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 16,
-            right: 16,
+            left: 24,
+            right: 24,
             top: 72,
             bottom: 48,
             child: Column(
@@ -49,9 +49,9 @@ class ArtExhibitonStartPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 32,
                     color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
                   child: Text(
@@ -63,6 +63,7 @@ class ArtExhibitonStartPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 24,),
                 Container(
                   height: 58,
                   child: Stack(
