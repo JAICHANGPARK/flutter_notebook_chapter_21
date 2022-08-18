@@ -32,16 +32,21 @@ class ArtExhibitonStartPage extends StatelessWidget {
             left: 16,
             right: 16,
             top: 72,
-            bottom: 0,
+            bottom: 48,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Arexs",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
+                Spacer(),
                 Text(
                   "Discover amazing art around the world",
-                  style: TextStyle(fontSize: 32),
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Colors.white,
+                  ),
                 ),
                 Text(
                   "Feel the experience of seeing art from around the world in the palm of your"
@@ -79,7 +84,8 @@ class ArtExhibitonStartPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
+
               ],
             ),
           )
