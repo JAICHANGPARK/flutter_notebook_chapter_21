@@ -20,6 +20,10 @@ class ArtExhibitonStartPage extends StatelessWidget {
                     "https://cdn.pixabay.com/photo/2017/03/02/11/51/florence-2111060_960_720.jpg",
                   ),
                   fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(0.7),
+                    BlendMode.darken,
+                  ),
                 ),
               ),
             ),
