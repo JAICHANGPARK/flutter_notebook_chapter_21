@@ -1,6 +1,13 @@
 # flutter_notebook_chapter_21
 
-### EP1244
+### EP1247
+
+- Arexs - Art Exhibition Mobile App 🎨
+- by Arfi Maulana ⚡️
+- 
+<img src="https://cdn.dribbble.com/users/12095349/screenshots/19096190/media/7b80d3446128145312869bb1eb1fc5ac.png" width="400px"/>
+
+### EP1244-1246
 
 - Skin Care E-commerce App
 - by Yasaman Yazdi
