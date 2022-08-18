@@ -40,7 +40,7 @@ class ArtExhibitonStartPage extends StatelessWidget {
                   "Arexs.",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 24,
                   ),
                 ),
                 Spacer(),
