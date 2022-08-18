@@ -4,8 +4,10 @@
 
 - Arexs - Art Exhibition Mobile App 🎨
 - by Arfi Maulana ⚡️
-- 
-<img src="https://cdn.dribbble.com/users/12095349/screenshots/19096190/media/7b80d3446128145312869bb1eb1fc5ac.png" width="400px"/>
+- https://dribbble.com/shots/19129458-Arexs-Art-Exhibition-Mobile-App/attachments/14288321?mode=media
+
+<img src="https://cdn.dribbble.com/users/2589136/screenshots/19129458/media/a1fea1ce139f13978c4ff496d76d5098.png" width="400px"/>
+<img src="https://cdn.dribbble.com/users/2589136/screenshots/19129458/media/c5573cb272c9396333fa5cdaba9b5e48.png" width="400px"/>
 
 ### EP1244-1246
 
