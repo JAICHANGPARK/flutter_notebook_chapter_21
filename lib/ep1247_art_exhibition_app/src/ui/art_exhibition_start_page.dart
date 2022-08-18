@@ -40,8 +40,31 @@ class ArtExhibitonStartPage extends StatelessWidget {
                   child: Stack(
                     children: [
                       Positioned(
+                        left: 0,
+                        right: 16,
+                        bottom: 16,
+                        top: 0,
                         child: Container(
                           color: Colors.white,
+                          child: Center(
+                            child: Text(
+                              "Get Started",
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 0,
+                        right: 16,
+                        bottom: 16,
+                        top: 0,
+                        child: Container(
+                          color: Colors.white,
+                          child: Center(
+                            child: Text(
+                              "Get Started",
+                            ),
+                          ),
                         ),
                       )
                     ],
