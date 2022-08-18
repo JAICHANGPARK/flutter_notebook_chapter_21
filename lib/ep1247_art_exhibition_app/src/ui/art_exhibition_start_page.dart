@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1247_art_exhibition_app/src/ui/art_exhibition_home_page.dart';
 
 class ArtExhibitonStartPage extends StatelessWidget {
   const ArtExhibitonStartPage({Key? key}) : super(key: key);
@@ -66,38 +67,47 @@ class ArtExhibitonStartPage extends StatelessWidget {
                 SizedBox(
                   height: 24,
                 ),
-                Container(
-                  height: 58,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 8,
-                        right: 0,
-                        bottom: 0,
-                        top: 8,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.white,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ArtExhibitionHomePage(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 58,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 8,
+                          right: 0,
+                          bottom: 0,
+                          top: 8,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Positioned(
-                        left: 0,
-                        right: 8,
-                        bottom: 8,
-                        top: 0,
-                        child: Container(
-                          color: Colors.white,
-                          child: Center(
-                            child: Text(
-                              "Get Started",
+                        Positioned(
+                          left: 0,
+                          right: 8,
+                          bottom: 8,
+                          top: 0,
+                          child: Container(
+                            color: Colors.white,
+                            child: Center(
+                              child: Text(
+                                "Get Started",
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],
