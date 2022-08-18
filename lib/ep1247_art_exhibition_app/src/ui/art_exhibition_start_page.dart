@@ -13,7 +13,16 @@ class ArtExhibitonStartPage extends StatelessWidget {
             right: 0,
             top: 0,
             bottom: 0,
-            child: Container(),
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2017/03/02/11/51/florence-2111060_960_720.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
           ),
           Positioned(
             left: 16,
@@ -40,10 +49,10 @@ class ArtExhibitonStartPage extends StatelessWidget {
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 16,
+                        left: 8,
                         right: 0,
                         bottom: 0,
-                        top: 16,
+                        top: 8,
                         child: Container(
                           decoration: BoxDecoration(
                             border: Border.all(),
@@ -52,8 +61,8 @@ class ArtExhibitonStartPage extends StatelessWidget {
                       ),
                       Positioned(
                         left: 0,
-                        right: 16,
-                        bottom: 16,
+                        right: 8,
+                        bottom: 8,
                         top: 0,
                         child: Container(
                           color: Colors.white,
