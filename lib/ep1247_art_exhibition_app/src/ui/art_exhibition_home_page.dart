@@ -81,9 +81,13 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                 Container(
                   color: Colors.black,
                   height: 84,
+                  padding: EdgeInsets.symmetric(horizontal: 32),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+
                         children: [
                           Text(
                             "Home",
