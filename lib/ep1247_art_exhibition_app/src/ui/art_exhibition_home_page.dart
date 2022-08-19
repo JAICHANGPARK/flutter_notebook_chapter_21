@@ -31,6 +31,24 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                   ],
                 ),
               ),
+              padding: EdgeInsets.fromLTRB(16, 64, 16, 0),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.menu,),
+                      Expanded(
+                        child: Center(
+                          child: Text("Arexs."),
+                        ),
+                      ),
+                      Icon(
+                        Icons.search,
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
