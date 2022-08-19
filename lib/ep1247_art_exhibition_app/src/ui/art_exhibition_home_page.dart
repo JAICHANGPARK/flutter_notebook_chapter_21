@@ -54,13 +54,14 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                       ),
                     ],
                   ),
+                  SizedBox(height: 24,),
                   Expanded(
                     child: ListView.builder(
+                      padding: EdgeInsets.zero,
                       itemBuilder: (context, index) {
                         return Container(
                           height: 340,
                           margin: EdgeInsets.only(bottom: 16),
-                          color: Colors.orangeAccent,
                           child: Stack(
                             children: [
                               Positioned(
@@ -80,9 +81,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                 bottom: 12,
                                 right: 12,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.white),
                                 ),
                               )
                             ],
@@ -122,7 +121,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                             ),
                           ),
                           SizedBox(
-                            height: 4,
+                            height: 8,
                           ),
                           Container(
                             color: Colors.white,
