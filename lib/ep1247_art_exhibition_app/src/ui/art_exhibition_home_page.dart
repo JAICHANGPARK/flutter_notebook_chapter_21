@@ -75,14 +75,28 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
             child: Column(
               children: [
                 Divider(
-                  height: 0,
+                  height: 1.5,
                   color: Colors.white,
                 ),
                 Container(
                   color: Colors.black,
                   height: 84,
                   child: Row(
-                    children: [],
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            "Home",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Divider(
+                            color: Colors.white,
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 ),
               ],
