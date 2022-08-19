@@ -36,10 +36,18 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                 children: [
                   Row(
                     children: [
-                      Icon(Icons.menu,),
+                      Icon(
+                        Icons.menu,
+                      ),
                       Expanded(
                         child: Center(
-                          child: Text("Arexs."),
+                          child: Text(
+                            "Arexs.",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24
+                            ),
+                          ),
                         ),
                       ),
                       Icon(
