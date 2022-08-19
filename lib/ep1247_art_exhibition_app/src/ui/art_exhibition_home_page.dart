@@ -31,7 +31,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                   ],
                 ),
               ),
-              padding: EdgeInsets.fromLTRB(16, 64, 16, 0),
+              padding: EdgeInsets.fromLTRB(24, 64, 24, 0),
               child: Column(
                 children: [
                   Row(
@@ -58,8 +58,35 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
-                          height: 320,
+                          height: 340,
+                          margin: EdgeInsets.only(bottom: 16),
                           color: Colors.orangeAccent,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  left: 12,
+                                  top: 12,
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                      color: Colors.white,
+                                    )),
+                                  )),
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                bottom: 12,
+                                right: 12,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         );
                       },
                     ),
