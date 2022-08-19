@@ -91,8 +91,13 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                               color: Colors.white,
                             ),
                           ),
-                          Divider(
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Container(
                             color: Colors.white,
+                            height: 1.5,
+                            width: 42,
                           )
                         ],
                       )
