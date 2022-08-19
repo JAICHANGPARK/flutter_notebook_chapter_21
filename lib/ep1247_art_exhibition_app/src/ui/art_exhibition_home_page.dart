@@ -87,7 +87,6 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-
                         children: [
                           Text(
                             "Home",
@@ -104,7 +103,11 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                             width: 42,
                           )
                         ],
-                      )
+                      ),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.search), color: Colors.white,),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.thumb_up_alt_outlined),  color: Colors.white,),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.person_outline), color: Colors.white,),
+
                     ],
                   ),
                 ),
