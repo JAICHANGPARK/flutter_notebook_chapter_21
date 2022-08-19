@@ -44,10 +44,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                         child: Center(
                           child: Text(
                             "Arexs.",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(color: Colors.white, fontSize: 18),
                           ),
                         ),
                       ),
@@ -56,7 +53,17 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                         color: Colors.white,
                       ),
                     ],
-                  )
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 320,
+                          color: Colors.orangeAccent,
+                        );
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -65,8 +72,20 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
             left: 0,
             right: 0,
             bottom: 0,
-            child: Container(
-              color: Colors.black,
+            child: Column(
+              children: [
+                Divider(
+                  height: 0,
+                  color: Colors.white,
+                ),
+                Container(
+                  color: Colors.black,
+                  height: 84,
+                  child: Row(
+                    children: [],
+                  ),
+                ),
+              ],
             ),
           ),
         ],
