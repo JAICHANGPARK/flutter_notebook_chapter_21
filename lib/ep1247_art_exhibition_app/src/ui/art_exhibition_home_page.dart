@@ -38,6 +38,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                     children: [
                       Icon(
                         Icons.menu,
+                        color: Colors.white,
                       ),
                       Expanded(
                         child: Center(
@@ -45,13 +46,14 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                             "Arexs.",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 24
+                              fontSize: 18
                             ),
                           ),
                         ),
                       ),
                       Icon(
                         Icons.search,
+                        color: Colors.white,
                       ),
                     ],
                   )
