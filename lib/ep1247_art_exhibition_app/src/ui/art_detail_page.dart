@@ -55,7 +55,11 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                       ),
                     ],
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: ListView(
+                      children: [],
+                    ),
+                  ),
                   GestureDetector(
                     onTap: () {},
                     child: Container(
