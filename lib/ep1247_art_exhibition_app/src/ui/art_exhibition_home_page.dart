@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
 
 class ArtExhibitionHomePage extends StatefulWidget {
   const ArtExhibitionHomePage({Key? key}) : super(key: key);
@@ -103,7 +104,10 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             CircleAvatar(
-
+                                              radius: 26,
+                                            ),
+                                            SizedBox(
+                                              width: 16,
                                             ),
                                             Expanded(
                                               child: Column(
@@ -113,17 +117,27 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                                   Text("Zack Jarosz"),
                                                   Row(
                                                     children: [
-                                                      Icon(Icons.thumb_up_alt_outlined, size: 14,),
+                                                      Icon(
+                                                        Icons.thumb_up_alt_outlined,
+                                                        size: 14,
+                                                      ),
                                                       Text("123"),
-
-                                                      Icon(Icons.chat_bubble_outline_outlined, size: 14,),
+                                                      Icon(
+                                                        Icons.chat_bubble_outline_outlined,
+                                                        size: 14,
+                                                      ),
                                                       Text("34"),
-
-                                                      Icon(Icons.visibility_outlined, size: 14,),
+                                                      Icon(
+                                                        Icons.visibility_outlined,
+                                                        size: 14,
+                                                      ),
                                                       Text("8.9m"),
-
                                                     ],
-                                                  )
+                                                  ),
+                                                  Text(
+                                                    loremIpsum.substring(0, 100),
+                                                  ),
+                                                  Text("Read more"),
                                                 ],
                                               ),
                                             ),
