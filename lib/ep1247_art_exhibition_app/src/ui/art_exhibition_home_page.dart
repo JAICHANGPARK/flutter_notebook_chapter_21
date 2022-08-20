@@ -113,9 +113,15 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                                   Text("Zack Jarosz"),
                                                   Row(
                                                     children: [
-                                                      Icon(Icons.thumb_up_alt_outlined),
+                                                      Icon(Icons.thumb_up_alt_outlined, size: 14,),
                                                       Text("123"),
-                                                      
+
+                                                      Icon(Icons.chat_bubble_outline_outlined, size: 14,),
+                                                      Text("34"),
+
+                                                      Icon(Icons.visibility_outlined, size: 14,),
+                                                      Text("8.9m"),
+
                                                     ],
                                                   )
                                                 ],
