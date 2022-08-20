@@ -112,25 +112,38 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                             Expanded(
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                 children: [
-                                                  Text("Can you hear me?"),
-                                                  Text("Zack Jarosz"),
+                                                  Text(
+                                                    "Can you hear me?",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  Text("Zack Jarosz", style: TextStyle(
+                                                    fontSize: 12
+                                                  ),),
                                                   Row(
                                                     children: [
                                                       Icon(
                                                         Icons.thumb_up_alt_outlined,
                                                         size: 14,
                                                       ),
+                                                      SizedBox(width: 4,),
                                                       Text("123"),
+                                                      SizedBox(width: 12,),
                                                       Icon(
                                                         Icons.chat_bubble_outline_outlined,
                                                         size: 14,
                                                       ),
+                                                      SizedBox(width: 4,),
                                                       Text("34"),
+                                                      SizedBox(width: 12,),
                                                       Icon(
                                                         Icons.visibility_outlined,
                                                         size: 14,
                                                       ),
+                                                      SizedBox(width: 4,),
                                                       Text("8.9m"),
                                                     ],
                                                   ),
