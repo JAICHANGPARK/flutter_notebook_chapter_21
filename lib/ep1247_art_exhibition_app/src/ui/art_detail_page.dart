@@ -27,27 +27,78 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                   ],
                 ),
               ),
-              padding: EdgeInsets.fromLTRB(24, 64, 24, 0),
+              padding: EdgeInsets.fromLTRB(24, 64, 24, 16),
               child: Column(
                 children: [
                   Row(
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                         icon: Icon(Icons.arrow_back_outlined),
                         color: Colors.white,
                       ),
                       Expanded(
-                        child: Text(
-                          "Details",
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.white,
+                        child: Center(
+                          child: Text(
+                            "Details",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
-                      )
+                      ),
+                      Container(
+                        width: 42,
+                      ),
                     ],
-                  )
+                  ),
+                  Expanded(child: Placeholder()),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      height: 58,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 8,
+                            right: 0,
+                            bottom: 0,
+                            top: 8,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: 0,
+                            right: 8,
+                            bottom: 8,
+                            top: 0,
+                            child: Container(
+                                color: Colors.white,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("Donate to artist"),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Icon(
+                                      Icons.arrow_forward,
+                                    )
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
