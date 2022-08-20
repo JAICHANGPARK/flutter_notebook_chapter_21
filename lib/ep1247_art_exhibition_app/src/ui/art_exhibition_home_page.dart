@@ -100,19 +100,22 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                       ),
                                       Expanded(
                                         child: Row(
-                                          
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             CircleAvatar(
 
                                             ),
                                             Expanded(
                                               child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Can you hear me?"),
                                                   Text("Zack Jarosz"),
                                                   Row(
                                                     children: [
-
+                                                      Icon(Icons.thumb_up_alt_outlined),
+                                                      Text("123"),
+                                                      
                                                     ],
                                                   )
                                                 ],
