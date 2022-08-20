@@ -88,6 +88,41 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                   ),
+                                  padding: EdgeInsets.all(8),
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 160,
+                                        decoration: BoxDecoration(color: Colors.black),
+                                      ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
+                                      Expanded(
+                                        child: Row(
+                                          
+                                          children: [
+                                            CircleAvatar(
+
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                children: [
+                                                  Text("Can you hear me?"),
+                                                  Text("Zack Jarosz"),
+                                                  Row(
+                                                    children: [
+
+                                                    ],
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               )
                             ],
