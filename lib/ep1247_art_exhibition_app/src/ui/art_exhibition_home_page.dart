@@ -120,35 +120,53 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                                       fontWeight: FontWeight.bold,
                                                     ),
                                                   ),
-                                                  Text("Zack Jarosz", style: TextStyle(
-                                                    fontSize: 12
-                                                  ),),
+                                                  Text(
+                                                    "Zack Jarosz",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
                                                   Row(
                                                     children: [
                                                       Icon(
                                                         Icons.thumb_up_alt_outlined,
                                                         size: 14,
                                                       ),
-                                                      SizedBox(width: 4,),
+                                                      SizedBox(
+                                                        width: 4,
+                                                      ),
                                                       Text("123"),
-                                                      SizedBox(width: 12,),
+                                                      SizedBox(
+                                                        width: 12,
+                                                      ),
                                                       Icon(
                                                         Icons.chat_bubble_outline_outlined,
                                                         size: 14,
                                                       ),
-                                                      SizedBox(width: 4,),
+                                                      SizedBox(
+                                                        width: 4,
+                                                      ),
                                                       Text("34"),
-                                                      SizedBox(width: 12,),
+                                                      SizedBox(
+                                                        width: 12,
+                                                      ),
                                                       Icon(
                                                         Icons.visibility_outlined,
                                                         size: 14,
                                                       ),
-                                                      SizedBox(width: 4,),
+                                                      SizedBox(
+                                                        width: 4,
+                                                      ),
                                                       Text("8.9m"),
                                                     ],
                                                   ),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Text(
                                                     loremIpsum.substring(0, 100),
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.grey,
+                                                    ),
                                                   ),
                                                   Text("Read more"),
                                                 ],
