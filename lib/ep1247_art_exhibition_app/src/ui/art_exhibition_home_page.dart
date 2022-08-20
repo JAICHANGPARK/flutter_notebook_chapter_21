@@ -94,7 +94,14 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                     children: [
                                       Container(
                                         height: 160,
-                                        decoration: BoxDecoration(color: Colors.black),
+                                        decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+                                              ),
+                                              fit: BoxFit.cover,
+                                            )),
                                       ),
                                       SizedBox(
                                         height: 16,
@@ -104,7 +111,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             CircleAvatar(
-                                              radius: 26,
+                                              radius: 24,
                                             ),
                                             SizedBox(
                                               width: 16,
