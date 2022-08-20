@@ -54,7 +54,9 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 24,),
+                  SizedBox(
+                    height: 24,
+                  ),
                   Expanded(
                     child: ListView.builder(
                       padding: EdgeInsets.zero,
@@ -65,23 +67,27 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                           child: Stack(
                             children: [
                               Positioned(
-                                  left: 12,
-                                  top: 12,
-                                  bottom: 0,
-                                  right: 0,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        border: Border.all(
+                                left: 12,
+                                top: 12,
+                                bottom: 0,
+                                right: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
                                       color: Colors.white,
-                                    )),
-                                  )),
+                                    ),
+                                  ),
+                                ),
+                              ),
                               Positioned(
                                 left: 0,
                                 top: 0,
                                 bottom: 12,
                                 right: 12,
                                 child: Container(
-                                  decoration: BoxDecoration(color: Colors.white),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               )
                             ],
