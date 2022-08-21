@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_21/ep1247_art_exhibition_app/src/model/art_item.dart';
 
 class ArtDetailPage extends StatefulWidget {
-  const ArtDetailPage({Key? key}) : super(key: key);
+  final ArtItem artItem;
+
+  const ArtDetailPage({
+    Key? key,
+    required this.artItem,
+  }) : super(key: key);
 
   @override
   State<ArtDetailPage> createState() => _ArtDetailPageState();
@@ -46,7 +52,6 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.white,
-
                             ),
                           ),
                         ),
@@ -58,7 +63,14 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                   ),
                   Expanded(
                     child: ListView(
-                      children: [],
+                      children: [
+                        Container(
+                          height: 300,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        )
+                      ],
                     ),
                   ),
                   GestureDetector(
