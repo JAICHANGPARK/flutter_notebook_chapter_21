@@ -14,7 +14,7 @@ List<ArtItem> artItems = [
     aspectRatio: "3:2",
     category: "Photography",
     dimension: "4272 x 2648",
-    description: loremIpsum.substring(0, 100),
+    description: loremIpsum.substring(0, 250),
   ),
   ArtItem(
     img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
@@ -27,7 +27,7 @@ List<ArtItem> artItems = [
     aspectRatio: "3:2",
     category: "Photography",
     dimension: "4272 x 2648",
-    description: loremIpsum.substring(0, 100),
+    description: loremIpsum.substring(0, 250),
   ),
   ArtItem(
     img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
