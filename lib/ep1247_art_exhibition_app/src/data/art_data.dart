@@ -1,3 +1,71 @@
+import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
+
 import '../model/art_item.dart';
 
-List<ArtItem> artItems = [];
+List<ArtItem> artItems = [
+  ArtItem(
+    img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+    title: "Can you hear me?",
+    name: "Zack Jarosz",
+    like: "123",
+    comments: "34",
+    distance: "8.9m",
+    date: "Apr 22. 2018",
+    aspectRatio: "3:2",
+    category: "Photography",
+    dimension: "4272 x 2648",
+    description: loremIpsum.substring(0, 100),
+  ),
+  ArtItem(
+    img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+    title: "Can you hear me?",
+    name: "Zack Jarosz",
+    like: "123",
+    comments: "34",
+    distance: "8.9m",
+    date: "Apr 22. 2018",
+    aspectRatio: "3:2",
+    category: "Photography",
+    dimension: "4272 x 2648",
+    description: loremIpsum.substring(0, 100),
+  ),
+  ArtItem(
+    img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+    title: "Can you hear me?",
+    name: "Zack Jarosz",
+    like: "123",
+    comments: "34",
+    distance: "8.9m",
+    date: "Apr 22. 2018",
+    aspectRatio: "3:2",
+    category: "Photography",
+    dimension: "4272 x 2648",
+    description: loremIpsum.substring(0, 100),
+  ),
+  ArtItem(
+    img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+    title: "Can you hear me?",
+    name: "Zack Jarosz",
+    like: "123",
+    comments: "34",
+    distance: "8.9m",
+    date: "Apr 22. 2018",
+    aspectRatio: "3:2",
+    category: "Photography",
+    dimension: "4272 x 2648",
+    description: loremIpsum.substring(0, 100),
+  ),
+  ArtItem(
+    img: "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+    title: "Can you hear me?",
+    name: "Zack Jarosz",
+    like: "123",
+    comments: "34",
+    distance: "8.9m",
+    date: "Apr 22. 2018",
+    aspectRatio: "3:2",
+    category: "Photography",
+    dimension: "4272 x 2648",
+    description: loremIpsum.substring(0, 100),
+  )
+];
