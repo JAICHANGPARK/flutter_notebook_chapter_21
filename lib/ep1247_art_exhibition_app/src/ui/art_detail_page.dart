@@ -64,10 +64,47 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                   Expanded(
                     child: ListView(
                       children: [
-                        Container(
-                          height: 300,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
+                        Hero(
+                          tag: "${widget.artItem.img}",
+                          child: Container(
+                            height: 300,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 12,
+                                  top: 12,
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                    left: 0,
+                                    top: 0,
+                                    bottom: 12,
+                                    right: 12,
+                                    child: Container(
+                                      padding: EdgeInsets.all(12),
+                                      color: Colors.white,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              widget.artItem.img ?? "",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ))
+                              ],
+                            ),
                           ),
                         )
                       ],
