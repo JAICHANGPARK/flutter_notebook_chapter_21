@@ -74,7 +74,8 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                             );
                           },
                           child: Hero(
-                            tag: "item_$index",
+                            // tag: "item_$index",
+                            tag: "${item.img}",
                             child: Container(
                               height: 340,
                               margin: EdgeInsets.only(bottom: 16),
