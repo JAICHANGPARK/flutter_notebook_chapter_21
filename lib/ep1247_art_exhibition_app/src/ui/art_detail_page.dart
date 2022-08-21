@@ -84,29 +84,123 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                                   ),
                                 ),
                                 Positioned(
-                                    left: 0,
-                                    top: 0,
-                                    bottom: 12,
-                                    right: 12,
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 12,
+                                  right: 12,
+                                  child: Container(
+                                    padding: EdgeInsets.all(12),
+                                    color: Colors.white,
                                     child: Container(
-                                      padding: EdgeInsets.all(12),
-                                      color: Colors.white,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.black,
-                                          image: DecorationImage(
-                                            image: NetworkImage(
-                                              widget.artItem.img ?? "",
-                                            ),
-                                            fit: BoxFit.cover,
+                                      decoration: BoxDecoration(
+                                        color: Colors.black,
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            widget.artItem.img ?? "",
                                           ),
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
-                                    ))
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
                           ),
-                        )
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "${widget.artItem.title}",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 16,
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text(
+                              "${widget.artItem.name}",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Text(
+                              "${widget.artItem.date}",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.thumb_up_alt_outlined,
+                              size: 14,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              // "123",
+                              widget.artItem.like ?? "",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Icon(
+                              Icons.chat_bubble_outline_outlined,
+                              size: 14,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              widget.artItem.comments ?? "34",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Icon(
+                              Icons.visibility_outlined,
+                              size: 14,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              // "8.9m",
+                              widget.artItem.distance ?? "8.9m",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
