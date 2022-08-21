@@ -200,6 +200,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                                         style: TextStyle(
                                                           fontSize: 12,
                                                           color: Colors.grey,
+                                                          overflow: TextOverflow.ellipsis
                                                         ),
                                                       ),
                                                       Text("Read more"),
