@@ -24,10 +24,6 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    // Colors.black.withOpacity(0.2),
-                    // Colors.black.withOpacity(0.3),
-                    // Colors.black.withOpacity(0.4),
-                    // Colors.black.withOpacity(0.5),
                     Colors.black.withOpacity(0.8),
                     Colors.black,
                   ],
@@ -46,7 +42,10 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                         child: Center(
                           child: Text(
                             "Arexs.",
-                            style: TextStyle(color: Colors.white, fontSize: 18),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                            ),
                           ),
                         ),
                       ),
