@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+
+@immutable
 class ArtItem {
   String? img;
   String? title;
