@@ -103,13 +103,14 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                                         Container(
                                           height: 160,
                                           decoration: BoxDecoration(
-                                              color: Colors.black,
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                  "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
-                                                ),
-                                                fit: BoxFit.cover,
-                                              )),
+                                            color: Colors.black,
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378__340.jpg",
+                                              ),
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
                                         ),
                                         SizedBox(
                                           height: 16,
