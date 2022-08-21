@@ -46,6 +46,7 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.white,
+
                             ),
                           ),
                         ),
