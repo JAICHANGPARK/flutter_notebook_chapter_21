@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_21/ep1247_art_exhibition_app/src/ui/art_detail_page.dart';
 import 'package:flutter_notebook_chapter_21/global_utils/global_text_util.dart';
+import 'package:flutter_notebook_chapter_21/ep1247_art_exhibition_app/src/data/art_data.dart';
 
 class ArtExhibitionHomePage extends StatefulWidget {
   const ArtExhibitionHomePage({Key? key}) : super(key: key);
@@ -61,6 +62,7 @@ class _ArtExhibitionHomePageState extends State<ArtExhibitionHomePage> {
                   Expanded(
                     child: ListView.builder(
                       padding: EdgeInsets.zero,
+                      itemCount: artItems.length,
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: () {
